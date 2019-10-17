@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <LinearLayout
+        android:id="@+id/ll_present"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_gift"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            tools:src="@mipmap/ic_logo_empty4" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            tools:text="四叶草" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/color_white"
+            android:textSize="12sp"
+            tools:text="免费" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_gift_checked"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+</RelativeLayout>

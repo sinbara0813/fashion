@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:gravity="center_horizontal"
+    android:onClick="hideKeyboard"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:text="@string/label_money2"
+                android:textColor="#DE000000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="¥"
+                android:textColor="#DE000000"
+                android:textSize="14sp" />
+
+            <com.d2cmall.buyer.widget.ClearEditText
+                android:id="@+id/et_deposit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@color/color_white"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="#DE000000"
+                android:textColorHint="#61000000"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <com.d2cmall.buyer.widget.CheckableLinearLayoutGroup
+        android:id="@+id/deposit_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <com.d2cmall.buyer.widget.CheckableLinearLayoutButton
+            android:id="@+id/alipay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="16dp"
+            app:isChecked="true">
+
+            <ImageView
+                android:id="@+id/ali_is_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_shopcart_aselected" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_alipay" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/label_alipay"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请保证支付宝余额充足哦~"
+                    android:textColor="@color/color_black38"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+
+        </com.d2cmall.buyer.widget.CheckableLinearLayoutButton>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line" />
+
+        <com.d2cmall.buyer.widget.CheckableLinearLayoutButton
+            android:id="@+id/wxpay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="16dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/wx_is_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_shopcart_unaselected" />
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_wxpay" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="微信支付"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用微信支付"
+                    android:textColor="@color/color_black38"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+        </com.d2cmall.buyer.widget.CheckableLinearLayoutButton>
+
+    </com.d2cmall.buyer.widget.CheckableLinearLayoutGroup>
+
+
+    <TextView
+        android:id="@+id/tv_recharge_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:textColor="@color/color_black3"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="invisible"
+        tools:text="@string/label_deposit_tip" />
+
+    <TextView
+        android:id="@+id/tv_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:text="*订单退款赠金不返还"
+        android:textColor="@color/color_black3"
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btn_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#DE232427"
+            android:enabled="false"
+            android:text="@string/label_deposit"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <cn.dreamtobe.kpswitch.widget.KPSwitchPanelLinearLayout
+        android:id="@+id/panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootLinearLayout>

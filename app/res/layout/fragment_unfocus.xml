@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/color_white2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/all_tv"
+            style="@style/tran87Size3TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_all_arrowright_small"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/label_hot_topics" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <RelativeLayout
+                android:id="@+id/flow_rl1"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF00"
+                android:elevation="2dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/flow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/flow_tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#66000000"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:lines="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="sdafasfsda"
+                    android:textColor="@color/bg_white"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flow_rl2"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="#FFF00FFF"
+                android:elevation="2dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/flow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/flow_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#66000000"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:lines="2"
+                    android:paddingLeft="10dp"
+                    android:text="fasdasdsa"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/bg_white"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/flow_rl3"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFeeFFFF"
+                android:elevation="2dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/flow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/flow_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#66000000"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:lines="2"
+                    android:text="safdasd"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/bg_white"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/big_gun"
+                style="@style/normalSize1TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="72dp"
+                android:text="达人" />
+
+            <TextView
+                android:id="@+id/design_gun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设计师"
+                android:textColor="@color/color_black60"
+                android:textSize="@dimen/medium_text_size1" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignBottom="@id/top"
+            android:background="@color/trans_87_color_black"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tag_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:visibility="gone"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

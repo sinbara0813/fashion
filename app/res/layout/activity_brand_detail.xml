@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:mContext="com.d2cmall.buyer.activity.BrandDetailActivity">
+
+    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:background="@null"
+        android:elevation="5dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/sp_rotate_progressbar_style"
+        android:indeterminateDuration="600"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/error_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_no_net"
+        android:visibility="gone" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/coll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:id="@+id/main_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0"
+                    app:layout_scrollFlags="scroll">
+
+                    <RelativeLayout
+                        android:background="@mipmap/pic_shoppage_bgcover"
+                        android:id="@+id/banner_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_alignParentTop="true">
+                        <ImageView
+                            android:id="@+id/iv_top_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/ic_logo_empty2"
+                            />
+                        <ImageView
+                            android:id="@+id/iv_top_cover"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/ic_logo_empty2"
+                            />
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/ic_play"
+                            android:id="@+id/iv_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/img_head"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                        <TextView
+                            tools:text="名称"
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="bottom"
+                            android:maxLines="1"
+                            android:maxWidth="180dp"
+                            android:textColor="#DE000000"
+                            android:textSize="16sp" />
+                            <TextView
+                                tools:text="36人关注"
+                                android:gravity="bottom"
+                                android:id="@+id/tv_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_focus"
+                                android:layout_marginTop="2dp"
+                                android:maxLines="1"
+                                android:maxWidth="180dp"
+                                android:textColor="@color/color_black85"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_marginRight="16dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_above="@+id/img_focus"
+                            android:background="@mipmap/pic_brandhome_popover3"
+                            android:paddingBottom="8dp"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:id="@+id/tv_focus_tip"
+                            android:textColor="#e6aa48"
+                            android:text="关注是3个品牌可获得60D币"
+                            android:layout_width="200dp"
+                            android:layout_height="46dp"
+                            />
+                        //开启消息推送行为节点
+                        <com.d2cmall.buyer.widget.ShowPopImageView
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/img_focus"
+                            android:layout_width="60dp"
+                            android:layout_height="22dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="18dp"
+                            android:gravity="center"
+                             />
+
+
+
+
+                        <ImageView
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/img_head"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@drawable/image_border"
+                            android:contentDescription="@string/app_name"
+                            android:padding="0.5dp"
+                            android:scaleType="fitXY" />
+                    </RelativeLayout>
+
+
+                    <android.support.design.widget.TabLayout
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        android:layout_below="@+id/banner_rl"
+                        android:id="@+id/brand_list_tabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="67dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_white"
+                        app:tabIndicatorColor="#DE000000"
+                        app:tabIndicatorHeight="2dp"
+                        app:tabSelectedTextColor="#DE000000"
+                        app:tabTextColor="#8A000000" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin">
+
+                    <RelativeLayout
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="#ffffff"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="16dp"
+                            android:src="@mipmap/tab_all_back_b" />
+
+                        <ImageView
+                            android:id="@+id/tv_title"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/border_bradlist"
+                            android:padding="0.5dp"
+                            android:src="@mipmap/ic_page4" />
+
+                        <ImageView
+                            android:id="@+id/share_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:src="@mipmap/icon_all_share" />
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.d2cmall.buyer.widget.LimitViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/start_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_gradient_black">
+
+        <ImageView
+            android:id="@+id/iv_start_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/tab_all_back_w" />
+
+        <ImageView
+            android:id="@+id/iv_start_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_nav_share_white" />
+
+    </RelativeLayout>
+</RelativeLayout>

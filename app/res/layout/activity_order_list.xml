@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tab_all_back_b"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="品牌推荐"
+            android:layout_weight="1"
+            android:paddingLeft="32dp"
+            style="@style/boldTextLeftStyle"/>
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_search" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:elevation="4dp"
+        android:background="#FFFFFFFF">
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/sliding_tab"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/color_white"
+            tl:tl_indicator_color="@color/trans_87_color_black"
+            tl:tl_indicator_gravity="BOTTOM"
+            tl:tl_indicator_height="2dp"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="#DE000000"
+            tl:tl_textUnselectColor="#8A000000"
+            tl:tl_textsize="16dp" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sliding_tab" />
+
+    <include layout="@layout/layout_progressbar"/>
+
+</LinearLayout>

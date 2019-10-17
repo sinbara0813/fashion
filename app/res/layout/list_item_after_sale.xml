@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="#8A000000"
+            android:textSize="14sp"
+            android:id="@+id/tv_after_sale_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/tv_product_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/ex_small_text_size" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="72dp"
+            android:layout_height="108dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/color_white2"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:maxLines="1"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/medium_text_size3" />
+
+            <TextView
+                tools:text="这是商品名称1111111111111111111111111111111111111111111111111111111111111"
+                android:id="@+id/tv_product_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_id"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="#DE000000"
+                android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@id/iv_image"
+                    android:singleLine="true"
+                    android:textColor="#61000000"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/tv_product_title"
+                    android:id="@+id/tv_product_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                   />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/line_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_paymode_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black2"
+                android:textSize="@dimen/medium_text_size3"
+                tools:text="【支付宝】" />
+
+            <TextView
+                android:id="@+id/tv_payment_describe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:maxLines="1"
+                android:textColor="@color/color_black2"
+                android:textSize="@dimen/medium_text_size3"
+                tools:text="@string/label_after_sale_payment" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_margin" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/after_sale_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+       >
+
+        <TextView
+            android:id="@+id/btn_edit_after_sale"
+            android:layout_width="104dp"
+            android:layout_height="32dp"
+            android:background="#FF232427"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            android:text="填写物流信息"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/btn_cancel_after_sale"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/border_black_button"
+            android:gravity="center"
+            android:text="@string/label_cancel_after_sale"
+            android:textColor="@color/color_black3"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:id="@+id/btn_confirm_after_sale"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/border_black_button"
+            android:gravity="center"
+            android:text="@string/label_confirm_receipt"
+            android:textColor="@color/color_black3"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_white" />
+
+</LinearLayout>

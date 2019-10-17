@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/pack_bg"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/trans_90_color_white"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/trans_90_color_white"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/color_black87"
+            android:drawablePadding="4dp"
+            android:textSize="@dimen/large_text_size"
+            />
+
+        <ImageView
+            android:id="@+id/product_collect_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/product_name"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_collect_black"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_product_fx"/>
+
+    <LinearLayout
+        android:id="@+id/pack_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:background="@color/gray_bg"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="16dp"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black30"
+                android:textSize="12dp"
+                android:text="以下拼团可直接参与"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_more_collages"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black30"
+                android:textSize="12dp"
+                android:drawablePadding="2dp"
+                android:drawableRight="@mipmap/ic_arrow_right_g"
+                android:text="更多"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pack_content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:id="@+id/collage_role"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text_size3"
+            android:textColor="@color/color_black85"
+            android:layout_marginRight="10dp"
+            android:text="拼团规则"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_invite_friend_step1"
+            android:drawablePadding="2dp"
+            android:drawableLeft="@mipmap/icon_point"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/small_text_size"
+            android:gravity="center"
+            android:textColor="@color/color_black7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_point"
+            android:drawablePadding="2dp"
+            android:text="@string/label_invite_friend_step2"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/small_text_size"
+            android:gravity="center"
+            android:textColor="@color/color_black7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_point"
+            android:drawablePadding="2dp"
+            android:text="@string/label_invite_friend_step3"
+            android:textSize="@dimen/small_text_size"
+            android:gravity="center"
+            android:textColor="@color/color_black7"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_arrow_right_g"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_line"/>
+
+
+    <TextView
+        android:id="@+id/store_tag_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_black85"
+        android:textSize="@dimen/medium_text_size3"
+        android:text="商品库存"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone"/>
+
+    <HorizontalScrollView
+        android:id="@+id/more_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/more_standard_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/single_standard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_black85"
+            android:textSize="@dimen/medium_text_size3"
+            android:text="商品库存"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/store_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tiny_text_size"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/color_black85"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_line"/>
+
+</LinearLayout>

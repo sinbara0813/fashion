@@ -1,0 +1,132 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="splashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/bg_launcher</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="bubble_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+    <style name="bubble_vis_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysVisible</item>
+    </style>
+
+    <style name="smallTextStyle">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/trans_87_color_black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="normalTextStyle">
+        <item name="android:textSize">@dimen/medium_text_size3</item>
+        <item name="android:textColor">@color/trans_87_color_black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="boldTextStyle">
+        <item name="android:textSize">@dimen/ex_large_text_size</item>
+        <item name="android:textColor">@color/color_black87</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="boldTextLeftStyle">
+        <item name="android:textSize">@dimen/ex_large_text_size</item>
+        <item name="android:textColor">@color/color_black87</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="tran87Size3TextStyle">
+        <item name="android:textSize">@dimen/medium_text_size3</item>
+        <item name="android:textColor">@color/color_black60</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="normalSize3TextStyle">
+        <item name="android:textSize">@dimen/medium_text_size3</item>
+        <item name="android:textColor">@color/color_black87</item>
+    </style>
+
+    <style name="normalSize1TextStyle">
+        <item name="android:textSize">@dimen/medium_text_size1</item>
+        <item name="android:textColor">@color/color_black87</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- Active thumb color & Active track color(30% transparency)
+            switch 打开时的拇指按钮的颜色 轨迹颜色默认为30%这个颜色 -->
+        <item name="colorControlActivated">@color/color_green</item>
+        <!-- Inactive thumb color switch关闭时的拇指按钮的颜色 -->
+        <item name="colorSwitchThumbNormal">@color/color_green</item>
+        <!-- Inactive track color(30% transparency) switch关闭时的轨迹的颜色  30%这个颜色 -->
+        <item name="android:colorForeground">@color/colorAccent</item>
+        <!--使用方法：
+        在布局文件中给需要自定义控件中增加app:theme="@style/MySwitch"-->
+    </style>
+
+    <style name="LiveSwitch" parent="Theme.AppCompat.Light">
+        <!-- Active thumb color & Active track color(30% transparency)
+            switch 打开时的拇指按钮的颜色 轨迹颜色默认为30%这个颜色 -->
+        <item name="colorControlActivated">@color/color_live</item>
+        <!-- Inactive thumb color switch关闭时的拇指按钮的颜色 -->
+        <item name="colorSwitchThumbNormal">@color/color_live</item>
+        <!-- Inactive track color(30% transparency) switch关闭时的轨迹的颜色  30%这个颜色 -->
+        <item name="android:colorForeground">@color/colorAccent</item>
+        <!--使用方法：
+        在布局文件中给需要自定义控件中增加app:theme="@style/MySwitch"-->
+    </style>
+
+    <style name="NotificationAnim">
+        <item name="android:windowEnterAnimation">@anim/anim_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_out</item>
+    </style>
+
+    <style name="showPopupAnimation" parent="android:Animation">  <!--name为调用这个style动画的名字，自己设置的-->
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+    </style>
+    <style name="select_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/season_selector</item>
+        <item name="android:textColor">@drawable/season_text_selector</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">16dp</item>
+    </style>
+</resources>

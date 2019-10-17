@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+                android:background="@color/color_white"
+    xmlns:tools="http://schemas.android.com/tools"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+                  android:id="@+id/second_title_ll_first"
+                  android:layout_width="match_parent"
+                  android:layout_height="56dp"
+                  android:elevation="4dp"
+                  android:background="@color/transparent"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="20dp"
+                  android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/back_fisrst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/tab_all_back_b" />
+
+        <TextView
+            android:id="@+id/product_title_name_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="@color/color_black2"
+            android:textSize="@dimen/medium_text_size1"/>
+
+        <ImageView
+
+            android:id="@+id/share_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_all_share" />
+
+    </LinearLayout>
+    <include layout="@layout/layout_product_second_title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout
+        android:id="@+id/ptr"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+        />
+
+    </com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout>
+        <LinearLayout
+                android:id="@+id/ll_bottom"
+                  android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:layout_alignParentBottom="true"
+                  android:background="@color/color_white"
+                  android:orientation="horizontal"
+                  android:elevation="2dp">
+
+        <LinearLayout
+            android:paddingTop="4dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/bottom_cart_ll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                tools:text="总价:¥998"
+                android:id="@+id/tv_sale_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/trans_50_color_black"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:id="@+id/ll_comb_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tv_combo_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="套装价:¥100"
+                    android:textColor="#F21A1A"
+                    android:textSize="12sp" />
+                <TextView
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:gravity="center"
+                    android:lines="1"
+                    tools:text="立省430"
+                    android:background="#F21A1A"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tv_save_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <TextView
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="暂无报价"
+                android:layout_marginTop="4dp"
+                android:id="@+id/tv_sale_down"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/bottom_add_cart"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:background="@color/color_black_bg"
+            android:text="立即购买"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</LinearLayout>
+    <include layout="@layout/layout_progressbar" />
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:visibility="gone"
+        android:background="@mipmap/ic_logo_empty5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>

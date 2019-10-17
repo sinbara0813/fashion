@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_layout"
+    android:background="@color/bg_white">
+
+    <com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+
+    </com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout>
+
+    <include layout="@layout/list_empty_view" />
+
+    <include layout="@layout/layout_progressbar" />
+
+    <ImageView
+        android:id="@+id/btn_back_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_back_top"
+        android:visibility="gone" />
+
+</RelativeLayout>

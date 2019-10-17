@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/red_packet_ll"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/color_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="18dp"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/red_packet_amount"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="使用红包抵用"
+        android:textSize="@dimen/medium_text_size3"
+        android:textColor="@color/color_black87"/>
+    <Switch
+        android:id="@+id/toggle_button"
+        android:layout_width="44dp"
+        android:layout_height="27dp"
+        android:checked="false"
+        android:textOff=""
+        android:textOn=""
+        android:theme="@style/MySwitch"
+        />
+</LinearLayout>

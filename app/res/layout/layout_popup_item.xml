@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="75dp"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:layout_marginBottom="15dp">
+    <TextView
+        android:id="@+id/tv_popup"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:background="@drawable/popup_text_background"
+        android:textColor="@color/trans_50_color_black"
+        />
+    <ImageView
+        android:id="@+id/iv_select_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/icon_all_chosenmark"
+        />
+
+</RelativeLayout>

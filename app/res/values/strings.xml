@@ -1,0 +1,754 @@
+<resources>
+    <string name="app_name">D2C</string>
+
+    <!-- a -->
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+    <string name="action_send">发送</string>
+    <string name="action_delete">删除</string>
+    <string name="action_save">保存</string>
+    <string name="action_submit">提交</string>
+    <string name="action_give">赠送</string>
+    <string name="desc_shrinkup">收起</string>
+    <string name="desc_spread">展开全部</string>
+    <string name="label_pay_success">支付成功</string>
+    <string name="action_clear_allempty">清除失效商品</string>
+
+    <!-- h -->
+    <string name="hint_msg_security">请输入验证码</string>
+    <string name="global_invoice">全球购商品暂不支持开发票</string>
+    <string name="global_warehouse_notice">商品总额已超过海关限额2000元(含),请选择部分商品分开下单</string>
+    <string name="question_type">问题类型</string>
+    <string name="function_error">功能异常</string>
+    <string name="send_slow">发货太慢</string>
+    <string name="product_quality">商品质量</string>
+    <string name="function_new">新功能建议</string>
+
+    <string name="buyer_count_down">试用期剩余:%1$s天%2$s时%3$s分%4$s秒</string>
+    <string name="hint_explore_publish">写下购买体会和使用感受来帮助其ta小伙伴吧~</string>
+    <string name="hint_over_rate">同仓库商品总额已超限,请选择部分商品分开下单</string>
+    <string name="hint_over_sea_notice">*非中国大陆地区将会根据订单实际情况额外收取运费,请准确填写微信号和邮箱,以便下单后客服联系您</string>
+    <string name="hint_over_sea_notices">*由于您选择的收货地址处于非中国大陆地区,我们将根据实际订单情况会要求您支付额外的运费,我们的客服专员会与您联系。</string>
+
+    <string name="hint_question_error">不能愉快的使用现有功能?上传相关页面截图能方便我们快速解决问题哦~</string>
+    <string name="hint_question_new">快把你想要的功能说出来吧~</string>
+    <string name="buyer_close_notice">你的买手店已被关闭,如需重新开店请购买指定商品</string>
+    <string name="hint_question_other">可填写畅所欲言的相关信息~</string>
+    <string name="hint_question_price">从购买之日起至收货后7天内，如遇任何购买平台同一商品价格更低，D2C赔付差价</string>
+    <string name="hint_complaint_slow">发货太慢?我要投诉！</string>
+    <string name="hint_complaint_bad">商品质量差?我要投诉！</string>
+    <string name="hint_complaint_attitude">客服态度差?我要投诉！</string>
+    <string name="people_attitude">客服态度</string>
+    <string name="equipment_notice">为保障您的账号安全,需要验证您的身份</string>
+
+    <string name="hint_get_coupon">输入优惠券密码</string>
+    <string name="hint_feed_back_name">输入您的姓名</string>
+    <string name="hint_feed_back_phone">输入您的电话</string>
+    <string name="hint_set_pay_password">请输入8&#8211;20位字母和数字的组合</string>
+    <string name="hint_receive_name">请输入收货人姓名</string>
+    <string name="hint_receive_phone">请输入收货人的手机号</string>
+    <string name="hint_receive_location">请选择收货地区</string>
+    <string name="hint_receive_street">请输入街道门牌</string>
+    <string name="hint_alipay_account">退款仅支持退到支付宝账号</string>
+    <string name="hint_alipay_name">支付宝实名认证</string>
+
+    <string name="hint_refund_money">最多可退%s元</string>
+    <string name="hint_refund_count">最多可退%s件</string>
+
+    <string name="hint_select_exchange_logistic">选择快递公司</string>
+    <string name="hint_logisitic_no">填写快递单号</string>
+    <string name="hint_packet_password">请输入钱包密码</string>
+    <string name="hint_msg_security2">请输入短信验证码</string>
+    <string name="hint_start_live">好的标题能吸引更多用户哦~</string>
+    <string name="hint_d2c_card_no">请输入D2C卡号码</string>
+    <string name="hint_d2c_card_password">请输入D2C卡密码</string>
+    <string name="hint_not_emoji">收货人姓名不能添加特殊字符</string>
+    <string name="hint_type_invoice_top">请输入个人/单位抬头</string>
+    <string name="hint_person_invoice">个人</string>
+    <string name="hint_live_input">说点什么&#8230;</string>
+    <string name="hint_dan_input_host">发送弹幕，免费</string>
+
+    <!-- l -->
+    <string name="label_main_menu4">购物车</string>
+    <string name="label_add_cart">加入购物车</string>
+    <string name="label_move_collect">移入收藏</string>
+    <string name="label_coupon">优惠券</string>
+    <string name="label_tax">税费</string>
+    <string name="label_self_buy">买手优惠</string>
+    <string name="label_my_order">我的订单</string>
+    <string name="label_waiting_payment">待付款</string>
+    <string name="label_waiting_comment">待评价</string>
+    <string name="label_focus_brand">关注品牌</string>
+    <string name="label_my_big_card">我的大牌</string>
+    <string name="label_top_recommend">榜单推荐</string>
+    <string name="label_online">在线客服</string>
+    <string name="label_telephone2">电话客服</string>
+    <string name="label_password">密码</string>
+    <string name="label_login">登 录</string>
+    <string name="label_reset_password">忘记密码</string>
+    <string name="label_loading">正在努力加载中</string>
+    <string name="label_see_detial">查看详情</string>
+    <string name="label_change_login_password">修改登录密码</string>
+    <string name="label_relevance_account">关联账号</string>
+    <string name="label_change_pay_password">修改支付密码</string>
+    <string name="label_person_info">个人信息</string>
+    <string name="label_account_security">账户安全</string>
+    <string name="label_message_notification">消息通知</string>
+    <string name="label_clear_cache">清除缓存</string>
+    <string name="label_check_version">检查更新</string>
+    <string name="label_certification">实名认证</string>
+    <string name="label_logout">退出登录</string>
+    <string name="label_msg_code">获取验证码</string>
+    <string name="label_password_tip1">请将密码设为8-20位，并包含字母、数字和符号两种以上字符</string>
+    <string name="label_password_tip2">密码过于简单,须包含字母,数字和符号两种以上字符!</string>
+    <string name="label_verification_1">手机收不到验证码怎么?</string>
+    <string name="label_verification_2">1.检查垃圾短信,在设置中,将发件人设置为白名单;</string>
+    <string name="label_verification_3">2.若手机号已停用,请联系客服解决</string>
+    <string name="label_bind_phone">绑定手机号</string>
+    <string name="label_register_protocol">注册即代表同意</string>
+    <string name="label_register_protocal_l">《D2C网络服务使用协议》</string>
+    <string name="label_avatar">头像</string>
+    <string name="label_nick">昵称</string>
+    <string name="label_sex">性别</string>
+    <string name="label_birthday">生日</string>
+    <string name="label_same_interest_buy">同兴趣的人也在买</string>
+    <string name="label_msg_pop_str">再也不错过物流、交易、促销等重要消息提醒~</string>
+    <string name="label_confirm_receipt">确认收货</string>
+    <string name="label_delete">不再使用该号码?注销账号</string>
+    <string name="label_apply_after_sale">申请售后</string>
+    <string name="label_order_total">商品总计</string>
+    <string name="label_order_charge">订单运费</string>
+    <string name="label_actual_payment">实际支付</string>
+    <string name="label_price">¥%s</string>
+    <string name="label_no_sign_price">%s</string>
+    <string name="label_price1">%s</string>
+    <string name="label_current_position">所在位置</string>
+    <string name="label_crowd_timeout">还剩%1$d天%2$d%3$d时%4$d%5$d分%6$d%7$d秒</string>
+    <string name="label_order1_timeout">剩余%1$d小时%2$d%3$d分%4$d%5$d秒</string>
+    <string name="label_order_detail_timeout">%1$d小时%2$d%3$d分%4$d%5$d秒未支付,订单会自动关闭</string>
+    <string name="label_order_timeover">*超时，订单已关闭</string>
+    <string name="label_product_style">颜色：%1$s 尺码：%2$s</string>
+    <string name="label_product_total">共%1$s件商品 实付￥%2$s</string>
+    <string name="label_cancel_order">取消订单</string>
+    <string name="label_buy_again">再次购买</string>
+    <string name="label_real_name">海关要求购买跨境商品需要进行实名认证</string>
+    <string name="label_over_rate_label">以下子订单的商品总额(使用优惠券,红包前)已超过国家政策规定的最高可购买限额,请您从中挑选部分商品分开下单。</string>
+    <string name="label_order_id">订单编号：%s</string>
+    <string name="label_order_id_simple">订单编号：%s</string>
+    <string name="label_order_buyer_code">购买人：%s</string>
+    <string name="label_order_payment">【%s】</string>
+    <string name="label_order_total2">%1$d件 ¥%2$s</string>
+    <string name="label_all_focus">%d人 关注</string>
+    <string name="label_all_like">共%d用户喜欢</string>
+    <string-array name="label_coupon_tabs">
+        <item>待使用</item>
+        <item>已使用</item>
+        <item>已过期</item>
+    </string-array>
+    <string name="label_coupon_list">我的优惠券</string>
+    <string name="label_get">兑换</string>
+    <string name="label_need_amount">满%d元使用</string>
+    <string name="label_need_amount1">满%s元使用</string>
+    <string name="label_pozhe">%1$s&#8212;%2$s</string>
+    <string-array name="label_after_sale_tabs">
+        <item>退款退货申请</item>
+        <item>换货申请</item>
+        <item>退款申请</item>
+    </string-array>
+    <string name="label_sale_id">售后编号:%s</string>
+    <string name="label_after_sale_payment">退款:¥%s 退回方式：原路返回</string>
+    <string name="label_after_sale_payment2">退款:¥%s</string>
+    <string name="label_cancel_after_sale">取消申请</string>
+    <string name="label_balance">结算(%d)</string>
+    <string name="label_edit_mark">点击这里，可以填写备注或留言</string>
+    <string name="label_fans">粉丝</string>
+    <string name="label_year_month_day">%1$s/%2$s/%3$s</string>
+    <string name="label_get_code">获取验证码</string>
+    <string name="label_reload_code">收不到验证码(%ss)</string>
+    <string name="label_reload_security">%ss</string>
+    <string name="label_country_code">选择国家和地区</string>
+    <string name="label_relevance_product">关联商品(%d/9)</string>
+    <string name="label_plus">+%s</string>
+    <string name="label_kongge">%1$s %2$s</string>
+    <string name="label_vip_center">会员中心</string>
+    <string name="label_pre_clothe">预约试衣</string>
+    <string name="label_report_product">商品报告</string>
+    <string name="label_collage">拼团</string>
+    <string name="label_enter_partner">入驻合作</string>
+    <string-array name="label_category_tabs">
+        <item>商品</item>
+        <item>品牌</item>
+    </string-array>
+    <string name="label_code">验证码</string>
+    <string name="label_add_focus">+关注</string>
+    <string name="label_confirm_password">确认密码</string>
+    <string name="label_new_password1">新密码(请输入8-20位字母和数字)</string>
+    <string name="label_copyright">Powered by D2C\nCopyright(&#169;)2016 D2CMALL COM-All Rights
+        Reserved
+    </string>
+    <string name="label_xuanhua_mail">入驻邮箱：xuanhua@d2cmall.com</string>
+    <string name="label_xuanhua_phone">联系电话：</string>
+    <string name="label_join_us">加入我们</string>
+    <string name="label_share_friend">分享给朋友</string>
+    <string name="label_scan_register">扫描左侧二维码，\n注册即送100元！</string>
+    <string name="label_android_version">Android v%s</string>
+    <string name="label_send_code_phone">将向您绑定的%s发送验证码</string>
+    <string name="label_cant_code">短信验证码收不到?</string>
+    <string name="label_try_code">收不到验证码</string>
+    <string name="label_voice_code">试试语音验证码</string>
+    <string name="label_show_logistical">查看物流</string>
+    <string name="label_change_logistical">修改物流信息</string>
+    <string name="label_write_logistical">填写物流信息</string>
+    <string name="label_confirm_receive">确认收货</string>
+    <string name="label_goto_comment">评价晒单</string>
+    <string name="label_comment_reward">晒单+%dD币</string>
+    <string name="label_discount">%s折</string>
+    <string name="label_share_qq">QQ</string>
+    <string name="label_share_qqzone">QQ空间</string>
+    <string name="label_share_link">复制链接</string>
+    <string name="label_share_weibo">新浪微博</string>
+    <string name="label_share_wxzone">朋友圈</string>
+    <string name="label_share_wxfriend">微信好友</string>
+    <string name="label_share_poster">生成海报</string>
+    <string name="label_member_share1">分享@%s的美SHOW,快来围观吧~</string>
+    <string name="label_member_share_person">%s在D2C分享了很多美show，快来围观吧~</string>
+    <string name="label_green_phone">400-8403666</string>
+    <string name="label_message_detail">消息详情</string>
+    <string name="label_rmb">¥</string>
+    <string name="label_sale_out">已售罄</string>
+    <string name="label_about_d2c">关于我们</string>
+    <string name="label_to_like">去评分</string>
+    <string name="label_capture_hint">将取景框对准二维码，即可自动扫描</string>
+    <string name="label_open_light">开灯</string>
+    <string name="label_close_light">关灯</string>
+    <string name="label_today">今天</string>
+    <string name="label_yesterday">昨天</string>
+    <string name="label_month">%s月</string>
+    <string name="label_promotion_name">【%s】</string>
+    <string name="label_show_comment">查看评价</string>
+    <string name="label_publish_review">发表追评</string>
+    <string name="label_show_after_sale">售后跟踪</string>
+    <string name="label_must_pay">订单需支付</string>
+    <string name="label_alipay">支付宝</string>
+    <string name="label_wxpay">微信支付</string>
+    <string name="label_cash">货到付款(限中国大陆)</string>
+    <string name="label_d2cpay">钱包支付</string>
+    <string name="label_hb">蚂蚁花呗</string>
+    <string name="label_hb_hint">使用蚂蚁花呗分期</string>
+    <string name="label_d2c_stages">么么钱包</string>
+    <string name="label_alipay_hint">请保证支付宝余额充足哦~</string>
+    <string name="label_wxpay_hint">使用微信支付</string>
+    <string name="label_cash_hint">不支持港澳台及国外地区，支持信用卡和现金</string>
+    <string name="label_d2cpay_hint">使用D2C钱包，支付方便快捷，充值请咨询客服</string>
+    <string name="label_d2c_stages_pay_hint">女神专享，3-12月0利息分期购</string>
+    <string name="label_cashier">收银台</string>
+    <string name="label_no_safe_link">此链接存在风险，是否打开？\n
+        </string>
+    <string name="label_pack_up">收起</string>
+    <string name="label_buy_ask">购买咨询</string>
+    <string name="label_valid_coupon">可用(%d)</string>
+    <string name="label_unvalid_coupon">不可用(%d)</string>
+    <string name="label_service_reply">客服回复:</string>
+    <string name="label_product_faction">商品满意度</string>
+    <string name="label_ship_faction">发货满意度</string>
+    <string name="label_pack_faction">包装满意度</string>
+    <string name="label_delivery_faction">配送满意度</string>
+    <string name="label_view_detail">查看详情</string>
+    <string name="label_retract_detail">收起详情</string>
+    <string name="label_default_address">设为默认地址</string>
+    <string name="label_address_format">%1$s%2$s%3$s%4$s</string>
+    <string name="label_address_format2">%1$s%2$s%3$s</string>
+    <string name="label_address_format3">%1$s%2$s</string>
+    <string name="label_final_price">实付￥%s</string>
+    <string name="label_number_more2">9+</string>
+    <string name="label_reload">重新加载</string>
+    <string name="label_exchange_info">申请换货</string>
+    <string name="label_reship_info">申请退款退货</string>
+    <string name="label_refund_info">申请退款</string>
+    <string name="label_total_money">合计: ¥%s</string>
+    <string name="label_total_money_tag">总额:¥%1$s 立减:¥%2$s</string>
+    <string name="label_reship_reason">选择退货原因</string>
+    <string name="label_reship_status">收货状态</string>
+    <string name="label_alipay_account">支付宝账号</string>
+    <string name="question_other">其他</string>
+    <string name="question_price">买贵补差价</string>
+    <string name="add_cart_dialog">以下商品库存不足,先将其他有货商品加入购物车吧~</string>
+    <string name="let_me_think">我再想想</string>
+    <string name="label_alipay_name">支付宝名称</string>
+    <string name="label_refund_explain">说明</string>
+    <string name="label_upload_licence">上传凭证</string>
+    <string name="label_upload_tip">最多上传三张，每张不超过5M</string>
+    <string-array name="label_exchange_titles">
+        <item>商品需要维修</item>
+        <item>收到商品破损</item>
+        <item>商品错发或漏发</item>
+        <item>收到商品与描述不符</item>
+        <item>商品质量问题</item>
+        <item>七天无理由换货</item>
+    </string-array>
+    <string-array name="label_refund_titles">
+        <item>拍错了</item>
+        <item>不想要了</item>
+        <item>商品缺货</item>
+        <item>协商一致退款</item>
+        <item>订单信息错误</item>
+    </string-array>
+    <string name="label_logistic_company">物流公司</string>
+    <string name="label_logistic_no">快递单号</string>
+    <string-array name="label_logistic_titles">
+        <item>顺丰速递</item>
+        <item>申通快递</item>
+        <item>圆通快递</item>
+        <item>中通快递</item>
+        <item>韵达快递</item>
+        <item>百世汇通</item>
+        <item>EMS</item>
+        <item>京东快递</item>
+        <item>德邦快递</item>
+        <item>快捷快递</item>
+        <item>其他</item>
+    </string-array>
+    <string name="label_reship_label2">
+        <Data><![CDATA[<font color="#fd555d">*</font>]]></Data>
+        该笔交易退款无法原路返回，退款需要汇到您的支付宝账户
+    </string>
+    <string name="label_reship_detail">退货退款详情</string>
+    <string name="label_to_comment2">回复%s：</string>
+    <string name="label_packet_password">钱包密码</string>
+    <string name="label_master_check">商家审核申请</string>
+    <string name="label_person_type_info">买家换货并填写换货信息</string>
+    <string name="label_master_send">商家确认收货并换货发出</string>
+    <string name="label_deliver_time">预计%1$d年%2$d月%3$d日发货</string>
+    <string name="label_live">直播</string>
+    <string name="label_live_play_loading">正在加载中~</string>
+    <string name="label_live_net_error">当前网络环境差,正在尝试帮您重新连接,请稍后...</string>
+    <string name="label_start_live">开始直播</string>
+    <string name="label_live_title">直播标题</string>
+    <string name="label_live_set_title">设置封面</string>
+    <string name="label_live_camera">翻转</string>
+    <string name="label_live_light">闪光灯</string>
+    <string name="label_pay_in">存入</string>
+    <string name="label_pay_out">支出</string>
+    <string name="label_gift_money">(内含%s元不可退赠金)</string>
+    <string name="label_online_pay">在线充值</string>
+    <string name="label_d2c_pay">D2C卡充值</string>
+    <string name="label_deposit">充值</string>
+    <string name="label_money2">充值金额</string>
+    <string name="label_money1_remind">可用%1$s 冻结%2$s(钱包金额不支持提现)</string>
+    <string name="label_card_no">卡号</string>
+    <string name="label_copy">复制</string>
+    <string name="label_promotions">活动列表</string>
+    <string name="label_select_coupon">选择优惠券</string>
+    <string name="label_more_payment">更多支付方式</string>
+    <string name="label_close_it">收起</string>
+    <string name="label_discount_price">抵用%s元</string>
+    <string name="label_discount_price1">%s折优惠</string>
+    <string name="label_money_less">¥%s余额不足</string>
+    <string name="label_go_alipay">去支付宝支付</string>
+    <string name="label_go_weixinpay">去微信支付</string>
+    <string name="label_kefu_help">客服&amp;售后</string>
+    <string name="label_faq">常见问题</string>
+    <string name="label_self_service">自助服务</string>
+    <string name="label_self_aftersale">自助退款</string>
+    <string name="label_self_return">自助退货</string>
+    <string name="label_refund">进度查询</string>
+    <string name="label_contact">联系客服</string>
+    <string name="label_ceo_owner">shili1103sl</string>
+    <string name="label_ceo_des">有任何问题欢迎随时联系，朋友圈常常会有福利哦</string>
+    <string name="label_mailbox">D2C服务邮箱：service@d2cmall.com</string>
+    <string name="label_alipay_recharge">d2c支付宝充值</string>
+    <string name="label_wx_recharge">d2c微信充值</string>
+    <string name="label_login_account">账号</string>
+    <string name="label_login_phone_mail">手机号</string>
+    <string name="label_login_password">密码</string>
+    <string name="label_login_nation_code">+%s</string>
+    <string name="label_confirm">确认</string>
+    <string name="label_designer_brand_name">%1$s
+        <Data><![CDATA[<font color="#999999">&#x0020;/&#x0020;%2$s</font>]]></Data>
+    </string>
+    <string name="label_tshirt">T-设置</string>
+    <string name="label_blue_device">连接蓝牙设备</string>
+    <string name="label_diy">DIY图案</string>
+    <string name="label_gif">图案库</string>
+    <string name="label_compelte">应用</string>
+    <string name="label_feed_back">反馈&amp;投诉</string>
+    <string name="label_has_selected">已选择：</string>
+    <string name="label_no_footmark">暂无浏览足迹</string>
+    <string name="label_active">活动</string>
+    <string name="label_take_coupon">优惠券</string>
+    <string-array name="label_filtration_prices">
+        <item>0&#8211;500</item>
+        <item>500&#8211;1k</item>
+        <item>1k&#8211;1.5k</item>
+        <item>1.5k&#8211;2k</item>
+        <item>2k&#8211;3k</item>
+        <item>3k以上</item>
+    </string-array>
+    <string name="label_select_brand">选择品牌</string>
+    <string name="label_xiegang">(%1$d/%2$d)</string>
+    <string name="label_order_promotion">满减优惠</string>
+    <string name="label_order_red_packet">红包</string>
+    <string name="label_order_id_copy">订单号已复制</string>
+    <string name="label_order_payment_id_copy">支付流水号已复制</string>
+    <string name="label_order__id_copy">订单编号已复制</string>
+    <string name="label_d2c_go">正品保证·七天无理由退换货·门店试衣</string>
+    <string name="label_show_toast">
+        <Data>
+            <![CDATA[<font color="#ffffff">%1$s客户%2$d分钟前下单</font><font color="#fd555d">%3$s</font><font color="#ffffff">设计服装</font>]]></Data>
+    </string>
+    <string name="label_new_version">有新版本可用</string>
+    <string name="label_not_notice">不再提醒</string>
+    <string name="label_goods_total">商品总计</string>
+    <string name="label_price_plus">＋¥%s</string>
+    <string name="label_price_minus">－¥%s</string>
+    <string name="label_bind_phone_remind">为了您的账户安全，请关联您的手机号</string>
+    <string name="label_kaola_address">收货地址信息校验未通过,建议您修改成国内地址或更改现有地址</string>
+    <string name="label_kaola_price_low">商品价格有变动,暂时无法购买</string>
+    <string name="label_refund_reason">选择退款原因</string>
+    <string name="label_create_invoice">开具发票</string>
+    <string name="label_invoice_type">发票类型</string>
+    <string name="label_normal_invoice">普通发票</string>
+    <string name="label_invoice_top">发票抬头</string>
+    <string name="label_invoice">发票</string>
+    <string name="label_more_tools">更多</string>
+    <string name="label_not_need">暂不需要</string>
+    <string name="label_invoice_top_content">发票抬头：%s</string>
+    <string name="label_no_more">亲，到底了哦~</string>
+    <string name="label_upload_cover">请上传封面</string>
+    <string name="label_upload_failed">上传封面失败</string>
+    <string name="label_no_know_device">未知设备</string>
+    <string name="label_recommend">推荐</string>
+    <string name="label_cancel_recommend">再次推荐</string>
+    <string name="label_forget_pay_password">忘记密码</string>
+    <string name="label_input_again">重新输入</string>
+    <string name="label_live_white">美白</string>
+    <string name="label_live_red">红润</string>
+    <string-array name="label_live_filters">
+        <item>无滤镜</item>
+        <item>简洁</item>
+        <item>黑白</item>
+        <item>老化</item>
+        <item>哥特</item>
+        <item>锐色</item>
+        <item>淡雅</item>
+        <item>酒红</item>
+        <item>青柠</item>
+        <item>浪漫</item>
+        <item>光晕</item>
+        <item>蓝调</item>
+        <item>梦幻</item>
+        <item>夜色</item>
+    </string-array>
+    <string name="label_live_msg">撩ta一下~</string>
+    <string name="label_live_off">直播已经结束~</string>
+    <string name="label_live_count_fans">粉丝人数</string>
+    <string name="label_live_count_watched">观看人数</string>
+    <string name="label_beliked">已关注</string>
+    <string name="label_live_watching">%1$d人</string>
+    <string name="label_account_money">余额：%s元</string>
+    <string name="label_gift_free">免费</string>
+    <string name="label_product_quantity">x%d</string>
+    <string name="label_present_content">送%s</string>
+    <string name="label_open_label">开通&#160;></string>
+    <string name="label_despoit_label">充值&#160;></string>
+    <string name="label_brand">%s品牌设计师</string>
+    <string name="label_brands">%s等品牌设计师</string>
+    <string name="label_focus">关注</string>
+    <string name="label_fashion_show">SHOW</string>
+    <string name="label_receive">收到</string>
+    <string name="label_plus_focus">＋关注</string>
+    <string name="label_host">主页</string>
+    <string name="label_goto_open_wallet">去开通</string>
+    <string name="label_start_live2">开始直播</string>
+    <string name="label_screen_mode_normal">标清</string>
+    <string name="label_screen_mode_clear">高清</string>
+    <string name="label_give_present">送出</string>
+    <string name="label_get_now">点击领取</string>
+    <string name="label_pre_product_empty">您还未添加商品，快去添加吧!</string>
+
+    <!-- m -->
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。可能需要重启设备。</string>
+    <string name="msg_camera_permission_error">请打开拍照权限</string>
+    <string name="msg_logout">确定退出当前账号？</string>
+    <string name="msg_voice_code">我们将以电话形式告知您验证码，您会接到057128827512的来电，请放心接听</string>
+    <string name="msg_go_wx">已保存到相册,到微信上传分享效果更好</string>
+    <string name="msg_exit_current_judge">确认放弃评价？</string>
+    <string name="msg_exit_again_judge">确认放弃追评？</string>
+    <string name="msg_confirm_receive">确认收到宝贝？</string>
+    <string name="msg_cancel_after_sale">确定取消申请？</string>
+    <string name="msg_nick_error">输入的昵称格式不正确</string>
+    <string name="msg_nick_error2">请输入昵称</string>
+    <string name="msg_mail_error">输入的邮箱格式不正确</string>
+    <string name="msg_mail_error2">请输入邮箱</string>
+    <string name="msg_get_coupon_ok">兑换优惠券成功</string>
+    <string name="msg_phone_error">输入的手机格式错误</string>
+    <string name="msg_feed_back_ok">意见反馈成功</string>
+    <string name="msg_send_code_ok">验证码已发送</string>
+    <string name="msg_user_password2">密码不一致</string>
+    <string name="msg_account_empty">请输入手机号</string>
+    <string name="msg_account_differ">注册手机号与发送验证码手机号不一致</string>
+    <string name="msg_password_empty">请输入密码</string>
+    <string name="msg_phone_empty">请输入手机号</string>
+    <string name="msg_new_password_empty">请输入新密码</string>
+    <string name="msg_confirm_password_empty">请输入确认密码</string>
+    <string name="msg_change_password_ok">密码修改成功</string>
+    <string name="msg_set_password_ok">密码设置成功</string>
+    <string name="msg_code_empty">请输入验证码</string>
+    <string name="msg_clear_memery">确定清除缓存?</string>
+    <string name="msg_advice_delete_account">您当前账户钱包仍有余额%s元,建议您消费后再注销</string>
+    <string name="msg_goon_live">您上一次有未完成的直播,是否继续?</string>
+    <string name="msg_praise_error">搜索不到应用市场,请安装后再尝试</string>
+    <string name="msg_bind_recommend_ok">绑定成功</string>
+    <string name="msg_bind_recommend_code">确定绑定%s?</string>
+    <string name="msg_cancel_after_sale_ok">取消申请成功</string>
+    <string name="msg_delete_explore">确定要删除？</string>
+    <string name="msg_unbind_relevance">你是否确定解除关联?</string>
+    <string name="msg_delete_ok">删除成功</string>
+    <string name="msg_confirm_receive_ok">确认收货成功</string>
+    <string name="msg_cancel_order_ok">取消订单成功</string>
+    <string name="msg_set_pay_password_ok">支付密码设置成功</string>
+    <string name="msg_bind_phone_ok">手机绑定成功</string>
+    <string name="msg_set_ok">设置成功</string>
+    <string name="msg_save_ok">保存成功</string>
+    <string name="msg_feed_back_content">请输入反馈内容</string>
+    <string name="msg_no_register">该账号尚未注册，去注册？</string>
+    <string name="msg_apply_money_limit">申请退款金额超过可退上限</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="main_information">情报站</string>
+    <string name="msg_focus_ok">关注成功</string>
+    <string name="msg_focus_canceled">取消关注成功</string>
+    <string name="msg_copy_ok">已成功复制到剪贴板</string>
+    <string name="msg_close_live">是否结束当前直播</string>
+    <string name="msg_input_too_long">输入文字不能超过160个</string>
+    <string name="msg_input_too_long2">输入文字不能超过100个</string>
+    <string name="msg_input_empty">输入文字不能为空</string>
+    <string name="live_share_txt">撞衫不要慌，直播帮你忙:%1$s</string>
+    <string name="live_share_new_txt">正在开播，一起玩耍吧~</string>
+    <string name="msg_deposit_ok">充值成功</string>
+    <string name="msg_brush_selected">画笔已选择</string>
+    <string name="msg_erase_selected">橡皮擦已选择</string>
+    <string name="msg_color_selected">颜色已选择</string>
+    <string name="msg_blue_connect_first">请先设置蓝牙连接</string>
+    <string name="msg_blue_connected">蓝牙已连接</string>
+    <string name="msg_unsupport_blue">不支持蓝牙BLE协议</string>
+    <string name="msg_three_most">亲~最多选3个哦</string>
+    <string name="msg_buy_consult">请输入咨询内容</string>
+    <string name="label_total_view_count">%d人观看</string>
+    <string name="msg_send_consult_ok">发表成功，请等待客服回复</string>
+    <string name="msg_allow_camera_permission">请开启摄像头权限</string>
+    <string name="msg_open_recorder_permission">请开启录音权限</string>
+    <string name="msg_append_address">请添加收货地址</string>
+    <string name="msg_pay_error">支付密码已被锁定，请2小时再试</string>
+    <string name="msg_mark_error">备注信息过长</string>
+    <string name="msg_street_error">街道门牌信息过长</string>
+    <string name="msg_name_error">姓名过长或过短</string>
+    <string name="msg_feedback_content_error">反馈内容过长</string>
+    <string name="msg_explore_publish_error">输入的买家秀内容过长</string>
+    <string name="msg_product_publish_error">输入的商品报告内容过长</string>
+    <string name="msg_comemnt_error">输入的评论过长</string>
+    <string name="msg_kefu_error_now">当前客服服务不可用</string>
+    <string name="msg_wechat_error">请输入微信号</string>
+    <string name="msg_no_open_wallet">您暂未开通钱包</string>
+    <string name="msg_comment_error">请输入评价内容</string>
+    <string name="msg_comment_error2">评价内容过长</string>
+    <string name="msg_remind_ok">提醒成功，将在开播前5分钟提醒您~</string>
+    <string name="msg_cancel_remind_ok">提醒取消，可能会错过精彩直播哦~</string>
+    <string name="msg_into_live_too_late">您来晚了~</string>
+    <!-- n -->
+    <string name="net_disconnect">啊哦，网络不太顺畅哦~</string>
+
+    <!-- z -->
+    <string name="zam_order">我的d2c订单</string>
+    <string name="zam_sale_out">我的d2c售后</string>
+
+    <string name="select">%1$d/%2$d</string>
+
+    <string name="label_message_maven">消息中心</string>
+    <string name="label_product_product">商品</string>
+    <string name="label_product_detail">详情</string>
+    <string name="label_product_commend">晒单</string>
+    <string name="label_product_match">搭配</string>
+    <string name="label_hot_topics">热门话题</string>
+
+    <string name="label_sift">我的精选</string>
+
+    <string name="behavior_update_title">com.d2cmall.buyer.behavior.UpdateTitleBehavior</string>
+
+    <string name="title_activity_publish_product_report">PublishProductReportActivity</string>
+
+    <string-array name="label_channel">
+        <item>m360</item>
+        <item>baidu</item>
+        <item>wandoujia</item>
+        <item>xiaomi</item>
+        <item>huawei</item>
+        <item>meizu</item>
+        <item>oppo</item>
+        <item>lenovo</item>
+        <item>anzhi</item>
+        <item>vivo</item>
+        <item>jinli</item>
+        <item>smartisan</item>
+        <item>samsung</item>
+        <item>letv</item>
+    </string-array>
+    <string name="label_ms_limit">*所结算商品中含秒杀商品，秒杀商品不支持优惠券</string>
+    <string name="msg_sold_out">商品下架啦，要不要瞧别的~</string>
+    <string name="msg_sell_out">商品售空啦，要不要瞧别的~</string>
+    <string name="msg_back_adress">寄回信息:退货地址: %1$s;收件人: %2$s; 电话: %3$s</string>
+    <string name="msg_back_delivery">物流信息:物流单号, %1$s; 物流公司: %2$s</string>
+    <string name="msg_refund_success">退款已完成,流水号: %1$s ,退款时间: %2$s; 退款金额: %3$s</string>
+    <string name="msg_refund_close_date">取消退款申请时间: %1$s</string>
+    <string name="msg_exchange_info">客服选择换货的商品货号为: %1$s,颜色: %2$s, 尺码:%3$s</string>
+    <string name="msg_partner_achivement_num">共创造了%1$s元业绩</string>
+    <string name="msg_partner_invite_date">%1$s邀请</string>
+    <string name="msg_partner_reward_detail">已提现奖励¥%1$s /累积奖励¥%2$s</string>
+    <string name="msg_partner_min_withdraw">最低提现金额%s元</string>
+    <string name="msg_partner_rebate_rate">/可获实付%1$s%%返利</string>
+    <string name="msg_device_resolution_info">%1$d*%2$d</string>
+    <string name="msg_visitor_date">%1$s 访问了你</string>
+    <string name="msg_invite_buyer">buyerId=%1$d</string>
+    <string name="msg_invite_partner">partnerId=%1$d</string>
+    <string name="msg_invite_partner_content">%1$s邀请你成为D2C%2$s,总销售额=合伙人奖励+买手业绩提成,发展下级买手,零成本助力开启属于你的买手店¥%3$s¥复制这条信息后打开D2C APP即可申请</string>
+    <string name="msg_invite_buyer_content">%1$s邀请你成为D2C%2$s在D2C分享好物,顾客购买后赚回剁手钱，最高可获30%%返利¥%3$s¥复制这条信息后打开D2C APP即可申请</string>
+    <string name="msg_partner_contact_us_pop">若您有关于买手和合伙人的疑惑,请加微信“D2C8003”,并备注“小程序”,因咨询人数较多,若未及时通过,勿重复添加</string>
+    <string name="msg_partner_notice_prefix">【公告】 %1$s</string>
+    <string name="msg_partner_notice_url">/news/%1$s</string>
+    <string name="msg_partner_theme_url">/theme/%1$s</string>
+    <string name="msg_sale_wait_pay_tip">支付后即可获得返利</string>
+    <string name="msg_sale_aftering_tip">售后中，将失去返利</string>
+    <string name="msg_sale_lose_tip"> 失去返利 :¥%1$s元</string>
+    <string name="msg_sale_aftering_exchange">换货中，返利到账时间延迟至换货结束</string>
+    <string name="msg_sale_aftering_difamount">部分退款,返利金额扣除退款部分</string>
+    <string name="msg_sale_wait_send_tip">订单签收%1$s天后即可提现</string>
+    <string name="msg_sale_wait_sign_tip">如果无售后，返利将于%1$s前到账</string>
+
+    <!-- 买手中心 -->
+    <string name="buyer_look_more">查看更多</string>
+    <string name="buyer_look_all">查看所有</string>
+    <string name="buyer_look_detail">查看明细</string>
+    <string name="buyer_visitor_num">访客数据</string>
+    <string name="buyer_buyer_data">买手数据</string>
+    <string name="buyer_dm_data">DM数据</string>
+    <string name="buyer_retail_statistics_title">零售统计</string>
+    <string name="buyer_retail_client_title">零售客户</string>
+    <string name="buyer_visitor_today">今日访客</string>
+    <string name="buyer_visitor_yesterday">昨日访客</string>
+    <string name="buyer_visitor_thirty">近30日访客</string>
+    <string name="buyer_buyer_data_all_text">总数/人</string>
+    <string name="buyer_buyer_data_today_add_text">今日新增人数/人</string>
+    <string name="buyer_buyer_data_try_period_text">试用期/人</string>
+    <string name="buyer_buyer_data_close_text">关店/人</string>
+    <string name="buyer_sell_rank_text">销售排行榜</string>
+    <string name="buyer_invite_rank_text">邀请排行榜</string>
+    <string name="buyer_contribution_rank_text">贡献排行榜</string>
+    <string name="buyer_list_text">买手列表</string>
+    <string name="buyer_no_visitor">您还没有成交的客户哦~</string>
+    <string name="buyer_no_rank">暂无客户~</string>
+    <string name="buyer_people_unit">%s人</string>
+    <string name="buyer_join_time">于%s加入</string>
+    <string name="buyer_last_sell_time">最后销售时间:%s</string>
+    <string name="buyer_invite_num">邀请了%s名买手客户</string>
+    <string name="buyer_invite_num_has_dm">邀请了%1$s名买手客户,其中有%2$s名升级到了DM</string>
+    <string name="buyer_code">编号:%s</string>
+    <string name="buyer_enter_date">加入时间:%s</string>
+    <string name="buyer_consume_date">最近消费:%s</string>
+    <string name="camera_photo_buy">识别出如下商品</string>
+    <string name="sale_question_desc">含退款退货订单，收益以最终收益明细为准</string>
+    <string name="partner_invite_buyer">%s邀请您成为D2C时尚买手</string>
+    <string name="partner_invite_dm">%s邀请您成为D2C买手店DM</string>
+    <string name="tax_level_30000">0＜x＜30000</string>
+    <string name="tax_level_more_30000">x≥30000</string>
+    <string name="tax_count_rule_more_30000">x*0.0396</string>
+    <string name="cash_tax_tip">%1$s,将收取%2$s元税费,本次提现到账金额为%3$s元</string>
+    <string name="adviser_wx_code">微信号 %1$s</string>
+    //工猫支持的银行列表
+    <string-array name="label_partner_consumes">
+        <item>3000元以下</item>
+        <item>3000元～7000元</item>
+        <item>7000元～10000元</item>
+        <item>10000元～15000元</item>
+        <item>15000元～20000元</item>
+        <item>20000元～30000元</item>
+        <item>30000元～40000元</item>
+        <item>40000元～50000元</item>
+        <item>50000元以上</item>
+        <item>对不起,我是土豪</item>
+    </string-array>
+
+    <string-array name="label_partner_sort_way">
+        <item>按加入时间</item>
+        <item>按销售额</item>
+        <item>按订单数</item>
+        <item>按受益贡献</item>
+        <item>按最近成交</item>
+        <item>按邀请人数</item>
+    </string-array>
+
+    <string-array name="label_partner_sort_level">
+        <item>全部</item>
+        <item>买手</item>
+        <item>DM</item>
+    </string-array>
+
+    <string-array name="label_partner_sort_is_order">
+        <item>全部</item>
+        <item>试用期</item>
+        <item>未开单</item>
+    </string-array>
+
+    <string name="label_rq_long_click">长按识别二维码即可购买</string>
+    <string name="label_d2c_scan">打开D2C APP 扫一扫</string>
+    <string name="lable_remove_partner_tip"><Data><![CDATA[解绑后该买手无法重新加入你的团队\n<font color="#f23365">谨慎操作该操作不可逆</font>]]></Data></string>
+    <string name="label_pop_focus_brand">小D第一时间为您提供品牌上新、活动促销、商品折扣等信息</string>
+    <string name="label_pop_focus_product">小D第一时间为您提供收藏商品降价促销等信息</string>
+    <string name="label_pop_focus_people">小D第一时间为您提供关注的用户的最新买家秀动态</string>
+    <string name="label_pop_focus_logistics">小D第一时间为您提供订单发货、物流信息</string>
+    <string name="label_pop_focus_show">小D第一时间为您提供点赞、评论等互动消息</string>
+    <string name="label_pop_focus_partner">返利收益，邀请客户，提现记录，经营动态一手掌控！</string>
+    <string name="msg_reship_left_time"> 还剩%1$s天</string>
+    <string name="label_change_login_pw">您的登录密码过于简单，安全风险较高，为了您的账户安全，请修改登录密码。</string>
+    <string name="label_change_pay_pw">您的钱包支付密码过于简单，安全风险较高，为了您的账户安全，请修改支付密码。</string>
+    <string name="label_empty_certification"> 你还没有实名认证信息哦~\n可以通过全球购商品下单，添加实名认证信息</string>
+    <string name="label_certification_rule">根据海关规定，购买跨境商品需要办理清关手续，请您配合进行实名认证，以确保您购买的商品顺利通过海关检查。
+    （D2C承诺所传身份证明只用于办理跨境商品的清关手续，不作他途使用，其他任何人均无法查看。）\n\n
+    实名认证的规则：购买跨境商品需填写账号注册人的真实姓名及身份证号码，部分商品下单时需提供收货人的实名信息（含身份证照片），具体请以下单时的提示为准。</string>
+    <string name="label_pack_tip">我已参与了该商品拼团，需拼团结束后才能重新参与。</string>
+    <string name="label_collage_end">活动已结束，试试其他商品吧！</string>
+    <string name="label_collage_no_store">商品已售空 去拼团商城看看吧！</string>
+    <string name="label_collage_no_store1">暂无库存，有其他用户组团失败后您仍可以参团购买</string>
+    <string name="label_invite_friend_step1">邀请好友</string>
+    <string name="label_invite_friend_step2">成团后发货</string>
+    <string name="label_invite_friend_step3">拼团失败退款</string>
+    <string name="label_bank_info">%1$s(%2$s)</string>
+    <string name="label_cash_wallet_tip">提现到钱包内的余额不可提现、转赠、仅可在D2C平台消费</string>
+    <string name="label_zhui_pin">追加评价，让其ta小伙伴和你一起分享吧~</string>
+    <string name="label_invite_new_title">%1$s送你%2$s元礼券，快来领取吧！</string>
+    <string name="label_dcion_price">%1$d D币</string>
+    <string name="label_red_price">%1$d D币/%2$s 元</string>
+    <string name="label_sign_title">签到提醒</string>
+    <string name="label_sign_content">每日签到得D币兑礼品，坚持天数越多，累计D币越多，快去签到吧！</string>
+    <string name="label_discount_coupon_desc">【折扣券】单笔订单满%1$s元%2$s折</string>
+    <string name="label_money_coupon_desc">【现金券】单笔订单满%1$s元优惠%2$s元</string>
+    <string name="label_tag_identity">1.应海关要求购买跨境商品需要进行实名认证\n2.请确保收货人和身份证是本人身份证信息</string>
+    <string name="label_tag_identity1">1.应海关要求购买跨境商品需要进行实名认证\n2.请确保收货人和身份证是本人身份证信息\n3.购买香港直邮商品需添加本人身份证正反面照片，下单后您将收到短信链接，请注意查收并及时填写</string>
+    <string name="label_amount_large_tip">本次支付金额较大，银行会对第三方支付渠道进行限额，可能出现无法下单，建议您分开下单</string>
+    <string name="label_address_identity_tag">应快递行业相关条例要求，收寄快递须填写真实姓名，非真实姓名快递公司有权拒绝。建议您填写真实姓名，如有疑问可咨询快递公司</string>
+    <string name="label_today_visitor">今日有%1$s人访问了您的买手店铺</string>
+    <string name="label_partner_update">距离升级到%1$s还差%2$d积分</string>
+    <string name="label_partner_progress">%1$d/%2$d</string>
+    <string name="label_current_point">当前积分%1$d</string>
+    <string name="label_point_exchange">%1$dD币兑换%2$s元红包</string>
+    <string name="label_filter_promotion">筛选%1$s商品</string>
+    <string name="label_filtered_promotion">已为您筛选%1$s商品</string>
+    <string name="label_scan_buy_tip">点击进入扫一扫或拍照购,开启全新购物体验</string>
+    <string name="label_tax_tip">%1$s元税费不计入返利</string>
+    <string name="label_order_rebeat">订单收益 :¥%1$s元</string>
+    <string name="label_cash_tax_desc" formatted="false"> 1、本月第一次提现到银行卡金额小于3w，则本月银行卡累计提现金额不能超过3w，提现金额按照0.6%缴纳税费。\n
+    2、本月第一次提现到银行卡金额大于等于3w，则银行卡不受累计提现金额限制，提现金额按照3.96%缴纳税费。\n
+    3、银行卡和钱包可分别提现，互不影响；银行卡钱包累计提现金额互不影响。</string>
+    <string name="label_caomei">应海关要求，购买该商品需添加本人身份证正反面照片，下单后您将收到短信链接，请注意查收并及时填写</string>
+    <string name="behavior_title">com.d2cmall.buyer.behavior.MainTitleBehavior</string>
+    <string name="behavior_search">com.d2cmall.buyer.behavior.SearchBehavior</string>
+    <string name="behavior_viewpager">com.d2cmall.buyer.behavior.ViewPagerBehavior</string>
+</resources>

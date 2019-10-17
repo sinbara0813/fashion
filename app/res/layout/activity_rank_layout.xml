@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:elevation="4dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/color_white"
+            android:id="@+id/title_layout">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tab_all_back_b"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                style="@style/boldTextStyle"
+                />
+
+            <TextView
+                android:id="@+id/title_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:textSize="@dimen/medium_text_size1"
+                android:textColor="@color/trans_87_color_black"/>
+        </LinearLayout>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/rank_sliding"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/color_white"
+            app:tl_indicator_color="#DE232427"
+            app:tl_indicator_height="2dp"
+            app:tl_indicator_margin_bottom="3dp"
+            app:tl_indicator_width_equal_title="true"
+            app:tl_tab_space_equal="true"
+            app:tl_tab_padding="10dp"
+            app:tl_textSelectColor="#DE000000"
+            app:tl_textUnselectColor="#8A000000"
+            app:tl_textsize="@dimen/medium_text_size1"/>
+
+    </LinearLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/rank_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

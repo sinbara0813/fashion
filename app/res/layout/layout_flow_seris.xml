@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="44dp">
+    <ImageView
+        android:src="@mipmap/icon_shopcart_unaselected"
+        android:id="@+id/iv_check"
+        android:layout_centerVertical="true"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="16dp"
+        />
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_check"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/color_black38"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_screen_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_all_chosenmark" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:id="@+id/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/line" />
+</RelativeLayout>

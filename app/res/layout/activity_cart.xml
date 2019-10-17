@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <include layout="@layout/layout_default_title"/>
+
+    <com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="48dp"
+        >
+
+        <com.d2cmall.buyer.widget.CartRecycleView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:visibility="gone"/>
+
+    </com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout>
+
+    <include layout="@layout/layout_progressbar"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_line"/>
+
+        <com.d2cmall.buyer.widget.CheckBox
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="全选"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/trans_87_color_black"
+            android:layout_toRightOf="@id/select_all"/>
+
+        <TextView
+            android:id="@+id/all_num"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_87_color1"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/medium_text_size3"
+            android:layout_alignParentRight="true"
+            android:text="@string/label_balance"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/all_num">
+            <TextView
+                android:id="@+id/total_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/medium_text_size3"
+                android:textColor="@color/color_black87"
+                android:text="@string/label_total_money"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:layout_marginBottom="2dp"/>
+            <TextView
+                android:id="@+id/total_money_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/main_text_size"
+                android:textColor="@color/color_black60"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/select_delete"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_87_color1"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/medium_text_size3"
+            android:layout_alignParentRight="true"
+            android:text="@string/action_delete"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/select_collect"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/sp_promotion"
+            android:textColor="@color/trans_87_color_black"
+            android:textSize="@dimen/medium_text_size3"
+            android:layout_toLeftOf="@id/select_delete"
+            android:text="@string/label_move_collect"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FFDBDB"
+        android:gravity="center"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="#f21a1a"
+        android:visibility="gone"
+        android:layout_above="@id/bottom_ll"
+        android:text="请将全球购商品和D2C自营商品分开下单"/>
+</RelativeLayout>

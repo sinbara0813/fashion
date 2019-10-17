@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <ImageView
+        android:id="@+id/fashion_report_iv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:src="@drawable/sl_business"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"/>-->
+
+    <ImageView
+        android:id="@+id/wardrobe_iv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sl_wardrobe"
+        android:layout_gravity="left"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/fashion_looks_iv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="right"
+        android:src="@drawable/sl_fashion_match"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"/>
+
+</merge>

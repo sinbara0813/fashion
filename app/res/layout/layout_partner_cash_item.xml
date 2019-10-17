@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        >
+        <ImageView
+            tools:src="@mipmap/icon_mine_back"
+            android:id="@+id/iv_account_type"
+            android:layout_centerVertical="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            />
+
+        <TextView
+            tools:text="返利单已完成"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/iv_account_type"
+            android:textColor="@color/color_black87"
+            android:textSize="14sp"
+            android:id="@+id/tv_account_type"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            android:layout_centerVertical="true"
+            tools:text="编号:PC123456879"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/iv_account_type"
+            android:textColor="@color/color_black60"
+            android:textSize="12sp"
+            android:id="@+id/tv_account_code"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            android:layout_below="@+id/tv_account_code"
+            tools:text="2018/11/02 10:30"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/iv_account_type"
+            android:textColor="@color/color_black60"
+            android:textSize="11sp"
+            android:id="@+id/tv_account_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            >
+            <TextView
+                android:layout_alignParentRight="true"
+                tools:text="+99.00"
+                android:textColor="@color/color_black87"
+                android:textSize="16sp"
+                android:id="@+id/tv_account_money"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/ll_tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/line_margin" />
+        <TextView
+            android:id="@+id/tv_apply_amount"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            tools:text="+99.00"
+            android:textColor="@color/color_black87"
+            android:textSize="14sp"
+            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            />
+
+        <include layout="@layout/line_margin" />
+        <TextView
+            android:id="@+id/tv_tax_amount"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            tools:text="+99.00"
+            android:textColor="@color/color_black87"
+            android:textSize="14sp"
+            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            />
+        <include layout="@layout/line_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/line_margin" />
+        <TextView
+            android:id="@+id/tv_pay_time"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            tools:text="+99.00"
+            android:textColor="@color/color_black87"
+            android:textSize="14sp"
+            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            />
+
+        <include layout="@layout/line_margin" />
+        <TextView
+            android:id="@+id/tv_pay_type"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            tools:text="+99.00"
+            android:textColor="@color/color_black87"
+            android:textSize="14sp"
+            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            />
+
+        <include layout="@layout/line_margin" />
+        <TextView
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:id="@+id/tv_pay_code"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            tools:text="+99.00"
+            android:textColor="@color/color_black87"
+            android:textSize="14sp"
+            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            />
+        <include layout="@layout/line_margin" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+        <TextView
+            android:minHeight="32dp"
+            android:id="@+id/tv_pay_account"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            tools:text="支付账号: 1588888"
+            android:textColor="@color/color_black87"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/ll_refuse_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/line_margin" />
+        <TextView
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_refuse_reason"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            tools:text="+99.00"
+            android:textColor="@color/color_black87"
+            android:textSize="14sp"
+            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>

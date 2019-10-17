@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginRight="16dp"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/trans_87_color_black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:lines="1"
+        android:ellipsize="end"
+        tools:text="您关注的李薇设计师上新啦，赶紧来瞧瞧！"/>
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="296dp"
+        android:layout_height="144dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="26dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/text_seemore"
+            android:text="查看详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/trans_40_color_black"/>
+        <ImageView
+            android:id="@+id/message_brand_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/icon_message_right"/>
+    </LinearLayout>
+
+</LinearLayout>

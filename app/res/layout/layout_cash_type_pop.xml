@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:src="@mipmap/ic_close"
+            android:id="@+id/iv_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            />
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/color_black85"
+            android:layout_centerInParent="true"
+            android:text="选择提现方式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    <include layout="@layout/line_layout"/>
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/tv_bank"
+        android:textSize="16sp"
+        android:textColor="@color/color_black85"
+        android:layout_centerInParent="true"
+        android:text="交通银行(9680)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <include layout="@layout/line_margin_left"/>
+    <LinearLayout
+        android:id="@+id/ll_wallet"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_wallet"
+            android:textSize="16sp"
+            android:textColor="@color/color_black85"
+            android:layout_centerInParent="true"
+            android:text="钱包"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:gravity="end"
+            android:id="@+id/tv_tip"
+            android:textSize="14sp"
+            android:textColor="@color/color_red"
+            android:layout_centerInParent="true"
+            android:text="可立即提现到钱包"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</LinearLayout>

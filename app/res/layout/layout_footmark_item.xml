@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="108dp"
+    android:layout_marginLeft="16dp"
+    android:background="#FFFFFF"
+    android:paddingBottom="20dp">
+
+    <com.d2cmall.buyer.widget.swipeLayout.SwipeLayout
+        android:id="@+id/swipe_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="72dp"
+                android:layout_height="128dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_toRightOf="@id/iv_product"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="#DE000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_product_name"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/iv_product"
+                android:textColor="#DE000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_high_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_price"
+                android:layout_below="@id/tv_product_name"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/tv_price"
+                android:gravity="center"
+                android:textColor="@color/color_black60"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bt_remove"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_red"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/color_white"
+            android:textSize="14dp" />
+
+    </com.d2cmall.buyer.widget.swipeLayout.SwipeLayout>
+</RelativeLayout>

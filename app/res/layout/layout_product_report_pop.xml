@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/color_black60"
+                android:layout_height="match_parent">
+<RelativeLayout
+                android:layout_width="240dp"
+                android:layout_centerInParent="true"
+                android:background="@color/color_white"
+                android:layout_height="270dp">
+    <ImageView
+        android:visibility="gone"
+        android:padding="16dp"
+        android:id="@+id/close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_order_close"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:src="@mipmap/icon_publish_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:gravity="center"
+        android:text="查看商品报告"
+        android:textColor="@color/color_white"
+        android:textSize="16sp"
+        android:background="@color/color_black6"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_look"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_default_title" />
+
+    <ScrollView
+        android:id="@+id/my_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:layout_marginBottom="48dp"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="@color/color_black"
+                android:layout_marginTop="27dp"
+                android:textSize="28dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="代付金额"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_black50"
+                android:textSize="@dimen/small_text_size" />
+
+            <TextView
+                android:id="@+id/state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/medium_text_size3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#fafafc"/>
+
+            <LinearLayout
+                android:id="@+id/order_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#fafafc"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/another_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/sp_round4_bg_black"
+        android:gravity="center"
+        android:text="找好友付款"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/large_text_size"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

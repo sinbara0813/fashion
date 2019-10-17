@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <ScrollView
+        android:id="@+id/help_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/web_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="12dp"
+                    android:text="@string/label_faq"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/medium_text_size1" />
+
+                <include layout="@layout/line_layout" />
+
+                <WebView
+                    android:id="@+id/web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="24dp"
+                android:text="@string/label_self_service"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/medium_text_size1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="48dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_self_refund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@mipmap/icon_help_moneyback"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_self_aftersale"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_self_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@mipmap/icon_help_shopback"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_self_return"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_pross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:layout_marginRight="24dp"
+                    android:drawableTop="@mipmap/icon_help_schedule"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_refund"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/small_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_complaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/icon_service_complaint"
+                    android:gravity="center_horizontal"
+                    android:text="投诉"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="24dp"
+                android:text="@string/label_contact"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/medium_text_size1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingBottom="24dp"
+                android:paddingLeft="48dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/tv_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@mipmap/icon_help_onlineserver"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_online"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/small_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_telphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@mipmap/icon_help_phoneserver"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_telephone2"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/small_text_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/bg_bossportrait" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/copy_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/color_black60"
+                        android:textSize="@dimen/small_text_size"
+                        android:text="施力个人微信号: D2C8001 (点击复制)"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_ceo_des"
+                        android:textColor="@color/color_black60"
+                        android:textSize="@dimen/small_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/label_mailbox"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/small_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_progressbar" />
+</RelativeLayout>

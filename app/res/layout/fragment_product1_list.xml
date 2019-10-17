@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_color"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_comprehensive"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="综合" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:id="@+id/tv_near"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="最新" />
+
+        <TextView
+            android:id="@+id/tv_hot"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="热销" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="价格" />
+
+            <ImageView
+                android:id="@+id/iv_price_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_shoplist_rank" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_white" />
+
+        <TextView
+            android:id="@+id/tv_screen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="筛选" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="#FFFFFFFF"
+            android:elevation="4dp"
+            android:src="@mipmap/icon_a_shopcar"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="8dp" />
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nest_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/error_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_empty_work"
+            android:visibility="gone" />
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

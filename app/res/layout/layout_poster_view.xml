@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <ImageView
+        android:id="@+id/bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:id="@+id/product_ll"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@mipmap/bg_xinxi">
+            
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textSize="24px"
+                android:textColor="@color/color_black85"
+                android:text="快来帮我砍价吧"/>
+            
+            <LinearLayout
+                android:id="@+id/ll_product_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="19"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+                
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="63px"
+                    android:layout_height="63px"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="6dp"
+                    android:src="@mipmap/ic_default_avatar"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24px"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/color_black85"/>
+
+                    <TextView
+                        android:id="@+id/price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20px"
+                        android:layout_below="@id/text"
+                        android:layout_alignLeft="@id/text"
+                        android:textColor="@color/color_black85"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <ImageView
+                android:id="@+id/rq"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/color_white"
+                android:layout_centerVertical="true"
+                android:padding="3dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/rq"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="125px"
+                    android:layout_height="125px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/logo"/>
+
+                <TextView
+                    android:id="@+id/tv_little_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    android:textSize="24px"
+                    android:layout_alignLeft="@id/logo"
+                    android:layout_marginTop="2dp"
+                    android:text="长按二维码，帮我砍价"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

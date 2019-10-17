@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginBottom="16dp"
+    android:layout_height="120dp">
+    <TextView
+        android:paddingLeft="16dp"
+        android:paddingRight="20dp"
+        android:layout_toLeftOf="@+id/iv_notice"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/tv_title"
+        android:textSize="14sp"
+        android:textColor="@color/color_black87"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="这样做他成了月收入100000000000000块的小富婆"
+        />
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_marginRight="16dp"
+        android:id="@+id/iv_notice"
+        tools:src="@mipmap/ic_default_avatar"
+        android:layout_alignParentRight="true"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        />
+    <TextView
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:lines="1"
+        android:ellipsize="end"
+        android:id="@+id/tv_date"
+        android:textSize="14sp"
+        android:textColor="@color/color_black60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="20118-01-02"
+        />
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/iv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+</RelativeLayout>

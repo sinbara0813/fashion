@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/ic_loading"
+              android:orientation="vertical">
+    <LinearLayout android:id="@+id/ll_head"
+                  android:layout_width="match_parent"
+                  android:layout_height="48dp"
+                  android:orientation="horizontal"
+                  android:visibility="gone"
+    >
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:drawableLeft="@mipmap/ic_back_w"
+            android:drawablePadding="-10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="返回"
+            android:textColor="@color/color_white"/>
+        <View android:layout_width="0dp"
+              android:layout_height="1dp"
+              android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:scaleType="center"
+            android:src="@mipmap/ic_live_close"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/video_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <com.d2cmall.buyer.widget.universalvideoview.UniversalVideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:uvv_fitXY="false"/>
+
+        <com.d2cmall.buyer.widget.universalvideoview.UniversalMediaController
+            android:id="@+id/media_controller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+
+        <RelativeLayout
+            android:id="@+id/preview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_loading"
+            android:visibility="visible">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_review_loading"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

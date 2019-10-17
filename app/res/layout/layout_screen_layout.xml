@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/color_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/sp_rotate_progressbar_style"
+            android:indeterminateDuration="600"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="16dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_screen_service" />
+
+                <include layout="@layout/layout_screen_type" />
+
+                <TextView
+                    android:id="@+id/tv_type_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="分类"
+                    android:textColor="#DE000000"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_first_select"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_selected_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_selected"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textColor="#DE000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/icon_all_chosenmark" />
+                </RelativeLayout>
+
+                <com.d2cmall.buyer.widget.LineGridView
+                    android:id="@+id/screen_type_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:horizontalSpacing="0dp"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="16dp"
+                    app:isColumnLineHide="true" />
+
+                <TextView
+                    android:id="@+id/tv_selected_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/label_has_selected"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/select_class_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="top|left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="设计师品牌"
+                        android:textColor="#DE000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_open"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon_title_unfold_black" />
+                </LinearLayout>
+
+                <com.d2cmall.buyer.widget.LineGridView
+                    android:id="@+id/screen_designer_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="16dp"
+                    app:isColumnLineHide="true" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/flow_series"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_look_all"
+                    android:layout_width="160dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border_unselect"
+                    android:gravity="center"
+                    android:text="查看所有品牌"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_selected_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/label_has_selected"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/select_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="top|left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="价格"
+                    android:textColor="#DE000000"
+                    android:textSize="18sp" />
+
+                <com.d2cmall.buyer.widget.LineGridView
+                    android:id="@+id/screen_price_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="16dp"
+                    app:isColumnLineHide="true" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_reset"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="重置"
+                android:textColor="#8A000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="3"
+                android:background="#FF232427"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pay_style_ll"
+    android:layout_marginBottom="16dp"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/alipay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <com.d2cmall.buyer.widget.MyCheckBox
+            android:id="@+id/alipay_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:is_clickable="false"
+            app:is_single="true"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/ic_alipay" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_alipay"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/medium_text_size3"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_alipay_hint"
+                android:textColor="@color/color_black38"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/ali_pay_line"
+        android:layout_width="328dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/line"/>
+    <LinearLayout
+        android:id="@+id/wxpay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.d2cmall.buyer.widget.MyCheckBox
+            android:id="@+id/wxpay_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:is_clickable="false"
+            app:is_single="true"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/ic_wxpay" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_wxpay"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/medium_text_size3"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_wxpay_hint"
+                android:textColor="@color/color_black38"
+                android:textSize="@dimen/main_text_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/wx_pay_line"
+        android:layout_width="328dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/line"/>
+    <LinearLayout
+        android:id="@+id/god_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="gone">
+
+
+        <com.d2cmall.buyer.widget.MyCheckBox
+            android:id="@+id/god_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:is_clickable="false"
+            app:is_single="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/ic_cashpay" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_cash"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/medium_text_size3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_cash_hint"
+                android:textColor="@color/color_black38"
+                android:textSize="@dimen/main_text_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/d2cpay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <com.d2cmall.buyer.widget.MyCheckBox
+            android:id="@+id/d2cpay_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:is_clickable="false"
+            app:is_single="true"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/ic_d2cpay" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_d2cpay"
+                    android:textColor="@color/color_black87"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <TextView
+                    android:id="@+id/d2c_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/main_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_d2cpay_hint"
+                android:textColor="@color/color_black38"
+                android:textSize="11dp"  />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/d2c_pay_line"
+        android:layout_width="328dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/line"/>
+    <LinearLayout
+        android:id="@+id/stages_pay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+            <com.d2cmall.buyer.widget.MyCheckBox
+                android:id="@+id/stages_pay_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:is_clickable="false"
+                app:is_single="true"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="center"
+                android:src="@mipmap/ic_momo"
+                android:layout_marginLeft="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_d2c_stages"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_d2c_stages_pay_hint"
+                    android:textColor="@color/color_black38"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_stages_ll"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/stage_item_info"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:drawableRight="@mipmap/ic_arrow_right_g"
+                android:drawablePadding="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/stages_pay_line"
+        android:layout_width="328dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/line"/>
+    <LinearLayout
+        android:id="@+id/hb_pay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <com.d2cmall.buyer.widget.MyCheckBox
+            android:id="@+id/hb_pay_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:is_clickable="false"
+            app:is_single="true"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/pay_ant" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_hb"
+                android:textColor="@color/color_black87"
+                android:textSize="@dimen/medium_text_size3"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_hb_hint"
+                android:textColor="@color/color_black38"
+                android:textSize="@dimen/main_text_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/hb_pay_line"
+        android:layout_width="328dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/line"/>
+    <RelativeLayout
+        android:id="@+id/select_hb_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/hb_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/color_black87"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:drawableRight="@mipmap/icon_all_arrowright_small"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择还款方式"
+            android:layout_toLeftOf="@id/hb_count"
+            android:layout_marginRight="16dp"
+            android:textColor="#8a232427"
+            android:textSize="12dp"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/open_handle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/hide_layout_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:drawableRight="@mipmap/tab_all_up_b"
+            android:drawablePadding="8dp"
+            android:maxLines="1"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/label_pack_up"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_black60"
+            android:textSize="@dimen/main_text_size" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"/>
+    </LinearLayout>
+</LinearLayout>

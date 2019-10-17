@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/push_toast"
+    android:layout_width="wrap_content"
+    android:layout_height="24dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="72dp"
+    android:background="@drawable/sp_round24_trans_black4"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <com.d2cmall.buyer.widget.RoundedImageView
+        android:id="@+id/img_head"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_default_avatar"
+        app:corner_radius="30dp"
+        app:round_background="true" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/tiny_text_size"
+        tools:text="北京用户3分钟前下单Wendy...设计的服装" />
+</LinearLayout>
+

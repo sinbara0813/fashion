@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFFFF">
+
+        <LinearLayout
+            android:id="@+id/avatar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/sl_white_2_line"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="@string/label_avatar"
+                android:textColor="#8A000000"
+                android:textSize="@dimen/medium_text_size3"/>
+
+            <com.d2cmall.buyer.widget.RoundedImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:is_oval="true"
+                android:src="@mipmap/ic_default_avatar"
+                app:round_background="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_arrow_right_g"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignBottom="@+id/avatar_layout"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/avatar_layout"
+            android:background="@drawable/sl_white_2_line"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="@string/label_login_account"
+                android:textColor="#8A000000"
+                android:textSize="@dimen/medium_text_size3"/>
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:maxLines="1"
+                android:textColor="#DE000000"
+                android:textSize="@dimen/medium_text_size3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_arrow_right_g"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="0.5dp"
+            android:layout_alignBottom="@+id/phone_layout"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:id="@+id/nick_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/phone_layout"
+            android:background="@drawable/sl_white_2_line"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="@string/label_nick"
+                android:textColor="#8A000000"
+                android:textSize="@dimen/medium_text_size3"/>
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="#DE000000"
+                android:textSize="@dimen/medium_text_size3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_arrow_right_g"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignBottom="@+id/nick_layout"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:id="@+id/sex_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/nick_layout"
+            android:background="@color/color_white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="@string/label_sex"
+                android:textColor="#8A000000"
+                android:textSize="@dimen/medium_text_size3"/>
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:text="男"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="#DE000000"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_arrow_right_g"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignBottom="@+id/sex_layout"
+            android:background="@color/line"/>
+
+
+        <LinearLayout
+            android:id="@+id/birthday_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/sex_layout"
+            android:background="@drawable/sl_white_2_line"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="@string/label_birthday"
+                android:textColor="#8A000000"
+                android:textSize="@dimen/medium_text_size3"/>
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:maxLines="1"
+                android:textColor="#DE000000"
+                android:textSize="@dimen/medium_text_size3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_arrow_right_g"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignBottom="@+id/birthday_layout"
+            android:background="@color/line"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/top"
+    android:paddingBottom="24dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:text="关注感兴趣的人，及时了解他们的动态"
+    android:textColor="#61000000"
+    android:textSize="@dimen/small_text_size"
+    />

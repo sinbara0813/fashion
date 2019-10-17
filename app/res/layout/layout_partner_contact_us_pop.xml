@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/trans_40_color_black"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:background="@drawable/sp_round7_white"
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        >
+        <TextView
+            android:padding="20dp"
+            android:text="@string/msg_partner_contact_us_pop"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:textColor="@color/color_black60"
+            android:textSize="14sp"
+            />
+        <include layout="@layout/line_layout"/>
+        <TextView
+            android:id="@+id/tv_sure"
+            android:gravity="center"
+            android:text="确定"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@color/color_black87"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

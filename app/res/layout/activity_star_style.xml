@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/color_white"
+              tools:mContext="com.d2cmall.buyer.activity.StarStyleActivity"
+              android:layout_height="match_parent">
+    <include layout="@layout/layout_default_title"/>
+    <RelativeLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:elevation="4dp"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/image_open"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:scaleType="fitCenter"
+            android:background="@color/color_white"
+            android:src="@mipmap/ic_arrow_down" />
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/sliding_tab"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/color_white"
+            app:tl_indicator_color="@color/trans_87_color_black"
+            app:tl_indicator_gravity="BOTTOM"
+            app:tl_indicator_height="2dp"
+            app:tl_indicator_width_equal_title="true"
+            app:tl_tab_padding="20dp"
+            app:tl_textSelectColor="#DE000000"
+            app:tl_textUnselectColor="#8A000000"
+            app:tl_textsize="16dp"
+            android:layout_toLeftOf="@id/image_open"
+        />
+
+        <TextView
+            android:id="@+id/tv_make_choice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="选择分类"
+            android:textColor="@color/trans_50_color_black"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/image_open"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+</LinearLayout>

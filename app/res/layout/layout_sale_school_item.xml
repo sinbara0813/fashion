@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    tools:src="@mipmap/ic_logo_empty5"
+    android:scaleType="fitXY"
+    android:id="@+id/image"
+    android:layout_width="98dp"
+    android:layout_height="60dp"
+    />
+    <TextView
+        android:ellipsize="end"
+        android:lines="2"
+        android:layout_toRightOf="@+id/image"
+        tools:text="*真实姓名: 马云"
+        android:id="@+id/tv_title"
+        android:paddingRight="16dp"
+        android:paddingLeft="12dp"
+        android:textSize="14sp"
+        android:textColor="@color/color_black87"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:paddingRight="16dp"
+        android:gravity="bottom"
+        android:layout_alignBottom="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/tv_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_date"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_toRightOf="@+id/image"
+            tools:text="*真实姓名: 马云"
+            android:paddingRight="16dp"
+            android:paddingLeft="12dp"
+            android:textSize="12sp"
+            android:textColor="@color/color_black38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:gravity="right"
+            android:id="@+id/tv_type"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_toRightOf="@+id/image"
+            tools:text="新人买手"
+            android:paddingLeft="12dp"
+            android:textSize="12sp"
+            android:textColor="@color/color_black60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/image"
+        android:layout_marginTop="16dp"
+        android:id="@+id/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+</RelativeLayout>

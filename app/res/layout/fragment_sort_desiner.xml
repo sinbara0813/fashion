@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <com.d2cmall.buyer.widget.headerview.StickyListHeadersListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/sideBar"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <com.d2cmall.buyer.widget.SideBar
+        android:id="@+id/sideBar"
+        android:layout_width="24dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFFFF"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/sp_round4_trans_black"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/color_white"
+        android:visibility="invisible" />
+
+    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/sp_rotate_progressbar_style"
+        android:indeterminateDuration="600"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+</RelativeLayout>

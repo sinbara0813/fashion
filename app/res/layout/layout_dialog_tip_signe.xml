@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="320dp"
+    android:background="@color/transparent"
+    android:layout_height="192dp">
+    <LinearLayout
+        android:background="@drawable/sp_round13_white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        >
+        <TextView
+            android:layout_marginTop="40dp"
+            style="@style/boldTextStyle"
+            android:textSize="20sp"
+            android:textColor="@color/color_black85"
+            android:text="开启签到提醒"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/color_black85"
+            android:text="每日签到得D币赢大奖!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+        <TextView
+            android:id="@+id/tv_know"
+            android:background="@drawable/sp_round13_e8e8e8"
+            android:gravity="center"
+            style="@style/boldTextStyle"
+            android:textSize="16sp"
+            android:textColor="@color/color_black85"
+            android:text="知道了"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44dp"
+            />
+        <TextView
+            android:id="@+id/tv_open"
+            android:background="@drawable/sp_round13_black"
+            style="@style/boldTextStyle"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/color_white"
+            android:text="去开启"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

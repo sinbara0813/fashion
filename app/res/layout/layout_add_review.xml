@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:id="@+id/add_review_ll">
+
+    <TextView
+        android:id="@+id/add_review_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/small_text_size"/>
+
+    <TextView
+        android:id="@+id/add_review_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        style="@style/normalSize3TextStyle"
+        android:textColor="@color/color_black85"
+        android:textSize="@dimen/medium_text_size3" />
+
+    <com.d2cmall.buyer.widget.ninegrid.NineGridView
+        android:id="@+id/add_review_nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        app:ngv_gridSpacing="8dp"
+        app:ngv_maxSize="9"
+        app:ngv_mode="grid"
+        app:ngv_isNine="true"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        app:ngv_singleImageRatio="1"/>
+
+    <TextView
+        android:id="@+id/add_review_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:textSize="@dimen/small_text_size"
+        android:background="#fafafc"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/color_black50"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

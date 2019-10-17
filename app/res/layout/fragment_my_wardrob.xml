@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:id="@+id/iv_back_first"
+            android:layout_width="46dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_nav_back_black"
+            />
+        <TextView
+            android:text="我的衣橱"
+            android:textSize="20sp"
+            android:textColor="#111111"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <com.d2cmall.buyer.widget.RoundedImageView
+            app:corner_radius="@dimen/dp_4"
+            android:scaleType="fitXY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/iv_clothing"
+            />
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.d2cmall.buyer.widget.RoundedImageView
+                app:corner_radius="@dimen/dp_4"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/iv_bag"
+                />
+
+            <com.d2cmall.buyer.widget.RoundedImageView
+                app:corner_radius="@dimen/dp_4"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/iv_jewelry"
+                android:layout_weight="1"
+                />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingRight="8dp">
+
+        <com.d2cmall.buyer.widget.RoundedImageView
+            app:corner_radius="@dimen/dp_4"
+            android:scaleType="fitXY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/iv_shose"
+            />
+
+        <com.d2cmall.buyer.widget.RoundedImageView
+            app:corner_radius="@dimen/dp_4"
+            android:scaleType="fitXY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/iv_beauty"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

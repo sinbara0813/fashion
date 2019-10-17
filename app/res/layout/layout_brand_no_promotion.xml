@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@mipmap/pic_brandpage_noactivity"
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+         />
+    <View
+        android:background="@color/bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="为你推荐"
+        android:textColor="@color/color_black85"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

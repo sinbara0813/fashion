@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFFFF">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@mipmap/tab_all_back_b" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxWidth="180dp"
+            android:text="限时购"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_title">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <ImageView
+                        android:id="@+id/iv_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="154dp"
+                        android:scaleType="fitCenter" />
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <RelativeLayout
+                    android:id="@+id/flash_time_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/rl_title"
+                    android:background="@color/color_white"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:maxWidth="220dp"
+                        android:id="@+id/tv_remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="还有商品可以抢哦~"
+                        android:textColor="@color/trans_50_color_black"
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:text="距结束"
+                            android:textColor="@color/trans_30_color_black"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/flash_hour_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_time_count"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textColor="@color/color_white"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:text=":"
+                            android:textColor="@color/color_black87"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/flash_minute_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_time_count"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textColor="@color/color_white"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:text=":"
+                            android:textColor="@color/color_black87"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/flash_mouse_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_time_count"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/color_white"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout>
+
+    <include layout="@layout/layout_progressbar" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <com.isseiaoki.simplecropview.CropImageView
+        android:id="@+id/CropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:visibility="visible"
+        custom:scv_background_color="#000000"
+        custom:scv_frame_color="#FFFFFF"
+        custom:scv_guide_color="#FFFFFF"
+        custom:scv_guide_show_mode="show_on_touch"
+        custom:scv_handle_color="#FFFFFF"
+        custom:scv_handle_show_mode="show_always"
+        custom:scv_handle_size="10dp"
+        custom:scv_overlay_color="#aa1c1c1c"
+        custom:scv_touch_padding="10dp" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/icon_pic_cut"
+            android:text="裁剪"
+            android:textColor="#8A000000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/icon_pic_rotate"
+            android:text="旋转"
+            android:textColor="#8A000000"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

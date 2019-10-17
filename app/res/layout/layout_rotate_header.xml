@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    >
+<ImageView
+    android:layout_marginTop="16dp"
+    android:id="@+id/iv_loading"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:src="@drawable/loading_anim"
+    />
+<TextView
+    android:layout_toRightOf="@+id/iv_loading"
+    android:id="@+id/tv_loading"
+    android:gravity="center"
+    android:layout_marginLeft="8dp"
+    android:textSize="12sp"
+    android:text="下拉即可刷新..."
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:textColor="@color/color_black87"
+    />
+</RelativeLayout>

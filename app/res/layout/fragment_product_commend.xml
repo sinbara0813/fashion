@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="42dp"
+        android:orientation="vertical"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:id="@+id/top_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/product_show_tv"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="晒单"
+                android:background="@color/color_black_bg"
+                android:textColor="@color/color_white"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/product_consult_tv"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_black87"
+                android:textSize="14dp"
+                android:text="购买咨询"
+                android:background="@drawable/sp_promotion"/>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_ll"/>
+
+        <ImageView
+            android:id="@+id/consult_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/pic_goodsdetail_ask"
+            android:layout_marginRight="16dp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/post_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/consult_iv"
+            android:layout_alignLeft="@id/consult_iv"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/pic_goodsdetail_post"/>
+    </RelativeLayout>
+
+</LinearLayout>

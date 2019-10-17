@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+    <com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:scrollbars="none" />
+
+
+    </com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout>
+
+    <include layout="@layout/list_empty_view" />
+
+    <include layout="@layout/layout_progressbar" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:borderWidth="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/icon_a_shopcar"
+        android:elevation="4dp"
+        app:pressedTranslationZ="8dp"
+        android:backgroundTint="#FFFFFFFF"/>
+</RelativeLayout>

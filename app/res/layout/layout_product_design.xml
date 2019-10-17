@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_design"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/product_designer_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/product_designer_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/image_border"
+            android:padding="0.5dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/product_designer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/color_black85"
+                android:text="LILY"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/product_design_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_text_size"
+                android:layout_below="@id/product_designer_name"
+                android:textColor="@color/color_black50"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/design_valid_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_nav_enter_black"
+            android:layout_marginTop="22dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_design_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:layout_below="@id/product_designer_ll"
+        />
+
+</RelativeLayout>

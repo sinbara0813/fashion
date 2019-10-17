@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/llPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/guideTv"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="#000000"
+        android:text="开启"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:contentDescription="@null"
+        android:onClick="onStart"
+        android:visibility="gone" />
+</RelativeLayout>

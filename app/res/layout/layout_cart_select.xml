@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:orientation="vertical"
+    android:background="@drawable/sp_round2_white">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16dp"
+        android:textColor="@color/color_black85"
+        android:text="请分开结算以下商品"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/common_check_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="48dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        >
+
+        <com.d2cmall.buyer.widget.CheckBox
+            android:id="@+id/common_check"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/common_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text_size3"
+            android:textColor="@color/color_black85"
+            android:text="D2C自营商品"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/global_check_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="48dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginBottom="16dp">
+
+        <com.d2cmall.buyer.widget.CheckBox
+            android:id="@+id/global_check"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/global_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text_size3"
+            android:textColor="@color/color_black85"
+            android:text="全球购商品"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#e8e8e8"
+            android:gravity="center"
+            android:text="返回购物车"/>
+
+        <TextView
+            android:id="@+id/sure_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_black_bg"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:text="去结算"/>
+
+    </LinearLayout>
+
+</LinearLayout>

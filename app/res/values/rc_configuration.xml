@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <!--设置语音消息的码率 (单位 bps)-->
+
+    <!--原图压缩比例-->
+    <!--原图压缩宽、高-->
+    <!-- 设置发送输入状态 -->
+
+</resources>

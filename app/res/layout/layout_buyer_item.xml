@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:elevation="2dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <com.d2cmall.buyer.widget.RoundedImageView
+            android:id="@+id/head_iv"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="13dp"
+            app:is_oval="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_alignTop="@id/head_iv"
+            android:layout_toRightOf="@id/head_iv"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:textColor="@color/trans_87_color_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_identity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:src="@mipmap/icon_buyer" />
+
+                <ImageView
+                    android:id="@+id/iv_try"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@mipmap/icon_try" />
+
+                <ImageView
+                    android:id="@+id/iv_closed"
+                    android:src="@mipmap/biaoqian_close"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_name"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_join_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_grade"
+                android:textColor="#cccccc"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_sell_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_join_time"
+                android:textColor="#cccccc"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rl_top"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/bg_color"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_left_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/trans_87_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_notice_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="零售订单"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sell_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/trans_87_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_notice_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户订单"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="已开单"
+        android:textColor="#999999"
+        android:textSize="9sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

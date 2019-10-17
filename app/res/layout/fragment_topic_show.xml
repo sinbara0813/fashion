@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:scrollbars="none" />
+
+    </com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="94dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_topic_empty" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_progressbar" />
+</RelativeLayout>

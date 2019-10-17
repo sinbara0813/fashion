@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_order_success" />
+
+    <TextView
+        android:id="@+id/tv_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/label_pay_success"
+        android:textColor="#DE000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="D2C仓库小弟开始帮您准备货品"
+        android:textColor="#8A000000"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_back_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_explain"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_order_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回到首页"
+            android:textColor="#8A000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_look_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_explain"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_order_list" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看订单"
+            android:textColor="#8A000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll_look_order">
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="56dp"
+            android:background="@color/line"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/ad_image"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/ll_look_order"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="0.5dp"
+            android:background="#FF232427" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="为你推荐"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="0.5dp"
+            android:background="#FF232427" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="round_width" format="dimension" />
+        <attr name="round_color" format="color" />
+        <attr name="round_background" format="boolean" />
+        <attr name="is_oval" format="boolean" />
+        <attr name="top_qualified" format="boolean" />
+        <attr name="bottom_qualified" format="boolean" />
+        <attr name="top_left_qualified" format="boolean" />
+        <attr name="top_right_qualified" format="boolean" />
+        <attr name="bottom_left_qualified" format="boolean" />
+        <attr name="bottom_right_qualified" format="boolean" />
+        <attr name="left_qualified" format="boolean" />
+        <attr name="right_qualified" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundLayout">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StaggeredGridView">
+        <attr name="column_count" format="integer" />
+        <attr name="column_count_portrait" format="integer" />
+        <attr name="column_count_landscape" format="integer" />
+        <attr name="item_margin" format="dimension" />
+        <attr name="grid_paddingLeft" format="dimension" />
+        <attr name="grid_paddingRight" format="dimension" />
+        <attr name="grid_paddingTop" format="dimension" />
+        <attr name="grid_paddingBottom" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckableLinearLayout2">
+        <attr name="isChecked" format="boolean" />
+        <attr name="uncheckable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="HeaderViewPager">
+        <attr name="hvp_topOffset" format="dimension" />
+        <attr name="hvp_headerAnim" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean" />
+        <attr name="max_select" format="integer" />
+        <!--<attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>-->
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_breakLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar" tools:ignore="ResourceName">
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+        <attr name="starHalf" format="reference" />
+        <attr name="clickable" format="boolean" />
+        <attr name="offer" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DottedLineView">
+        <attr name="dlv_color" format="color" />
+        <attr name="dashLength" format="dimension" />
+        <attr name="dashGap" format="dimension" />
+        <attr name="dashThickness" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ClearEditText">
+        <attr name="del" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LineGridView">
+        <attr name="isColumnLineHide" format="boolean" />
+        <attr name="lineColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WrapLineGridView">
+        <attr name="wrapLineColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewLive">
+        <attr name="isBigView" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innerColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WrapViewPager">
+        <attr name="rowCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="androidWheelView">
+        <attr name="awv_textsize" format="integer" />
+        <attr name="awv_lineSpace" format="float" />
+        <attr name="awv_centerTextColor" format="integer" />
+        <attr name="awv_outerTextColor" format="integer" />
+        <attr name="awv_dividerTextColor" format="integer" />
+        <attr name="awv_itemsVisibleCount" format="integer" />
+        <attr name="awv_isLoop" format="boolean" />
+        <attr name="awv_initialPosition" format="integer" />
+        <attr name="awv_scaleX" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="checkBox">
+        <attr name="is_clickable" format="boolean"/>
+        <attr name="is_single" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="NineGridView">
+        <attr name="ngv_singleImageSize" format="dimension" />
+        <attr name="ngv_singleImageRatio" format="float" />
+        <attr name="ngv_gridSpacing" format="dimension" />
+        <attr name="ngv_maxSize" format="integer" />
+        <attr name="ngv_isNine" format="boolean"/>
+        <attr name="ngv_mode" format="enum">
+            <enum name="fill" value="0" />
+            <enum name="grid" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="pile">
+        <attr name="interval" format="dimension" />
+        <attr name="sizeRatio" format="float" />
+        <attr name="scaleStep" format="float" />
+        <attr name="displayCount" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TimeLineView">
+        <attr name="startedLineColor" format="color"/>
+        <attr name="preLineColor" format="color"/>
+        <attr name="startedCircleColor" format="color"/>
+        <attr name="underwayCircleColor" format="color"/>
+        <attr name="preCircleColor" format="color"/>
+        <attr name="startedStringColor" format="color"/>
+        <attr name="underwayStringColor" format="color"/>
+        <attr name="preStringColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="tlradius" format="dimension"/>
+        <attr name="lineWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="timeline_style">
+        <attr name="marker" format="color|reference"/>
+        <attr name="line" format="color|reference"/>
+        <attr name="markerSize" format="dimension"/>
+        <attr name="lineSize" format="dimension"/>
+        <attr name="lineOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="linePadding" format="dimension"/>
+        <attr name="markerInCenter" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="expandView">
+        <attr name="canSlide" format="boolean"/>
+        <attr name="isExpand" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SwitcherView">
+        <attr name="switcherTextColor" format="reference|color"/>
+        <attr name="switcherTextSize" format="dimension"/>
+        <attr name="switcherRollingTime" format="integer"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CustomProgress">
+        <attr name="progressRadius" format="dimension" /><!--半径-->
+        <attr name="strokeWidth" format="dimension" /><!--画笔宽度-->
+        <attr name="circleColor" format="color" /><!--内圆颜色-->
+        <attr name="ringColor" format="color" /><!--进度条颜色-->
+        <attr name="totalProgress" format="integer" /><!--总进度-->
+        <attr name="textColor" format="color|reference" /><!--字体颜色-->
+        <attr name="bigCircleColor" format="color" /><!--外圆颜色-->
+    </declare-styleable>
+
+
+        <declare-styleable name="CalendarView">
+            <!--是否显示农历-->
+            <attr name="show_lunar" format="boolean" />
+            <!--是否显示上月和下月-->
+            <attr name="show_last_next" format="boolean" />
+            <!--是否显示节假日-->
+            <attr name="show_holiday" format="boolean" />
+            <!--是否显示节气-->
+            <attr name="show_term" format="boolean" />
+            <!--阳历的日期颜色-->
+            <attr name="solar_color" format="color" />
+            <!--阳历的日期尺寸-->
+            <attr name="solar_size" format="integer" />
+            <!--农历的日期颜色-->
+            <attr name="lunar_color" format="color" />
+            <!--农历的日期尺寸-->
+            <attr name="lunar_size" format="integer" />
+            <!--节日文字颜色-->
+            <attr name="holiday_color" format="color" />
+            <!--选中的日期文字颜色-->
+            <attr name="choose_color" format="color" />
+            <!--选中的日期背景-->
+            <attr name="day_bg" format="reference" />
+            <!--单选时切换月份，是否选中上次的日期-->
+            <attr name="switch_choose" format="boolean" />
+            <!--设置单选、多选-->
+            <attr name="choose_type" format="enum">
+                <enum name="single" value="0" />
+                <enum name="multi" value="1" />
+            </attr>
+        </declare-styleable>
+
+        <declare-styleable name="WeekView">
+            <!--周的表示形式（x.x.x.x.x.x.x）-->
+            <attr name="week_str" format="string" />
+            <!--周的文字颜色-->
+            <attr name="week_color" format="color" />
+            <!--周的文字大小-->
+            <attr name="week_size" format="integer" />
+        </declare-styleable>
+
+    <declare-styleable name="AutoNewLineLayout">
+        <attr name="horizontalSpace" format="dimension|reference"/>
+        <attr name="vertivalSpace" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="min_radius" format="integer"/>
+        <attr name="max_radius" format="integer"/>
+        <attr name="stroke_width" format="integer"/>
+        <attr name="progress_color" format="color"/>
+    </declare-styleable>
+</resources>

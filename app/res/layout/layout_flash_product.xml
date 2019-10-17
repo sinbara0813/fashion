@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/product_iv"
+        android:layout_width="96dp"
+        android:layout_height="144dp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/sale_out_tag"
+        android:layout_width="96dp"
+        android:layout_height="144dp"
+        android:scaleType="center"
+        android:src="@mipmap/icon_rob_none"
+        android:visibility="gone"
+        android:background="@color/trans_50_color_white"/>
+
+    <TextView
+        android:id="@+id/product_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/product_iv"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/color_black87"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/medium_text_size3"/>
+
+    <TextView
+        android:id="@+id/product_sub_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_info_tv"
+        android:layout_alignLeft="@id/product_info_tv"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/color_black38"/>
+
+    <TextView
+        android:id="@+id/product_notice_tv"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:background="@color/color_black_bg"
+        android:layout_alignBottom="@id/product_iv"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:textSize="@dimen/medium_text_size3"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/product_notice_tv"
+        android:textColor="@color/color_black38"
+        android:textSize="@dimen/small_text_size"
+        android:layout_above="@id/product_notice_tv"/>
+
+</RelativeLayout>

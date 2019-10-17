@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/ll_top_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_ware_house_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D2C保税仓"
+            android:textColor="#FF262626"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="已超限额2000元"
+            android:textColor="#FFF21A1A"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_below="@id/ll_top_name"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

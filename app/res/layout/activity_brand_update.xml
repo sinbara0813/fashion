@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <com.d2cmall.buyer.widget.headerViewPager.HeaderViewPager
+        android:id="@+id/scrollableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:hvp_topOffset="56dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.d2cmall.buyer.widget.VideoBanner1
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="270dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="170dp"
+                android:background="@mipmap/pic_new_bannercover">
+
+                <TextView
+                    android:id="@+id/sub_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="54dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/sub_name"
+                    android:layout_marginLeft="16dp"
+                    android:maxLines="1"
+                    android:layout_marginRight="54dp"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/large_text_size" />
+
+                <TextView
+                    android:id="@+id/page_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/sub_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="302dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="品牌尚新"
+                    android:textColor="@color/color_black85"
+                    android:textSize="@dimen/large_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="76dp"
+                    android:text="BRAND"
+                    android:textColor="#e8e8e8"
+                    android:textSize="@dimen/ex_large_text_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/brand_more_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_title_more" />
+
+            </RelativeLayout>
+
+            <com.d2cmall.buyer.widget.ReboundScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="335dp"
+                android:paddingLeft="16dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/brand_content_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+            </com.d2cmall.buyer.widget.ReboundScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="501dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="新品上市"
+                    android:textColor="@color/color_black85"
+                    android:textSize="@dimen/large_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="92dp"
+                    android:text="NEW"
+                    android:textColor="#e8e8e8"
+                    android:textSize="@dimen/ex_large_text_size"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/sliding_tab"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@color/color_white"/>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.d2cmall.buyer.widget.headerViewPager.HeaderViewPager>
+
+    <FrameLayout
+        android:id="@+id/back_fl"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_nav_back_white" />
+
+        <ImageView
+            android:id="@+id/cart_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="6dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/icon_nav_shoppingcar_white" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/title_fl"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:alpha="0"
+        android:background="@color/color_white"
+        app:layout_behavior="@string/behavior_update_title">
+
+        <ImageView
+            android:id="@+id/back_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_nav_back_black" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="144dp"
+            android:gravity="center"
+            android:text="品牌上新"
+            android:textColor="@color/color_black85"
+            android:textSize="@dimen/large_text_size" />
+
+        <ImageView
+            android:id="@+id/cart_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="6dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/icon_nav_shoppingcar_black" />
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_buyer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-15dp"
+    android:background="@color/transparent"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFF" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_buyer_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/bg_mine_buyercenterbg">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_buyer_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@mipmap/bg_mine_buyercenter">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="买手中心"
+                    android:textColor="#FFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_buyer_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_go_buyer_center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/icon_mine_enterbuyercenter" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_buyer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_buyer_top"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:id="@+id/ll_survey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_mine_jingyinggaikuang" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="经营概况"
+                    android:textColor="@color/trans_50_color_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_brand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_mine_dianpushuju" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="店铺数据"
+                    android:textColor="@color/trans_50_color_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sell"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_mine_shouhuomingxi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="售货明细"
+                    android:textColor="@color/trans_50_color_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_deposit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_mine_tixian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="提现"
+                    android:textColor="@color/trans_50_color_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="8dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignBottom="@id/ll_buyer_button"-->
+        <!--android:layout_below="@id/rl_buyer_top"-->
+        <!--android:background="#FFF" />-->
+
+        <!--<View-->
+        <!--android:layout_width="8dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignBottom="@id/ll_buyer_button"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/rl_buyer_top"-->
+        <!--android:background="#FFF" />-->
+    </RelativeLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_shadow"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:layout_below="@id/rl_buyer_content"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:background="#FFF"-->
+    <!--android:src="@mipmap/pic_shadow10"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<View-->
+    <!--android:layout_width="8dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignBottom="@id/iv_shadow"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignTop="@id/rl_buyer_content"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:background="#FFF"-->
+    <!--android:visibility="visible" />-->
+
+    <!--<View-->
+    <!--android:layout_width="8dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignBottom="@id/iv_shadow"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignTop="@id/rl_buyer_content"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:background="#FFF"-->
+    <!--android:visibility="visible" />-->
+
+</RelativeLayout>

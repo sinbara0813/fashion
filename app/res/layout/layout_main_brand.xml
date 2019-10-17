@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/layout_main_item_title"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/brand_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+        <ImageView
+            android:id="@+id/first_image"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:id="@+id/first_brand_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="176dp"
+            android:padding="0.5dp"
+            android:background="@drawable/sp_line"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:id="@+id/first_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/first_brand_head"
+            android:layout_alignBottom="@id/first_brand_head"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/color_black87"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/first_brand_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+        <ImageView
+            android:id="@+id/second_image"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:scaleType="centerCrop"/>
+        <ImageView
+            android:id="@+id/second_brand_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="176dp"
+            android:padding="0.5dp"
+            android:background="@drawable/sp_line"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:id="@+id/second_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/second_brand_head"
+            android:layout_alignBottom="@id/second_brand_head"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/color_black87"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/second_brand_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

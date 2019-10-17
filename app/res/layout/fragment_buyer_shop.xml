@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg_color"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--访客数据标题-->
+            <LinearLayout
+                android:id="@+id/ll_visitor_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/buyer_visitor_num"
+                    android:textColor="@color/trans_87_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_more_visitor_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@mipmap/icon_more2"
+                    android:text="访问记录" />
+            </LinearLayout>
+
+            <!--访客数据卡片-->
+            <RelativeLayout
+                android:id="@+id/rl_income_detail"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/ll_visitor_title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_top_income_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@mipmap/pic_bg_visiter"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_today"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_today_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/buyer_visitor_today"
+                            android:textColor="@color/trans_87_color_white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_yesterday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_yesterday_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/buyer_visitor_yesterday"
+                            android:textColor="@color/trans_87_color_white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_thirty_days"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_thirty_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/buyer_visitor_thirty"
+                            android:textColor="@color/trans_87_color_white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--零售统计标题-->
+            <LinearLayout
+                android:id="@+id/ll_retail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_income_detail"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/buyer_retail_statistics_title"
+                    android:textColor="@color/trans_87_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_more_retail_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@mipmap/icon_more2"
+                    android:text="@string/buyer_look_detail"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!--零售统计卡片-->
+            <LinearLayout
+                android:id="@+id/ll_retail_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/ll_retail_title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:background="#FFFFFFFF"
+                android:elevation="2dp">
+
+            </LinearLayout>
+
+            <!--零售客户标题-->
+            <LinearLayout
+                android:id="@+id/ll_retail_client_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_retail_statistics"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/buyer_retail_client_title"
+                    android:textColor="@color/trans_87_color_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_more_retail_client_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@mipmap/icon_more2"
+                    android:text="@string/buyer_look_more" />
+            </LinearLayout>
+
+            <!--零售客户卡片-->
+            <LinearLayout
+                android:id="@+id/ll_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_retail_client_title"
+                android:layout_margin="16dp"
+                android:background="#FFFFFFFF"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

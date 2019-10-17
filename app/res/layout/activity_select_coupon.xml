@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/valid_coupon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/medium_text_size3"
+                tools:text="@string/label_valid_coupon" />
+
+            <TextView
+                android:id="@+id/un_valid_coupon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/medium_text_size3"
+                tools:text="@string/label_unvalid_coupon" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="matrix" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/color_black87"
+        android:textSize="@dimen/small_text_size"
+        android:text="@string/label_ms_limit"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/m_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>

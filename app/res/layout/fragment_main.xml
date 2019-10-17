@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/top_fl"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/color_white">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/bg_gradient_black3"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/title_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"/>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/cart_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="11dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/bg_gradient_black3"
+            android:src="@mipmap/tab_all_shop_b"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/search_fl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_white"
+        android:layout_below="@id/top_fl">
+
+        <ImageView
+            android:id="@+id/message_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/icon_all_message" />
+
+        <LinearLayout
+            android:id="@+id/search_iv1"
+            android:layout_width="288dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="56dp"
+            android:background="@drawable/sp_search_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp">
+
+            <ImageView
+                android:id="@+id/search_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_searchbox_search" />
+
+            <TextView
+                android:id="@+id/search_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="请输入商品名称"
+                android:textColor="@color/color_black38"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/scan_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_scan" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.d2cmall.buyer.widget.ExpandViewPager
+        android:id="@id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_fl"
+        />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_notice"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/search_fl"
+        android:background="#99000000"
+        android:gravity="center_vertical">
+        <com.d2cmall.buyer.widget.SwitcherView
+            android:layout_gravity="center"
+            app:switcherTextColor="#FFFDC33E"
+            app:switcherTextSize="12sp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_notice"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            />
+        <ImageView
+            android:alpha="0.5"
+            android:src="@mipmap/ic_delete"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_close"
+            />
+    </LinearLayout>
+</RelativeLayout>

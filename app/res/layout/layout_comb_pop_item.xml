@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/color_white">
+        <ImageView
+            android:src="@mipmap/ic_logo_empty5"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_comb_top"
+            android:layout_width="70dp"
+            android:layout_height="105dp"
+            />
+        <TextView
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:id="@+id/tv_comb_top_name"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/color_black"
+            android:layout_toRightOf="@+id/iv_comb_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="组合商品上"
+            />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/tv_comb_top_name"
+            android:lines="1"
+            android:ellipsize="end"
+            android:id="@+id/tv_comb_subtitle"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/trans_50_color_black"
+            android:layout_toRightOf="@+id/iv_comb_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="组合商品上"
+            />
+        <TextView
+            android:layout_below="@+id/tv_comb_subtitle"
+            android:paddingBottom="12dp"
+            android:gravity="bottom"
+            android:id="@+id/tv_comb_top_price"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/color_red"
+            android:layout_toRightOf="@+id/iv_comb_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="￥1111"
+            />
+        <TextView
+
+            android:layout_below="@+id/tv_comb_top_name"
+            android:paddingBottom="12dp"
+            android:gravity="bottom"
+            android:id="@+id/tv_comb_old_price"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/color_black60"
+            android:layout_toRightOf="@+id/tv_comb_top_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="￥1111"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/color_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text_size3"
+            android:textColor="@color/color_black87"
+            android:text="颜色"
+            android:layout_marginBottom="12dp"/>
+
+        <com.d2cmall.buyer.widget.flowLayout.TagFlowLayout
+            android:id="@+id/color_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_below="@id/color_tv"/>
+
+        <TextView
+            android:id="@+id/size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text_size3"
+            android:textColor="@color/color_black87"
+            android:text="尺码"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@id/color_layout"/>
+
+        <com.d2cmall.buyer.widget.flowLayout.TagFlowLayout
+            android:id="@+id/size_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_below="@id/size_tv"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/sp_rotate_progressbar_style"
+            android:indeterminateDuration="600"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@id/size_tv"
+            tools:visibility="gone" />
+
+
+    </RelativeLayout>
+</LinearLayout>

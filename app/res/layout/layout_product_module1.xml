@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/color_black85"
+            android:textStyle="bold"
+            android:textSize="@dimen/medium_text_size3" />
+
+        <com.d2cmall.buyer.widget.ShowPopImageView
+            android:id="@+id/product_collect_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/product_name"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_collect_black" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/trans_50_color_black"
+        android:textSize="@dimen/small_text_size"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_product_flash" />
+
+    <LinearLayout
+        android:id="@+id/country_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="#2be3d9d9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/country_pic"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="4dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black85"
+            android:textSize="@dimen/small_text_size" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_product_fx"/>
+
+    <ImageView
+        android:id="@+id/global_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pic_quanqiugou"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_caomei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/color_black85"
+        android:text="@string/label_caomei"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ad_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <RelativeLayout
+        android:id="@+id/product_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/product_info_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/bg_bossportrait"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/product_info_iv">
+
+            <TextView
+                android:id="@+id/boss_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/color_black50"
+                android:text="施力个人微信号：D2C8001 (点击复制)"
+                android:textSize="@dimen/small_text_size"/>
+
+            <TextView
+                android:id="@+id/boss_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black50"
+                android:text="有任何问题欢迎随时联系，朋友圈常常有福利哦"
+                android:textSize="@dimen/small_text_size"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_product_shili_introduce" />
+
+</LinearLayout>

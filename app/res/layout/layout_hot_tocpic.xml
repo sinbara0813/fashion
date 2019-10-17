@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:id="@+id/all_tag"
+        style="@style/tran87Size3TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:text="@string/label_hot_topics" />
+
+    <TextView
+        android:id="@+id/all_tv"
+        style="@style/tran87Size3TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/icon_all_arrowright_small"
+        android:text="全部"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/all_tag"
+        android:paddingTop="8dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="8dp"
+        android:layout_alignBottom="@id/all_tag"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@id/all_tag">
+
+        <RelativeLayout
+            android:id="@+id/flow_rl1"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF"
+            android:elevation="2dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/flow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/flow_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#66000000"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:lines="2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/bg_white"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flow_rl2"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF"
+            android:elevation="2dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/flow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/flow_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#66000000"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:lines="2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/bg_white"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flow_rl3"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF"
+            android:elevation="2dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/flow3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/flow_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#66000000"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:lines="2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/bg_white"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

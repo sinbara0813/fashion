@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:padding="16dp"
+        android:layout_gravity="start"
+        android:id="@+id/back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/tab_all_back_b"
+        android:layout_centerVertical="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_d2c_logo" />
+
+        <TextView
+            android:id="@+id/tv_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_black4"
+            android:textSize="@dimen/medium_text_size1"
+            tools:text="@string/label_android_version" />
+
+        <LinearLayout
+            android:paddingLeft="68dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sp_line"
+                android:padding="1dp">
+
+                <ImageView
+                    android:id="@+id/img_scan"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_app"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/bg_white" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_scan_register"
+                    android:textColor="@color/color_black3"
+                    android:textSize="@dimen/medium_text_size2" android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="88dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/sp_round4_stroke_red"
+                    android:gravity="center"
+                    android:text="@string/label_share_friend"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/medium_text_size3" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_marginLeft="68dp"
+            android:id="@+id/tv_join_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_enter"
+            android:gravity="center_vertical"
+            android:text="@string/label_join_us"
+            android:textColor="@color/color_black2"
+            android:textSize="@dimen/medium_text_size1" />
+
+        <View
+            android:layout_marginLeft="68dp"
+            android:layout_width="25dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_black2" />
+
+        <LinearLayout
+            android:layout_marginLeft="68dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:text="@string/label_xuanhua_phone" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:text="@string/label_green_phone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/label_xuanhua_mail"
+                android:textColor="@color/color_black2"
+                android:textSize="@dimen/medium_text_size3" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/label_copyright"
+            android:textColor="@color/color_black4"
+            android:textSize="@dimen/small_text_size" />
+
+    </LinearLayout>
+</LinearLayout>

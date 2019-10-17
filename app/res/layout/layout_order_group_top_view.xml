@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="16dp"
+        android:id="@+id/iv_warehouse"
+        android:src="@mipmap/icon_cangku"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        />
+    <TextView
+        android:layout_toRightOf="@+id/iv_warehouse"
+        style="@style/boldTextStyle"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        android:id="@+id/tv_warehouse_name"
+        android:textColor="#262626"
+        tools:text="COOKIECO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/line_layout"
+        android:layout_below="@+id/iv_warehouse"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="208dp"
+    android:layout_height="120dp"
+    android:layout_marginLeft="16dp"
+    android:background="#FFF6F6F6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="80dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/iv_product"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:scaleType="centerInside" />
+
+        <View
+            android:id="@+id/view_no_store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FFFFFF"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_no_store"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="#66000000"
+            android:gravity="center"
+            android:text="已售罄"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_designer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/rl_image"
+        android:textColor="#DE000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_designer"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/rl_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#DE000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#DE000000"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

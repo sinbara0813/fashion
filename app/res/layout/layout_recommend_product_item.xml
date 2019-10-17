@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="0.5dp"
+    android:background="@drawable/border_product_item_bg"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/year_tag"
+        android:layout_width="68dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignTop="@id/image"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_global_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/back_global_tag"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        android:paddingTop="1dp"
+        android:text="全球购"
+        android:textColor="#FFFFFFFF"
+        android:textSize="10sp" />
+
+    <View
+        android:id="@+id/view_no_store"
+        android:layout_width="wrap_content"
+        android:layout_height="236dp"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignRight="@id/image"
+        android:background="#80FFFFFF"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_no_store"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignRight="@id/image"
+        android:background="#66000000"
+        android:gravity="center"
+        android:text="已售罄"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/design_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignRight="@id/image"
+        android:layout_below="@id/image"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/color_black60"
+        android:textSize="@dimen/medium_text_size3" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignRight="@id/image"
+        android:layout_below="@id/design_name"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/color_black87"
+        android:textSize="@dimen/medium_text_size3" />
+
+    <LinearLayout
+        android:id="@+id/ll_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/image"
+        android:layout_alignRight="@id/image"
+        android:layout_below="@id/product_name"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_black87"
+            android:textSize="@dimen/medium_text_size3" />
+
+        <TextView
+            android:id="@+id/product_drop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color_black60"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_below="@+id/ll_price"
+        android:id="@+id/ll_promotion_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_height="16dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:background="@color/color_red"
+            tools:text="限时购"
+            android:id="@+id/tv_good_promotion"
+            android:layout_width="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_white"
+            android:textSize="10sp" />
+        <TextView
+            tools:text="订单活动"
+            android:id="@+id/tv_order_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:background="@drawable/sp_red"
+            android:textSize="10dp"
+            android:textColor="#f23365"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/view_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_40_color_black"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:src="@mipmap/icon_button_home_zxs"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

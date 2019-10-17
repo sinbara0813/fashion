@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_invite"
+        android:gravity="center_horizontal"
+        android:background="@drawable/sp_round4_white"
+        android:orientation="vertical"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_invite_buyer"
+            android:padding="14dp"
+            android:gravity="center"
+            android:text="邀请好友成为买手"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black87"
+            android:textSize="16sp"
+            />
+        <include layout="@layout/line_layout"/>
+        <TextView
+            android:id="@+id/tv_invite_dm"
+            android:padding="14dp"
+            android:gravity="center"
+            android:text="邀请好友成为DM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black87"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/sp_round4_white"
+        android:gravity="center"
+        android:padding="14dp"
+        android:id="@+id/tv_cancle"
+        android:text="取消"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_red"
+        android:textSize="16sp"
+        />
+</LinearLayout>

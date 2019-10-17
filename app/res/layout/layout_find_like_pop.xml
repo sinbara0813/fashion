@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_root"
+    android:minHeight="400dp"
+    android:background="@drawable/sp_roundtop4_white"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/iv_colse"
+            android:src="@mipmap/ic_close"
+            android:paddingLeft="16dp"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="找到如下商品"
+            android:textColor="#D9000000"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/rl_title"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        />
+
+    <include layout="@layout/layout_progressbar"/>
+    <include layout="@layout/list_empty_view"/>
+
+</RelativeLayout>

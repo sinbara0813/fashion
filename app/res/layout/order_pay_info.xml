@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/color_white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_order_total"
+            android:textColor="@color/color_black87"
+            android:textSize="@dimen/medium_text_size3" />
+
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/color_black87"
+            android:textSize="@dimen/medium_text_size3" />
+
+        <TextView
+            android:id="@+id/order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black87"
+            android:textSize="@dimen/medium_text_size3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_order_charge"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/order_freight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black38" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_promotion_money_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_order_promotion"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size"/>
+
+        <TextView
+            android:id="@+id/order_promotion_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_coupon_money_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_coupon"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/order_coupon_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_red_money_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_order_red_packet"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size"/>
+
+        <TextView
+            android:id="@+id/order_red_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size"
+            android:text="-¥0"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/self_buy_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_self_buy"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@+id/order_self_buy_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black38"
+            android:textSize="@dimen/small_text_size"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/actual_mount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_actual_payment"
+            android:textColor="@color/color_black87"
+            android:textSize="@dimen/medium_text_size3"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/order_actual_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/large_text_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/main_text_size"
+            android:layout_toLeftOf="@id/order_actual_money"
+            android:layout_alignBottom="@id/order_actual_money"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/large_amount_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actual_mount_tv"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/small_text_size"
+            android:text="@string/label_amount_large_tip"
+            android:maxLines="2"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

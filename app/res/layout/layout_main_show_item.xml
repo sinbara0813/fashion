@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+    android:layout_width="208dp"
+    android:layout_height="224dp">
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#E6FFFFFF"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8A000000"
+            android:textSize="12sp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/tv_like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:textSize="12sp"
+            android:text="238"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            />
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="3dp"
+            android:src="@mipmap/icon_fashion_like_small"
+            android:layout_toLeftOf="@id/tv_like_num"/>
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#DE000000"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@id/tv_user_name"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+    <com.d2cmall.buyer.widget.RoundedImageView
+        android:id="@+id/iv_user_head_pic"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:round_width="1dp"
+        android:layout_marginTop="144dp"
+        app:is_oval="true"
+        android:layout_marginLeft="16dp"
+        app:round_color="#E6FFFFFF"/>
+
+
+</RelativeLayout>

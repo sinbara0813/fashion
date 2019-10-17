@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <uk.co.senab.photoview.PhotoView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/pv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/down_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_down"
+        android:visibility="gone" />
+
+    <com.d2cmall.buyer.widget.TagParentView
+        android:id="@+id/tag_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/add_tag_ll"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_gravity="bottom"
+        android:background="@color/trans_30_color_black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/tag_down_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/ic_tabel_download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_save"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/medium_text_size3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/ic_tabel_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加标签"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/medium_text_size3" />
+        </LinearLayout>
+    </LinearLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:text="发表"
+         android:layout_gravity="top|right"
+         android:textSize="@dimen/medium_text_size3"
+         android:background="@color/trans_30_color_black"
+         android:textColor="@color/color_white"
+         android:gravity="center_vertical|right"
+         android:paddingRight="10dp"
+         android:drawableLeft="@mipmap/ic_back_w"
+         android:visibility="gone"/>
+</FrameLayout>

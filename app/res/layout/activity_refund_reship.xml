@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    >
+
+    <include layout="@layout/layout_default_title" />
+
+    <ScrollView
+        android:layout_marginBottom="48dp"
+        android:id="@+id/scroll_view"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img_product"
+                    android:layout_width="48dp"
+                    android:layout_height="72dp"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        tools:text="这是商品名称"
+                        android:id="@+id/tv_product_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:layout_marginRight="8dp"
+                        android:lineSpacingExtra="2dp"
+                        android:maxLines="1"
+                        android:textColor="#DE000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/tv_product_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_product_title"
+                        android:layout_marginTop="14dp"
+                        android:lines="1"
+                        android:gravity="bottom"
+                        android:textColor="#8A000000"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tv_product_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_product_title"
+                        android:layout_marginTop="14dp"
+                        android:lines="1"
+                        android:layout_marginRight="2dp"
+                        android:textColor="#DE000000"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_product_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|bottom"
+                            android:textColor="#DE000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/line_margin_left"/>
+            <LinearLayout
+                android:background="@color/color_white"
+                android:id="@+id/ll_items_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_white"
+                android:padding="16dp"
+                android:gravity="center"
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:textSize="14sp"
+                    android:textColor="@color/color_red"
+                    android:background="@drawable/sp_round4_stroke_red"
+                    android:button="@null"
+                    android:id="@+id/rb_all"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="退全款" />
+
+                <RadioButton
+                    android:layout_marginLeft="14dp"
+                    android:textColor="@color/trans_50_color_black"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:background="@drawable/sp_round4_stroke_black3"
+                    android:button="@null"
+                    android:id="@+id/rb_freight"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="退运费" />
+                <RadioButton
+                    android:layout_marginLeft="14dp"
+                    android:textColor="@color/trans_50_color_black"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:background="@drawable/sp_round4_stroke_black3"
+                    android:button="@null"
+                    android:id="@+id/rb_gap_price"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:checked="false"
+                    android:text="退差价" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/label_reship_status"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+
+                <com.d2cmall.buyer.widget.CheckableLinearLayoutGroup
+                    android:id="@+id/status_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"
+                    android:gravity="right"
+                    android:paddingRight="16dp"
+                    android:orientation="horizontal">
+
+                    <com.d2cmall.buyer.widget.CheckableLinearLayoutButton
+                        android:id="@+id/received_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        app:isChecked="true">
+
+                        <ImageView
+                            android:id="@+id/iv_received"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:duplicateParentState="true"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/icon_shopcart_aselected" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="已收到"
+                            android:textColor="#DE000000"
+                            android:textSize="14sp" />
+                    </com.d2cmall.buyer.widget.CheckableLinearLayoutButton>
+
+                    <com.d2cmall.buyer.widget.CheckableLinearLayoutButton
+                        android:id="@+id/unreceived_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:clickable="true"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_unreceived"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/app_name"
+                            android:duplicateParentState="true"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/icon_shopcart_unaselected" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="未收到"
+                            android:textColor="#DE000000"
+                            android:textSize="14sp" />
+                    </com.d2cmall.buyer.widget.CheckableLinearLayoutButton>
+                </com.d2cmall.buyer.widget.CheckableLinearLayoutGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/status_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:id="@+id/reason_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_reason_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="16dp"
+                    android:text="选择您的退货原因"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_white"
+                    android:gravity="center_vertical|right"
+                    android:hint="请选择"
+                    android:maxLines="1"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/color_black2"
+                    android:textColorHint="@color/color_black4"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_arrow_right_g"/>
+            </LinearLayout>
+
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/alipay_account_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/color_white">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_alipay_account"-->
+                    <!--android:layout_width="105dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingLeft="15dp"-->
+                    <!--android:text="@string/label_alipay_account"-->
+                    <!--android:textColor="@color/color_black2"-->
+                    <!--android:textSize="@dimen/medium_text_size3" />-->
+
+                <!--<com.d2cmall.buyer.widget.ClearEditText-->
+                    <!--android:id="@+id/et_alipay_account"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_toRightOf="@+id/tv_alipay_account"-->
+                    <!--android:background="@color/color_white"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:hint="@string/hint_alipay_account"-->
+                    <!--android:paddingRight="15dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/color_black2"-->
+                    <!--android:textColorHint="@color/color_black4"-->
+                    <!--android:textSize="@dimen/medium_text_size3" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="@color/line" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/alipay_name_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/color_white">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_alipay_name"-->
+                    <!--android:layout_width="105dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingLeft="15dp"-->
+                    <!--android:text="@string/label_alipay_name"-->
+                    <!--android:textColor="@color/color_black2"-->
+                    <!--android:textSize="@dimen/medium_text_size3" />-->
+
+                <!--<com.d2cmall.buyer.widget.ClearEditText-->
+                    <!--android:id="@+id/et_alipay_name"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_toRightOf="@+id/tv_alipay_name"-->
+                    <!--android:background="@color/color_white"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:hint="@string/hint_alipay_name"-->
+                    <!--android:inputType="text"-->
+                    <!--android:paddingRight="15dp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/color_black2"-->
+                    <!--android:textColorHint="@color/color_black4"-->
+                    <!--android:textSize="@dimen/medium_text_size3" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="@color/line" />-->
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/rl_num_product"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_white">
+
+                <TextView
+                    android:id="@+id/tv_num_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退货件数"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"/>
+
+
+                <com.d2cmall.buyer.widget.ClearEditText
+                    android:id="@+id/et_count"
+                    android:layout_toRightOf="@+id/tv_num_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black2"
+                    android:textColorHint="@color/color_black4"
+                    android:textSize="@dimen/medium_text_size3"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_white">
+
+                <TextView
+                    android:id="@+id/tv_money_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退货金额"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"/>
+                <com.d2cmall.buyer.widget.ClearEditText
+                    android:id="@+id/et_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/tv_money_product"
+                    android:background="@color/color_white"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black2"
+                    android:textColorHint="@color/color_black4"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="该笔交易退款将原路返回"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:id="@+id/tv_back_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="16dp"
+                    android:text="退款说明?"
+                    android:textColor="@color/color_red" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white">
+
+                <TextView
+                    android:paddingTop="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/tv_back_reason"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_black87"
+                    android:text="问题描述"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+                <com.d2cmall.buyer.widget.ClearEditText
+                    android:gravity="top"
+                    android:paddingTop="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_back_reason"
+                    android:id="@+id/et_remark"
+                    android:layout_width="328dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/sp_line"
+                    android:hint="请在此描述详情,以便快速通过审核"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/color_black2"
+                    android:textColorHint="@color/color_black4"
+                    android:textSize="@dimen/medium_text_size3" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/label_upload_licence"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <LinearLayout
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <GridView
+                        android:id="@+id/gridView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="3"
+                        android:verticalSpacing="10dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/label_upload_tip"
+                        android:textColor="@color/color_black4"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/color_white"
+        >
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="#ff232427"
+            android:gravity="center"
+            android:text="@string/action_submit"
+            android:textColor="@color/text_white_white"
+            android:textSize="@dimen/medium_text_size1" />
+
+    </RelativeLayout>
+    <include layout="@layout/layout_progressbar"/>
+</RelativeLayout>

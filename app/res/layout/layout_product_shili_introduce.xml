@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_info_tv_Ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    android:background="@color/color_white">
+
+    <TextView
+        android:id="@+id/product_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/color_black85"/>
+
+    <TextView
+        android:id="@+id/product_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/color_blue"
+        android:visibility="gone"
+        android:layout_marginLeft="4dp"/>
+</RelativeLayout>

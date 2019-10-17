@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="40dp"
+    android:layout_marginBottom="60dp"
+    android:layout_marginLeft="16dp"
+    android:background="@mipmap/pic_pintuanbg"
+    android:id="@+id/collage_ll"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/collage_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/color_white"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去拼团"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24dp"
+        android:textColor="@color/color_white"
+        android:textSize="10dp"/>
+
+</RelativeLayout>

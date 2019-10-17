@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_default_title" />
+
+        <include layout="@layout/layout_after_sale_list_item" />
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white"
+            android:id="@+id/ll_items_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_after_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/tv_product_title"
+                android:gravity="bottom"
+                android:lines="1"
+                android:paddingTop="16dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:text="以下同仓库商品将同时退款"
+                android:textColor="#F21A1A"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:id="@+id/apply_exchange_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/sl_white_2_line"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/label_exchange_info"
+                    android:textColor="#DE000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_arrow_right_g" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apply_reship_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/apply_exchange_layout"
+                android:background="@drawable/sl_white_2_line"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/label_reship_info"
+                    android:textColor="#DE000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_arrow_right_g" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apply_refund_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/apply_reship_layout"
+                android:background="@drawable/sl_white_2_line"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/label_refund_info"
+                    android:textColor="#DE000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_arrow_right_g" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

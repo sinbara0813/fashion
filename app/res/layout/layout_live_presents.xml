@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/presents_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="gone">
+
+    <View
+        android:id="@+id/presents_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans_70_color_black"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.d2cmall.buyer.widget.WrapViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rowCount="2" />
+
+
+        <LinearLayout
+            android:id="@+id/account_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/dot_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_accout_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:visibility="gone"
+                    tools:text="@string/label_account_money" />
+
+                <TextView
+                    android:id="@+id/tv_status_bind_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/label_open_label"
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:visibility="gone"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_status_despoit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/label_despoit_label"
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_status_despoit_nopwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/label_despoit_label"
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/medium_text_size3"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/tv_free_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_zhibo_fasong"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_present_send"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/sp_round4_bg_black"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/action_give"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/medium_text_size3"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_present_send_unenable"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/sp_round4_black5"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/action_give"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/medium_text_size3"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_setting_pay_pwd"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/sp_round4_bg_black"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="@string/action_give"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/medium_text_size3"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tb_video_pick"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/BgRv"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:minHeight="45dp"
+            android:src="@mipmap/ic_back_w" />
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/title_sure"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textColor="@color/trans_50_color_white"
+            android:gravity="center|right"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/rv_top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tb_video_pick"
+        android:background="@color/BgRv" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rv_top_divider" />
+
+    <ViewStub
+        android:id="@+id/stub_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rv_top_divider"
+        android:layout="@layout/empty_media" />
+</RelativeLayout>

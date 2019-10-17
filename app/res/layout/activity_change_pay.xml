@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:onClick="hideKeyboard"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:gravity="left"
+        android:textColor="#61000000"
+        android:textSize="12sp"
+        tools:text="@string/label_send_code_phone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textColorHint="#8A000000"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <com.d2cmall.buyer.widget.ClearEditText
+                android:id="@+id/edit_man_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="验证码"
+                android:textColor="#DE000000"
+                android:background="@null"
+                android:textColorHint="#8A000000"
+                android:textSize="14sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn_code"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:background="@drawable/border_black"
+                android:gravity="center"
+                android:text="@string/label_get_code"
+                android:textColor="#FF000000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#8A000000"
+            android:text="@string/label_cant_code"/>
+        <TextView
+            android:id="@+id/tv_get_voice"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_try_code"
+            android:textSize="12sp"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@mipmap/icon_login_voice"
+            android:textColor="#FFFDC33E"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:text="下一步"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp"
+        android:enabled="false"
+        android:background="#FFDDDDDD"
+        android:layout_marginTop="48dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/color_white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:elevation="@dimen/dp_4"
+    android:gravity="center_vertical"
+    android:layout_height="49dp">
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:text="D币"
+        android:id="@+id/tv_dcoin_amount"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_black85"
+        android:textSize="16sp"
+        />
+    <View
+        android:background="#EEEEEE"
+        android:layout_width="1dp"
+        android:layout_height="21dp"
+        />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:text="兑换记录"
+        android:id="@+id/tv_record_conversion"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_black85"
+        android:textSize="16sp"
+        />
+</LinearLayout>

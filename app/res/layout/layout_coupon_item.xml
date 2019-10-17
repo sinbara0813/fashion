@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_coupon_newtop">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="#DE000000"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/tv_discount"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="#DE000000"
+            android:textSize="35sp"
+            android:typeface="sans"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_limit"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price"
+            android:gravity="center"
+            android:textColor="#DE000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="22dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#DE000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/buy_price_tv"
+            android:layout_width="58dp"
+            android:layout_height="16dp"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/sp_round2_stroke_red"
+            android:gravity="center"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/tiny_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="66dp"
+            android:textColor="@color/trans_87_color_black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_get_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="60dp"
+            android:background="#DE232427"
+            android:padding="5dp"
+            android:text="点击领取"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_sign_can_give"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="96dp"
+            android:drawableLeft="@mipmap/icon_share_coupon"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="可转赠"
+            android:textColor="@color/trans_87_color_black"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:padding="8dp"
+            android:id="@+id/img_arrow"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="96dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_coupon_down" />
+
+        <TextView
+            android:id="@+id/tv_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="96dp"
+            android:gravity="center"
+            android:text="点击领取"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/icon_coupon_used"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_give_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_share_pink"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="赠送朋友"
+            android:textColor="@color/trans_87_color_black"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="14dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="16dp"
+            android:textColor="@color/trans_87_color_black"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@mipmap/bg_coupon_newbottom" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/transparent" />
+
+</LinearLayout>

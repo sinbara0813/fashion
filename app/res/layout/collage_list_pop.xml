@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="380dp"
+    android:background="@color/color_white">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:scrollbars="none"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#111111"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/medium_text_size3"
+        android:text="@string/action_ok"/>
+
+    <include layout="@layout/layout_progressbar"/>
+</LinearLayout>

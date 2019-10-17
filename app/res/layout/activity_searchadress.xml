@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_white">
+
+        <com.d2cmall.buyer.widget.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/btn_cancel"
+            android:background="@drawable/sp_round4_bg_white"
+            android:drawableLeft="@mipmap/ic_nav_search"
+            android:drawablePadding="5dp"
+            android:hint="隐藏地址"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_black2"
+            android:textColorHint="@color/color_black4"
+            android:textSize="@dimen/medium_text_size3" />
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="@string/action_cancel"
+            android:textColor="@color/color_black3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+
+    </RelativeLayout>
+
+    <com.d2cmall.buyer.widget.MyRecyclerView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    </com.d2cmall.buyer.widget.MyRecyclerView>
+</LinearLayout>

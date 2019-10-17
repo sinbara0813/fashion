@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    <TextView
+        android:lines="1"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/trans_87_color_black"
+        android:textStyle="bold"
+        tools:text="热血音乐节"/>
+
+        <ImageView
+            android:layout_marginBottom="12dp"
+            android:id="@+id/image_view"
+            android:layout_width="296dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/text_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/detailtext_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            tools:text="这是音乐节的活动专题，你想要来参加吗？这是音乐节的活动专题，你想要来参加吗？这是音乐节的活动专题，你想要来参加吗？这是音乐节的活动专题，你想要来参加吗？"
+            android:textColor="@color/trans_50_color_black"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

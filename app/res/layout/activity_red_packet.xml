@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@mipmap/bg_myredp_redp">
+
+                <TextView
+                    android:id="@+id/tv_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="32dp"
+                    android:text="红包总金额"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_explain"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="16dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="￥0.00"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/tv_red_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text_size"
+                    android:layout_below="@id/tv_total"
+                    android:layout_marginLeft="32dp"
+                    android:textColor="@color/color_white"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/income_detail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/sl_white_2_line">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="收支明细"
+                    android:textColor="#DE000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@mipmap/ic_arrow_right_g"
+                    android:gravity="center"
+                    android:text="更多"
+                    android:textColor="#61000000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_progressbar" />
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black">
+
+    <ImageView
+        android:id="@+id/content_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+    <com.d2cmall.buyer.widget.nicevideo.NiceVideoPlayer
+        android:visibility="gone"
+        android:id="@id/nice_video_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:src="@mipmap/icon_back_white1"/>
+
+    <ImageView
+        android:id="@+id/more_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/icon_operation_white"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:background="@mipmap/pic_new_bannercover"/>
+
+    <TextView
+        android:id="@+id/introduce_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/medium_text_size3"
+        android:textColor="@color/color_white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:visibility="visible"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/date_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/medium_text_size3"
+        android:textColor="#B2B2B2"
+        android:visibility="visible"
+        android:layout_marginLeft="16dp"
+        android:layout_above="@id/introduce_tv"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/city_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textColor="@color/color_white"
+        android:layout_above="@id/date_iv"
+        android:layout_marginLeft="16dp"
+        android:visibility="visible"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/page_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/city_tv"
+        android:layout_alignBottom="@id/city_tv"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:textSize="@dimen/medium_text_size3"
+        android:visibility="visible"
+        android:textColor="@color/color_white"/>
+
+</RelativeLayout>

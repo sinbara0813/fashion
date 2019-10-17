@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/bind_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFFFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="@string/label_bind_phone"
+                android:textColor="#DE000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bind_phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="#8A000000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_arrow_right_g" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/login_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFFFFFFF">
+
+            <TextView
+                android:id="@+id/change_login_pw"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:text="@string/label_change_login_password"
+                android:textColor="#DE000000"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/red_point_1"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_toRightOf="@id/change_login_pw"
+                android:background="@drawable/sp_round7_red"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_right_g" />
+        </RelativeLayout>
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/line_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line" />
+
+
+        <RelativeLayout
+            android:id="@+id/pay_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/login_password_layout"
+            android:background="#FFFFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/change_pay_pw"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:text="@string/label_change_pay_password"
+                android:textColor="#DE000000"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/red_point_2"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_toRightOf="@id/change_pay_pw"
+                android:background="@drawable/sp_round7_red"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_right_g" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/relevance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFFFFFFF"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:text="@string/label_relevance_account"
+                android:textColor="#DE000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_arrow_right_g" />
+        </LinearLayout>
+
+        <include layout="@layout/line_layout" />
+
+
+    </LinearLayout>
+
+    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@null"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/sp_rotate_progressbar_style"
+        android:indeterminateDuration="600"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:visibility="gone"
+        tools:visibility="gone" />
+</RelativeLayout>

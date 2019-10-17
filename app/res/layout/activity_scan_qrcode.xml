@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent" />
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/preview_view"
+        android:layout_alignTop="@+id/preview_view">
+
+        <google.zxing.client.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/label_capture_hint"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/medium_text_size3" />
+
+            <Button
+                android:id="@+id/btn_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/ic_light"
+                android:gravity="center"
+                android:onClick="onLight"
+                android:text="@string/label_open_light"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/medium_text_size3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="onBackPressed"
+        android:src="@mipmap/icon_back_white" />
+
+    <ImageView
+        android:id="@+id/tv_right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:gravity="center"
+        android:src="@mipmap/icon_turncamera_white"
+        android:textColor="@color/color_white"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_go_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/tv_right"
+        android:src="@mipmap/icon_photo_white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_animation"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pic_scanphoto" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_80_color_black"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_scan_sel" />
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_camera_unsel" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:src="@mipmap/button_takephoto_pre"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="正在识别"
+            android:textColor="@color/trans_87_color_white"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_cancle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv_notice"
+            android:src="@mipmap/icon_quit" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_progressbar" />
+
+
+</RelativeLayout>

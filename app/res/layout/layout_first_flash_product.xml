@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/icon_biqiang"
+        android:drawablePadding="6dp"
+        android:text="必抢尖货"
+        android:textColor="@color/trans_87_color_black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@mipmap/bg_shadow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_product"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:textColor="@color/trans_87_color_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:drawablePadding="4dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="#f23365"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tv_order_promotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/back_order_promotion"
+                    android:gravity="center"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="1dp"
+                    android:text="满减"
+                    android:textColor="#FFF23365"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="-12dp"
+                android:layout_toRightOf="@id/iv_product"
+                android:src="@mipmap/xianshigou_btn_mashangqiang" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/iv_button"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/iv_product"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_min_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:textColor="#f23365"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_high_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/trans_30_color_black"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    >
+    <TextView
+        android:layout_marginRight="16dp"
+        android:lines="1"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/trans_87_color_black"
+        android:gravity="center"
+        android:textStyle="bold"
+        tools:text="优惠券过期提醒"/>
+    <ImageView
+        android:layout_below="@+id/text_view"
+        android:padding="16dp"
+        android:src="@mipmap/icon_message_wallet"
+        android:gravity="center"
+        android:id="@+id/tv_money_num"
+        android:layout_width="108dp"
+        android:layout_height="72dp"
+        />
+
+    <TextView
+        android:layout_below="@+id/text_view"
+        android:id="@+id/detailtext_view"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_view"
+        android:layout_marginLeft="106dp"
+        tools:text="您购买的东西已经没货了，你快点加钱吧！真是不省心！您购买的东西已经没货了是不省心！"
+        android:lines="3"
+        android:ellipsize="end"
+        android:textColor="@color/trans_50_color_black"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        applicationId "com.d2cmall.buyer"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 123043
+        versionName "3.4.3"
+        multiDexEnabled true
+        ndk {
+
+            //APP的build.gradle设置支持的SO库架构
+
+            abiFilters  'armeabi-v7a'
+        }
+        flavorDimensions "123027"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('d2c.keystore')
+            keyAlias 'd2c'
+            keyPassword '123456'
+            storePassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            shrinkResources false
+            zipAlignEnabled true
+            debuggable false
+            manifestPlaceholders = [
+                    GETUI_APP_ID       : "7hMGYcZXnP8mtDL8HHLZU6",
+                    GETUI_APP_KEY      : "ruoORCobkiAHtvizaAWHe7",
+                    GETUI_APP_SECRET   : "ym9hhheylW75mBeF4iWrO2",
+                    MMD_WALLET_APP_CODE: "2ZLXzwS5e1PGV_dmdXcH9CWVZSoVKd"
+            ]
+        }
+        debug {
+            signingConfig signingConfigs.release
+            shrinkResources false
+            zipAlignEnabled false
+            debuggable true
+            manifestPlaceholders = [
+                    GETUI_APP_ID       : "Z8ya4R7QPOABui0v9iS0s8",
+                    GETUI_APP_KEY      : "QxeyhFMop46qPT6nGZknW5",
+                    GETUI_APP_SECRET   : "mU3H0DRKPuAYDfFmXW63b5",
+                    MMD_WALLET_APP_CODE: "hpMBabYjH20M0rnVn3c1VR5sVntEXi"
+            ]
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        checkAllWarnings false
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['jniLibs']
+        }
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    dexOptions {
+        preDexLibraries = false
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            if (variant.buildType.name == "release"){
+                outputFileName = "d2c-${variant.versionName}.apk"
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+
+
+
+
+dependencies {
+    api fileTree(include: '*.jar', dir: 'libs')
+    api 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
+    // If you want to use the GPU Filters
+    api(name: 'ZMCert_SDK', ext: 'aar')
+    api('com.alibaba.android:vlayout:1.2.12@aar') {
+        transitive = true
+    }
+    api('com.zhihu.android:matisse:0.5.1') {
+        exclude group: 'com.android.support'
+    }
+    api 'com.isseiaoki:simplecropview:1.1.4'
+    api 'com.android.support:appcompat-v7:26.+'
+    api 'com.android.support:recyclerview-v7:26.+'
+    api 'com.android.support:design:26.+'
+    api 'com.android.support:cardview-v7:26.+'
+    api 'com.mcxiaoke.volley:library:1.0.18'
+    api 'com.google.code.gson:gson:2.4'
+    api 'com.jakewharton:butterknife:7.0.1'
+    api 'com.nineoldandroids:library:2.4.0'
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
+    api 'com.github.cpoopc:scrollablelayoutlib:1.0.0'
+    api 'in.srain.cube:ultra-ptr:1.0.11'
+    api 'de.greenrobot:eventbus:3.0.0-beta1'
+    api 'com.android.support:multidex:1.0.1'
+    api 'com.github.chrisbanes.photoview:library:1.2.4'
+    api 'cn.dreamtobe.kpswitch:library:1.5.0'
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'
+    api 'com.facebook.rebound:rebound:0.3.8'
+    api 'com.github.Commit451:NativeStackBlur:1.0.5'
+    api 'com.github.lzyzsd:jsbridge:1.0.4'
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.1.6'
+    api 'com.github.QuadFlask:colorpicker:0.0.13'
+    api 'com.qiyukf.unicorn:unicorn:+'
+    api 'com.upyun:upyun-android-sdk:2.0.1'
+    api 'pub.devrel:easypermissions:0.3.0'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'jp.wasabeef:glide-transformations:2.0.2'
+    api 'q.rorbin:badgeview:1.1.3'
+    api 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    api 'com.googlecode.mp4parser:isoparser:1.1.20'
+    api 'com.github.xiaoyanger0825:NiceVieoPlayer:v1.6'
+    api 'com.amap.api:search:5.0.0'
+    api 'com.amap.api:location:latest.integration'
+    api 'com.amap.api:map2d:latest.integration'
+    api 'com.flyco.banner:FlycoBanner_Lib:2.0.2@aar'
+    api 'com.android.support.constraint:constraint-layout:1.0.2'
+    api 'com.qiniu:happy-dns:0.2.7'
+    api 'com.getui:sdk:2.12.4.0'
+    testImplementation 'junit:junit:4.12'
+}

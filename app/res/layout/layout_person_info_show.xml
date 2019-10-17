@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxWidth="250dp"
+            android:layout_centerVertical="true"
+            android:textColor="#DE000000"/>
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#61000000"
+            android:textSize="12sp"
+            android:text="刚刚"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:maxLines="2"
+        android:ellipsize="end"
+        style="@style/normalSize3TextStyle"
+        android:textColor="@color/color_black2"
+        android:textSize="@dimen/medium_text_size3" />
+
+    <com.d2cmall.buyer.widget.ninegrid.NineGridView
+        android:id="@+id/nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:ngv_gridSpacing="8dp"
+        app:ngv_maxSize="9"
+        app:ngv_mode="grid"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        app:ngv_singleImageRatio="1"/>
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <com.d2cmall.buyer.widget.nicevideo.NiceVideoPlayer
+            android:id="@+id/nice_video_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="238"
+            android:drawablePadding="4dp"
+            android:layout_marginRight="28dp"
+            android:drawableLeft="@mipmap/icon_fashion_liked"
+            android:gravity="center_vertical"
+            android:padding="0dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="240"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_fashion_comment_small"
+            android:layout_toRightOf="@id/like_num"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="238"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@mipmap/icon_fashion_seen_s"
+            android:gravity="center_vertical"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

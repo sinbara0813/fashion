@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp">
+
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@mipmap/icon_dapai"
+        android:drawablePadding="6dp"
+        android:text="必抢大牌"
+        android:textColor="@color/trans_87_color_black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_below="@id/tv_top">
+
+        <ImageView
+            android:id="@+id/iv_brand_bg"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_purple" />
+
+        <com.d2cmall.buyer.widget.RoundLayout
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/iv_brand_img"
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:scaleType="fitCenter" />
+        </com.d2cmall.buyer.widget.RoundLayout>
+
+        <ImageView
+            android:id="@+id/iv_bottom_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="130dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_white" />
+
+        <ImageView
+            android:id="@+id/iv_rob_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="28dp"
+            android:src="@mipmap/icon_qiang" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/rl_top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:scrollbars="none" />
+
+
+</RelativeLayout>

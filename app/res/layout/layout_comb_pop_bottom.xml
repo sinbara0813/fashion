@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/line_layout"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:paddingLeft="16dp"
+            android:id="@+id/num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:textColor="@color/color_black87"
+            android:textSize="@dimen/medium_text_size3"
+            android:layout_below="@+id/size_layout"
+            android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:id="@+id/num_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/num_tv"
+        android:layout_marginBottom="16dp"
+    >
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_shopcart_minus"/>
+        <TextView
+            android:id="@+id/cart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_shopcart_boader"
+            android:gravity="center"
+            android:text="1"
+        />
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_shopcart_add"/>
+    </LinearLayout>
+</LinearLayout>

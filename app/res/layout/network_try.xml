@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/not_network_layout1"
+    android:visibility="gone">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_review_logo"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/net_disconnect"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/medium_text_size3"/>
+
+    <TextView
+        android:id="@+id/tv_reload"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/sp_round4_stroke_black3"
+        android:gravity="center"
+        android:text="@string/label_reload"
+        android:textColor="@color/color_black2"
+        android:enabled="true"
+        android:textSize="@dimen/medium_text_size3"/>
+</LinearLayout>

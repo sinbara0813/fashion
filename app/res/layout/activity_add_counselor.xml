@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:mContext="com.d2cmall.buyer.activity.AddCounselorActivity">
+    <include layout="@layout/layout_default_title"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_root"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/sp_round4_white"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:id="@+id/iv_headpic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:src="@mipmap/ic_default_avatar"
+            />
+        <TextView
+            android:id="@+id/tv_wx_nickname"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:text="运营顾问001"
+            android:textColor="@color/color_black60"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_wx_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:text="微信号D2CISSOFASHION"
+            android:textColor="@color/color_black"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_sv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            tools:text="微信号D2CISSOFASHION"
+            android:textColor="@color/trans_50_color_black"
+            android:textSize="12sp" />
+        <ImageView
+            android:clickable="false"
+            android:layout_marginTop="32dp"
+            android:id="@+id/btn_add_adviser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_adviser"
+            />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="添加运营顾问微信号,为您解决所有的运营问题!"
+            android:textColor="#ED7A21"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <include layout="@layout/layout_progressbar" />
+    <include layout="@layout/list_empty_view" />
+</RelativeLayout>

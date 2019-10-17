@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <TextView
+        android:id="@+id/tv_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/label_bind_phone_remind"
+        android:textColor="#DE000000"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DE232427" />
+
+        <TextView
+            android:id="@+id/tv_nation_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:drawableEnd="@mipmap/icon_login_down_b"
+            android:gravity="center"
+            android:text="+86"
+            android:textColor="#FF000000"
+            android:textSize="16dp" />
+
+        <com.d2cmall.buyer.widget.ClearEditText
+            android:id="@+id/et_bind_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/tv_nation_code"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="手机号"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#DE232427"
+            android:textColorHint="#61000000"
+            android:textSize="14sp"
+            app:del="@mipmap/icon_login_delete_w" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_security_rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DE232427" />
+
+        <com.d2cmall.buyer.widget.ClearEditText
+            android:id="@+id/et_bind_security_code"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/label_code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#DE232427"
+            android:textColorHint="#61000000"
+            android:textSize="14sp"
+            app:del="@mipmap/icon_login_delete_w" />
+
+        <TextView
+            android:id="@+id/register_security_tv"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/border_black"
+            android:gravity="center"
+            android:text="@string/label_msg_code"
+            android:textColor="@color/color_black87"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_cant_code"
+            android:textColor="#8A000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_get_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@mipmap/icon_login_voice"
+            android:drawablePadding="4dp"
+            android:text="@string/label_try_code"
+            android:textColor="#FFFDC33E"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DE232427" />
+
+            <com.d2cmall.buyer.widget.ClearEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#DE232427"
+                android:textColorHint="#61000000"
+                android:textSize="14sp"
+                app:del="@mipmap/icon_login_delete_b" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DE232427" />
+
+            <com.d2cmall.buyer.widget.ClearEditText
+                android:id="@+id/et_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#DE232427"
+                android:textColorHint="#61000000"
+                android:textSize="14sp"
+                app:del="@mipmap/icon_login_delete_b" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/tv_bind_button"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="#DE232427"
+        android:gravity="center"
+        android:text="绑定"
+        android:textColor="#ffffffff"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

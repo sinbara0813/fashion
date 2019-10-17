@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:minHeight="72dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/item_iv"
+                    android:layout_width="48dp"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_logo" />
+
+                <TextView
+                    android:id="@+id/text_faction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/item_iv"
+                    android:text="@string/label_product_faction"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp" />
+
+                <com.d2cmall.buyer.widget.RatingBar
+                    android:id="@+id/product_satisfaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_faction"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@id/item_iv"
+                    hedgehog:clickable="true"
+                    hedgehog:starCount="5"
+                    hedgehog:starEmpty="@mipmap/icon_orderrecommend_unstar"
+                    hedgehog:starFill="@mipmap/icon_orderrecommend_star"
+                    hedgehog:starImageSize="30dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#FFE8E8E8" />
+
+            <LinearLayout
+                android:id="@+id/ll_choice_appraise"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_good"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_good"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_haoping_pre" />
+
+                    <TextView
+                        android:id="@+id/tv_good"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="好评"
+                        android:textColor="#FFFDC33E"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="40dp"
+                    android:background="#FFE8E8E8" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bad"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_bad"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_chaping_nor" />
+
+                    <TextView
+                        android:id="@+id/tv_bad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="差评"
+                        android:textColor="@color/trans_50_color_black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#FFE8E8E8" />
+
+            <EditText
+                android:id="@+id/commend_content"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/color_white"
+                android:gravity="left"
+                android:hint="@string/hint_explore_publish"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:textColorHint="@color/color_black4"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/pic_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.d2cmall.buyer.widget.MyCheckBox
+                    android:id="@+id/my_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="同时发布到我的个人主页"
+                    android:textColor="@color/color_black3"
+                    android:textSize="@dimen/ex_small_text_size" />
+            </LinearLayout>
+
+            <include layout="@layout/line_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:text="@string/label_pack_faction"
+                        android:textColor="#8A000000"
+                        android:textSize="14sp" />
+
+                    <com.d2cmall.buyer.widget.RatingBar
+                        android:id="@+id/pack_satisfaction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        hedgehog:clickable="true"
+                        hedgehog:starCount="5"
+                        hedgehog:starEmpty="@mipmap/icon_orderrecommend_unstar"
+                        hedgehog:starFill="@mipmap/icon_orderrecommend_star"
+                        hedgehog:starImageSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:text="@string/label_ship_faction"
+                        android:textColor="#8A000000"
+                        android:textSize="14sp" />
+
+                    <com.d2cmall.buyer.widget.RatingBar
+                        android:id="@+id/ship_satisfaction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        hedgehog:clickable="true"
+                        hedgehog:starCount="5"
+                        hedgehog:starEmpty="@mipmap/icon_orderrecommend_unstar"
+                        hedgehog:starFill="@mipmap/icon_orderrecommend_star"
+                        hedgehog:starImageSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="35dp"
+                        android:text="@string/label_delivery_faction"
+                        android:textColor="#8A000000"
+                        android:textSize="14sp" />
+
+                    <com.d2cmall.buyer.widget.RatingBar
+                        android:id="@+id/delivery_satisfaction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        hedgehog:clickable="true"
+                        hedgehog:starCount="5"
+                        hedgehog:starEmpty="@mipmap/icon_orderrecommend_unstar"
+                        hedgehog:starFill="@mipmap/icon_orderrecommend_star"
+                        hedgehog:starImageSize="30dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/rl_adviser"
+        android:layout_below="@+id/top_rl"
+        android:layout_height="40dp"
+        android:background="#FFF4ED"
+        >
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#ED7A21"
+            android:text="添加您的专属运营顾问"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_tianjia"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            />
+
+</RelativeLayout>

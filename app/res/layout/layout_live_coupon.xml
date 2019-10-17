@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coupon_container_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/recommend_good_layout"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="15dp"
+    android:visibility="gone"
+    tools:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/coupone_normal_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_zhibo_youhuiquan"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="4dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_coupon_label"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/label_coupon"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/medium_text_size2"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/coupon_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_coupon_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_rmb"
+                    android:visibility="gone"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    android:lines="1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_coupon_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/tiny_text_size"
+                android:visibility="gone"
+                tools:text="满500元可使用" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/coupon_line_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:background="@color/color_white" />
+
+        <TextView
+            android:id="@+id/btn_get_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_get_now"
+            android:textColor="@color/color_white"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/coupon_timeout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_live_card_g"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/btn_timeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_clock_w"
+            android:drawablePadding="5dp"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/small_text_size"
+            tools:text="9分25秒" />
+    </LinearLayout>
+
+</RelativeLayout>

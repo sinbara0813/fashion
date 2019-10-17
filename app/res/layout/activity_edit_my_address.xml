@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:onClick="hideKeyboard"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_white">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="#8A000000">
+
+            <com.d2cmall.buyer.widget.ClearEditText
+                android:id="@+id/edit_man_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="收货人"
+                android:textColor="#DE000000"
+                android:textColorHint="#8A000000"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_white">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="#8A000000">
+
+            <com.d2cmall.buyer.widget.ClearEditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="手机号"
+                android:inputType="number"
+                android:textColor="#DE000000"
+                android:textColorHint="#8A000000"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_margin" />
+
+    <LinearLayout
+        android:id="@+id/ll_province"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.d2cmall.buyer.widget.ClearEditText
+            android:id="@+id/edit_province"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:hint="省市区"
+            android:textColor="#DE000000"
+            android:textColorHint="#8A000000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_setting_arrow" />
+    </LinearLayout>
+
+    <include layout="@layout/line_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_white">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="#8A000000">
+
+            <com.d2cmall.buyer.widget.ClearEditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="详细地址"
+                android:textColor="#DE000000"
+                android:textColorHint="#8A000000"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_oversea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/line_layout" />
+
+        <TextView
+            android:id="@+id/tv_oversea_notice"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFF9F2F2"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/hint_over_sea_notice"
+            android:textColor="#FFF23365"
+            android:textSize="11sp" />
+
+        <include layout="@layout/line_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/color_white">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColorHint="#8A000000">
+
+                <com.d2cmall.buyer.widget.ClearEditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="常用邮箱"
+                    android:textColor="#DE000000"
+                    android:textColorHint="#8A000000"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/color_white">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColorHint="#8A000000">
+
+                <com.d2cmall.buyer.widget.ClearEditText
+                    android:id="@+id/edit_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="微信号"
+                    android:textColor="#DE000000"
+                    android:textColorHint="#8A000000"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="设为默认地址"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.5"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp">
+
+            <Switch
+                android:id="@+id/switch_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="16dp"
+                android:theme="@style/MySwitch" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/color_red"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/label_address_identity_tag"/>
+
+</LinearLayout>

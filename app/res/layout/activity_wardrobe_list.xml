@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_white"
+    tools:mContext="com.d2cmall.buyer.activity.StarStyleActivity"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:paddingLeft="16dp"
+            android:id="@+id/iv_back"
+            android:layout_width="46dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_nav_back_black"
+            />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sliding_tab_title"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/color_white"
+            app:tabIndicatorColor="#111111"
+            app:tabIndicatorHeight ="2dp"
+            app:tabSelectedTextColor ="#111111"
+            app:tabMode="scrollable"
+            android:layout_toLeftOf="@id/image_open"
+            />
+    </LinearLayout>
+    <include layout="@layout/line_layout"/>
+    <RelativeLayout
+        android:id="@+id/top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/color_white">
+
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/sliding_tab"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/color_white"
+            app:tl_indicator_width="0dp"
+            app:tl_tab_padding="20dp"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tl_textSelectColor="#111111"
+            app:tl_textUnselectColor="#7F7F7F"
+            app:tl_textsize="14dp"
+            android:layout_toLeftOf="@id/image_open"
+            />
+
+        <TextView
+            android:id="@+id/tv_make_choice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="选择分类"
+            android:textColor="@color/trans_50_color_black"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/image_open"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:background="@color/bg_color"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

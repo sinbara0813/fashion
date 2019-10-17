@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/tv_rank_name"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_height="36dp" />
+
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/iv_top_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_top3"
+        android:layout_alignLeft="@id/iv_3"
+        android:layout_alignTop="@id/iv_3"/>
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/iv_3"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/iv_top_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_top2"
+        android:layout_alignLeft="@id/iv_2"
+        android:layout_alignTop="@id/iv_2"/>
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/iv_2"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/iv_top_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_top1"
+        android:layout_alignLeft="@id/iv_1"
+        android:layout_alignTop="@id/iv_1"/>
+
+</RelativeLayout>

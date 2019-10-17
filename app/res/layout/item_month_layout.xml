@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:background="@mipmap/pic_datebg"
+        android:textSize="16sp"
+        android:textColor="@color/color_white"
+        android:textStyle="italic"
+        android:id="@+id/solar_day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_day_wear"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/lunar_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

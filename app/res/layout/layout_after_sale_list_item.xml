@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+   >
+
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="48dp"
+        android:layout_height="72dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside" />
+
+
+        <TextView
+            android:paddingRight="16dp"
+            android:layout_toRightOf="@+id/img_product"
+            android:id="@+id/tv_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="1"
+            android:textColor="#DE000000"
+            android:textSize="14sp"
+            tools:text="这是商品名称" />
+
+        <TextView
+            android:layout_toRightOf="@+id/img_product"
+            tools:text="颜色尺码"
+            android:id="@+id/tv_product_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_title"
+            android:layout_marginTop="32dp"
+            android:gravity="bottom"
+            android:lines="1"
+            android:textColor="#8A000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:paddingRight="16dp"
+            android:id="@+id/tv_product_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_product_title"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:lines="1"
+            android:textColor="#DE000000"
+            android:textSize="12sp" />
+
+
+            <TextView
+                android:paddingRight="16dp"
+                android:layout_below="@+id/tv_product_title"
+                android:layout_marginTop="32dp"
+                tools:text="实付款:599"
+                android:layout_toRightOf="@+id/tv_product_style"
+                android:id="@+id/tv_product_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|bottom"
+                android:textColor="#DE000000"
+                android:textSize="12sp" />
+</RelativeLayout>
+    <View
+        android:visibility="gone"
+        android:layout_below="@+id/img_product"
+        android:id="@+id/line_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+</LinearLayout>

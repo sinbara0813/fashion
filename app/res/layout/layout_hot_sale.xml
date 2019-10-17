@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/sp_line"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/hot_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/color_black87"
+        android:gravity="center_horizontal"
+        tools:text="—— 裙装 ——"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/color_black38"
+        android:text="排行榜"
+        android:gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/first_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/second_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@id/first_iv"
+            android:layout_toRightOf="@id/first_iv"/>
+
+        <ImageView
+            android:id="@+id/three_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignLeft="@id/first_iv"
+            android:layout_below="@id/first_iv"
+            android:layout_marginRight="8dp"/>
+
+        <ImageView
+            android:id="@+id/four_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_alignTop="@id/three_iv"
+            android:layout_toRightOf="@id/three_iv"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/more_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_shopcollect_more"
+        android:layout_marginBottom="12dp"/>
+
+</LinearLayout>

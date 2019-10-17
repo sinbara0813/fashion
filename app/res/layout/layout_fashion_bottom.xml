@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginBottom="60dp">
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_closed"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/add_costume"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:scaleType="center"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/icon_addclothing"
+        android:layout_marginLeft="72dp"/>
+
+    <ImageView
+        android:id="@+id/show_match"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:scaleType="center"
+        android:src="@mipmap/icon_showwear"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="72dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

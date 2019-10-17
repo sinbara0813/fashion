@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title" />
+
+    <com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.d2cmall.buyer.widget.PtrStoreHouseFrameLayout>
+
+    <include layout="@layout/layout_progressbar" />
+
+    <include layout="@layout/list_empty_view" />
+
+</LinearLayout>

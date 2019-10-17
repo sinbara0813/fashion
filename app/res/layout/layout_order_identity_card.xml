@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/identity_rl"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/identity_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black85"
+            android:textSize="@dimen/medium_text_size3"
+            android:layout_marginRight="10dp"
+            android:text="身份证号"/>
+
+        <EditText
+            android:id="@+id/identity_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:digits="0123456789X"
+            android:maxLength="18"
+            android:textColor="@color/color_black50"
+            android:textSize="@dimen/medium_text_size3"
+            android:hint="请输入您的身份证号码 (加密处理)"
+            android:textColorHint="@color/color_black30"/>
+
+        <ImageView
+            android:id="@+id/tag_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/tag_certified"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/identity_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_below="@id/identity_ll"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/identity_pic_ll"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/identity_line"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="84dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:id="@+id/identity_select_z_iv"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/pic_addidcardz"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/identity_select_z_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="添加身份证正面照片"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/color_black30"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="84dp">
+
+            <ImageView
+                android:id="@+id/identity_select_f_iv"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/pic_addidcardf"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/identity_select_f_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="添加身份证反面照片"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/color_black30"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tag_tv"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/color_red"
+        android:text="@string/label_tag_identity"
+        android:layout_below="@id/identity_pic_ll"
+        android:visibility="gone"/>
+
+</RelativeLayout>

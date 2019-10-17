@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:onClick="hideKeyboard"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_default_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_left_deposit"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_deposit_repeat"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/label_card_no"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size2"/>
+
+                <com.d2cmall.buyer.widget.ClearEditText
+                    android:id="@+id/et_card_no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/sp_round4_white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_d2c_card_no"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:maxLines="1"
+                    android:textColor="@color/color_black2"
+                    android:textColorHint="@color/color_black4"
+                    android:textSize="@dimen/medium_text_size2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/label_password"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size2"/>
+
+                <com.d2cmall.buyer.widget.ClearEditText
+                    android:id="@+id/et_card_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/sp_round4_white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_d2c_card_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:maxLines="1"
+                    android:textColor="@color/color_black2"
+                    android:textColorHint="@color/color_black4"
+                    android:textSize="@dimen/medium_text_size2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_right_deposit"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/sl_round4_black5_2_red"
+        android:enabled="false"
+        android:text="@string/label_deposit"
+        android:textColor="@color/text_white_white"
+        android:textSize="@dimen/medium_text_size1"/>
+
+</LinearLayout>

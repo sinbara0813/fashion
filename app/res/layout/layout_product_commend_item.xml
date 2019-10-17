@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="4dp"
+            />
+        <ImageView
+            android:id="@+id/img_tag"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@mipmap/icon_all_designer"
+            android:layout_alignBottom="@id/img_avatar"
+            android:layout_alignRight="@id/img_avatar"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_avatar"
+            android:lines="1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="100dp"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="238"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@mipmap/icon_goodsdetail_dianzan0"
+            android:gravity="center_vertical"
+            android:padding="0dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="240"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_goodsdetail_pingjia"
+            android:layout_toLeftOf="@id/like_num"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        style="@style/normalSize3TextStyle"
+        android:textColor="@color/color_black85"
+        android:textSize="@dimen/medium_text_size3" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name_tv"
+        android:layout_marginLeft="50dp"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/color_black50"
+        android:layout_marginTop="4dp" />
+
+    <com.d2cmall.buyer.widget.ninegrid.NineGridView
+        android:id="@+id/nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        app:ngv_gridSpacing="8dp"
+        app:ngv_maxSize="9"
+        app:ngv_mode="grid"
+        app:ngv_isNine="true"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        app:ngv_singleImageRatio="1"/>
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <com.d2cmall.buyer.widget.nicevideo.NiceVideoPlayer
+            android:id="@+id/nice_video_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:textSize="@dimen/small_text_size"
+        android:layout_marginLeft="50dp"
+        android:background="#fafafc"
+        android:textColor="@color/color_black50"
+        android:layout_marginTop="8dp"/>
+
+    <include layout="@layout/layout_add_review"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

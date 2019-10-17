@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#8A000000</color>
+
+    <!--背景色-->
+    <color name="bg_white">#f0f0f0</color>
+    <color name="bg_color">#f6f6f6</color>
+
+    <!--内分割线-->
+    <color name="line">#E8E8E8</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_white2">#f5f0eb</color>
+    <color name="color_white5">#f6f6f6</color>
+    <color name="color_yellow1">#BB9D6E</color>
+    <color name="color_yellow3">#FFFFECD0</color>
+    <!--用于醒目信息-->
+    <color name="color_red">#E83333</color>
+
+    <color name="color_green">#22a775</color>
+    <color name="color_green2">#00ff00</color>
+    <color name="color_green3">#7abd54</color>
+    <color name="color_green4">#28cc71</color>
+    <color name="color_blue">#5a96ca</color>
+    <color name="color_blue3">#576b95</color>
+    <color name="color_blue4">#4a91e3</color>
+    <color name="color_blue5">#007aff</color>
+
+    <!--用于提示性文字-->
+    <color name="color_orange">#C39B5C</color>
+
+    <!--全黑，一般不用-->
+    <color name="color_black">#000000</color>
+    <!--用于重要文字，按钮底色-->
+    <color name="color_black2">#222222</color>
+    <!--用于较为重要信息-->
+    <color name="color_black3">#666666</color>
+    <!--用于非重要信息-->
+    <color name="color_black4">#999999</color>
+    <!--类似分割线-->
+    <color name="color_black5">#c8c8c8</color>
+
+    <color name="color_black6">#e0232427</color>
+
+    <color name="color_black7">#7f7f7f</color>
+
+    <color name="color_black90">#61000000</color>
+    <color name="color_black20">#33000000</color>
+    <color name="color_black30">#4D000000</color>
+    <color name="color_black50">#80000000</color>
+    <color name="color_black85">#DA000000</color>
+    <color name="color_black_bg1">#262626</color>
+
+    <color name="color_black38">#61000000</color>
+    <color name="color_black60">#8A000000</color>
+    <color name="color_black87">#DE000000</color>
+    <color name="color_black_bg">#DE232427</color>
+    <color name="color_black_dot">#ff232427</color>
+    <color name="color_black_dot_false">#61232427</color>
+
+    <!--90%白色-->
+    <color name="trans_90_color_white">#e6ffffff</color>
+
+    <color name="trans_87_color_white">#e0ffffff</color>
+    <!--60%白色-->
+    <color name="trans_60_color_white">#b2ffffff</color>
+    <!--70%白色-->
+    <color name="trans_70_color_white">#b4ffffff</color>
+    <!--50%白色-->
+    <color name="trans_50_color_white">#80ffffff</color>
+    <!--40%白色-->
+    <color name="trans_40_color_white">#66ffffff</color>
+    <!--25%白色-->
+    <color name="trans_25_color_white">#40ffffff</color>
+
+    <!--66%白色-->
+    <color name="trans_66_color_white">#a8ffffff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_white2">#80ffffff</color>
+    <color name="transparent_white3">#ccffffff</color>
+    <color name="color_live">#FDC33E</color>
+
+    <!--80%#767676黑色-->
+    <color name="trans_80_color_black2">#cc767676</color>
+
+    <!--80%黑色-->
+    <color name="trans_80_color_black">#cc000000</color>
+    <!--70%透明-->
+    <color name="trans_70_color_black">#b2000000</color>
+    <!--60%透明-->
+    <color name="trans_60_color_black">#b2000000</color>
+    <!--50%黑色-->
+    <color name="trans_50_color_black">#80000000</color>
+    <!--40%黑色-->
+    <color name="trans_40_color_black">#66000000</color>
+    <!--30%黑色-->
+    <color name="trans_30_color_black">#4c000000</color>
+    <!--87%黑色-->
+    <color name="trans_87_color_black">#e0000000</color>
+
+    <!--87%黑色-->
+
+    <!--87%-->
+    <color name="trans_87_color1">#e0232427</color>
+
+    <color name="flash_time_bg_color">#333333</color>
+
+    <color name="enable_color">#ebecec</color>
+
+    <color name="BgRv">#191919</color>
+
+    <color name="ShadowItem2">#ffF899b2</color>
+    <color name="ShadowItem3">#80F899b2</color>
+    <color name="ShadowItem4">#FFFFFFFF</color>
+    <color name="gray_color">#dddddd</color>
+    <color name="gray_color1">#b4b4b4</color>
+    <color name="gray_bg">#FAF8F8</color>
+    <color name="gray_line">#FAFAFC</color>
+</resources>

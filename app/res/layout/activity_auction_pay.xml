@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <include layout="@layout/layout_default_title" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_must_pay"
+                android:textColor="@color/color_black3"
+                android:textSize="@dimen/medium_text_size3" />
+            <TextView
+                android:id="@+id/price_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_text_size3"
+                android:textColor="@color/color_red"
+                android:text="￥"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/medium_text_size1"
+                android:text=""/>
+        </LinearLayout>
+
+        <include layout="@layout/order_pay_style"/>
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="328dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="#DE232427"
+            android:gravity="center"
+            android:text="@string/action_ok"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_progressbar" />
+
+</RelativeLayout>

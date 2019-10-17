@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:src="@mipmap/pic_pop_addshili"/>
+
+    <TextView
+        android:id="@+id/code_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/medium_text_size3"
+        android:textColor="@color/color_white"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:background="#262626"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/medium_text_size3"
+        android:text="放弃福利"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/image"/>
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="145dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:background="#d9a34d"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/medium_text_size3"
+        android:text="立即领取"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/image"
+        android:layout_toRightOf="@id/cancel"/>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/color_white">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_white">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:layout_marginLeft="16dp"
+                android:minHeight="45dp"
+                android:src="@mipmap/icon_order_close" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_select_brand"
+                    android:textColor="#DE000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_title_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_xiegang"
+                    android:textColor="#8A000000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:minHeight="45dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/action_ok"
+                android:src="@mipmap/icon_order_check"/>
+
+        </RelativeLayout>
+
+        <com.d2cmall.buyer.widget.headerview.StickyListHeadersListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_layout"
+            android:layout_toLeftOf="@+id/sideBar"
+            android:divider="@null"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <com.d2cmall.buyer.widget.SideBar
+            android:id="@+id/sideBar"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title_layout"
+            android:background="#FFFFFFFF"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog_text"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sp_round4_trans_black"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/color_white"
+            android:visibility="invisible" />
+
+        <include layout="@layout/layout_progressbar" />
+    </RelativeLayout>
+</LinearLayout>

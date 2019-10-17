@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/kps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black">
+
+    <com.pili.pldroid.player.widget.PLVideoTextureView
+        android:id="@+id/VideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <include layout="@layout/layout_live_play_loading" />
+
+    <include layout="@layout/layout_logo_tag" />
+
+
+    <cn.dreamtobe.kpswitch.widget.KPSwitchPanelRelativeLayout
+        android:id="@+id/panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+    <com.d2cmall.buyer.widget.LiveRelativeLayout
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/xin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"/>
+
+        <include layout="@layout/layout_live_no_network" />
+
+        <include layout="@layout/layout_live_top" />
+
+        <com.d2cmall.buyer.widget.heartLayout.PeriscopeLayout
+            android:id="@+id/heart_layout"
+            android:layout_width="120dp"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pic_layout"
+            android:layout_marginBottom="45dp"
+            android:paddingLeft="20dp"
+            android:visibility="visible" />
+
+        <include layout="@layout/layout_live_bottom" />
+
+        <ListView
+            android:id="@+id/chat_listview"
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:listSelector="@color/transparent"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal" />
+
+
+        <include layout="@layout/layout_live_animation" />
+
+        <include layout="@layout/layout_live_recommend" />
+
+        <include layout="@layout/layout_live_coupon" />
+
+        <include layout="@layout/layout_live_presents" />
+
+        <include layout="@layout/layout_live_loading" />
+
+        <include layout="@layout/layout_live_setting" />
+
+        <include layout="@layout/layout_live_off" />
+
+        <include layout="@layout/layout_progressbar" />
+
+        <include layout="@layout/layout_live_input" />
+
+        <include layout="@layout/network_try" />
+
+        <include layout="@layout/layout_live_play_cover" />
+
+    </com.d2cmall.buyer.widget.LiveRelativeLayout>
+
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootFrameLayout>

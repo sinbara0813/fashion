@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.d2cmall.buyer.widget.slide.SlideView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slide_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <com.d2cmall.buyer.widget.slide.SlideTop
+        android:id="@+id/top_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.d2cmall.buyer.widget.slide.SlideBottom
+        android:id="@+id/bottom_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.d2cmall.buyer.widget.slide.SlideView>

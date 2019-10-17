@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:elevation="4dp"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_scan"
+            android:background="@drawable/sp_round4_bg_white"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@mipmap/ic_nav_search"
+                android:drawablePadding="5dp"
+                android:maxLines="1"
+                android:text="请输入商品名称"
+                android:paddingRight="36dp"
+                android:textColor="@color/color_black4"
+                android:textSize="@dimen/medium_text_size3"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/tab_all_shop_b"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tab_rl"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:elevation="4dp"
+        android:background="@color/color_white">
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/sliding_tab"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        tl:tl_tab_space_equal="true"
+        tl:tl_divider_color="@color/color_white"
+        android:layout_height="32dp"
+        tl:tl_textSelectColor="#DE000000"
+        tl:tl_textUnselectColor="#8A000000"
+        tl:tl_indicator_color="#DE232427"
+        tl:tl_indicator_height="2dp"
+        tl:tl_indicator_gravity="BOTTOM"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_textsize="@dimen/medium_text_size1" />
+    </RelativeLayout>
+
+    <com.d2cmall.buyer.widget.NoSlideViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

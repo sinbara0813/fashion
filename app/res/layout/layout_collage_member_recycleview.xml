@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="448dp"
+    android:background="@color/color_white"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+    <TextView
+        android:layout_below="@+id/recycle_view"
+        android:id="@+id/tv_sure"
+        android:textSize="18sp"
+        android:textColor="@color/color_white"
+        android:background="@color/color_black85"
+        android:gravity="center"
+        android:text="@string/action_ok"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        />
+</RelativeLayout>

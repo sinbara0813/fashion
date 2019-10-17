@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="服务"
+        android:textColor="#DE000000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_sale"
+            android:layout_width="72dp"
+            android:layout_height="32dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_sale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_unselect"
+                android:gravity="center"
+                android:text="促销"
+                android:textColor="#8A000000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_sale_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/icon_all_chosenmark"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_try"
+            android:layout_width="72dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_try"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_unselect"
+                android:gravity="center"
+                android:text="门店试衣"
+                android:textColor="#8A000000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_try_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/icon_all_chosenmark"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_after"
+            android:layout_width="72dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_no_reason_change"
+                android:layout_width="72dp"
+                android:layout_height="32dp"
+                android:background="@drawable/border_unselect"
+                android:gravity="center"
+                android:minHeight="32dp"
+                android:minWidth="72dp"
+                android:text="七天退换货"
+                android:textColor="#8A000000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_no_reason_change_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/icon_all_chosenmark"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

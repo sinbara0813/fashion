@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    android:orientation="vertical">
+
+    <com.pili.pldroid.player.widget.PLVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/preview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_loading">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_review_loading" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/sp_round20_trans_black3"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_default_avatar" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_avatar"
+                android:layout_alignRight="@+id/img_avatar"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_vip" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_anchor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="80dp"
+                android:textColor="@color/color_white"
+                android:textSize="14sp"
+                android:text="张帥" />
+
+            <TextView
+                android:id="@+id/tv_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:textColor="@color/transparent_white3"
+                android:text="0人"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/tv_care"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_zhibo_guanzhu"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title_left"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_live_close" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/img_close"
+        android:contentDescription="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/icon_zhibo_shuiyin" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:max="1000"
+        android:progressDrawable="@drawable/seekbar_live_setting"
+        android:visibility="gone" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/img_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/icon_zhibo_fenxiang"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

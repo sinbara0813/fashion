@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="#262626"
+            android:background="@drawable/sp_round2_stroke_black5"
+            android:text="@string/action_cancel"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#262626"
+            />
+        <TextView
+            android:id="@+id/publish_tv"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="#111111"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="发布"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/color_white"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="32dp"
+        android:background="@null"
+        android:hint="说一说今天的穿搭靓点吧..."
+        android:layout_marginLeft="32dp"
+        android:textColorHint="#B2B2B2"
+        android:textSize="18dp"
+        android:textColor="@color/color_black87"/>
+
+    <LinearLayout
+        android:id="@+id/pic_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="31dp"
+        android:gravity="center_vertical">
+
+        <com.d2cmall.buyer.widget.MyCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#262626"
+            android:text="公开并发布到时尚圈"/>
+
+    </LinearLayout>
+
+</LinearLayout>

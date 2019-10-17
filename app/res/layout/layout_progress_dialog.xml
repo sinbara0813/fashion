@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.d2cmall.buyer.widget.RoundLayout
+    android:layout_width="80dp"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    android:background="@color/trans_87_color_black"
+    android:orientation="vertical"
+    app:radius="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.d2cmall.buyer.widget.CustomProgress
+        android:id="@+id/progress_down"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        app:bigCircleColor="@color/trans_87_color_black"
+        app:circleColor="@color/trans_87_color_black"
+        app:progressRadius="20dp"
+        app:ringColor="#ffffff"
+        app:strokeWidth="2dp"
+        app:textColor="#ffffff"
+        app:totalProgress="100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_down"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="正在下载"
+        android:textColor="@color/trans_50_color_white" />
+</com.d2cmall.buyer.widget.RoundLayout>

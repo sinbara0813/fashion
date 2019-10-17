@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_commend_sort_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="#8A000000"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        android:background="#FFE6EAF2" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8">
+
+        <com.d2cmall.buyer.widget.FlowLayout
+            android:id="@+id/fl_commend_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/line"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

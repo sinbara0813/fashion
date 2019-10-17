@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_line"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/color_red"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:background="@color/color_white"
+        android:visibility="visible"/>
+
+    <include layout="@layout/layout_product_flash1"/>
+
+    <include layout="@layout/layout_product_module1"/>
+
+    <include layout="@layout/layout_product_coupon" />
+
+    <LinearLayout
+        android:id="@+id/standard_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="已选"
+            android:textStyle="bold"
+            android:textColor="@color/color_black85"
+            android:textSize="@dimen/medium_text_size3" />
+
+        <TextView
+            android:id="@+id/select_standard_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_black85"
+            android:textSize="@dimen/small_text_size" />
+
+        <ImageView
+            android:id="@+id/standard_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_nav_enter_black" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_product_server"/>
+
+    <include layout="@layout/layout_product_comb" />
+
+    <include layout="@layout/layout_product_design" />
+
+</LinearLayout>

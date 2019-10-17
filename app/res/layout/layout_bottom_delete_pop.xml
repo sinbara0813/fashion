@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/transparent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/content"
+        android:background="@color/transparent"
+        android:layout_height="match_parent" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <View
+            android:id="@+id/tv_dismiss"
+            android:background="@color/trans_30_color_black"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+        />
+        <TextView
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:textColor="@color/color_red"
+            android:text="删除"
+            android:padding="8dp"
+            android:id="@+id/tv_delete"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="48dp" />
+        <View
+            android:background="@color/bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+        />
+        <TextView
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="4dp"
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:textColor="#333"
+            android:text="取消"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_height="48dp" />
+    </LinearLayout>
+</RelativeLayout>

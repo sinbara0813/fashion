@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.dreamtobe.kpswitch.widget.KPSwitchRootRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:onClick="hideKeyboard">
+
+    <include layout="@layout/layout_default_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:scrollbars="none"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_create_invoice"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <Switch
+                    android:id="@+id/togglebutton"
+                    android:layout_width="44dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:textOff=""
+                    android:textOn=""
+                    android:theme="@style/MySwitch" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_margin_left" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_invoice_type"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_normal_invoice"
+                    android:textColor="@color/color_black4"
+                    android:textSize="@dimen/medium_text_size3" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_margin_left" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/color_white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/label_invoice_top"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/hint_person_invoice"
+                    android:textColor="@color/color_black4"
+                    android:textSize="@dimen/medium_text_size3" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_invoice_top"
+                    android:textColor="@color/color_black2"
+                    android:textSize="@dimen/medium_text_size3"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.d2cmall.buyer.widget.ClearEditText
+                        android:id="@+id/et_invoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/sp_round2_bg_white"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_type_invoice_top"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:text="@string/hint_person_invoice"
+                        android:textColor="@color/color_black2"
+                        android:textColorHint="@color/color_black4"
+                        android:textSize="@dimen/medium_text_size3"
+                        android:visibility="gone"
+                        tools:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_invoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/sp_round2_bg_white"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_person_invoice"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textColorHint="@color/color_black4"
+                        android:textSize="@dimen/medium_text_size3"
+                        android:visibility="visible"
+                        tools:visibility="visible"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_progressbar" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/color_black"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="@string/action_ok"
+        android:textColor="@color/text_white_white"
+        android:textSize="@dimen/medium_text_size1"
+        tools:visibility="visible"
+        android:visibility="gone" />
+
+    <cn.dreamtobe.kpswitch.widget.KPSwitchPanelLinearLayout
+        android:id="@+id/panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone" />
+
+</cn.dreamtobe.kpswitch.widget.KPSwitchRootRelativeLayout>

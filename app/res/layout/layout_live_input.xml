@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:visibility="gone"
+    tools:visibility="gone">
+
+    <View
+        android:id="@+id/input_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_panel_layout"
+        android:background="@null" />
+
+    <LinearLayout
+        android:id="@+id/input_panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_90_color_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sl_dan_choose_2_unchoose"
+            android:checked="false"
+            android:visibility="gone"
+            android:textOff=""
+            android:textOn="" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/color_white" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical|left"
+            android:hint="@string/hint_live_input"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/color_black2"
+            android:textColorHint="@color/color_black4"
+            android:textSize="@dimen/medium_text_size1"
+            tools:text="哈哈哈哈" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/color_white" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/action_send"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/medium_text_size1" />
+    </LinearLayout>
+</RelativeLayout>

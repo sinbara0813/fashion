@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="120dp"
+    android:gravity="center_vertical"
+    android:paddingRight="8dp"
+    android:background="@color/trans_87_color_black"
+    android:layout_height="50dp">
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/iv_buyer_headpic"
+        android:src="@mipmap/icon_orderlist_purchaser"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+    <TextView
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        android:id="@+id/iv_buyer_name"
+        android:textColor="@color/color_white"
+        tools:text="COOKIECO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

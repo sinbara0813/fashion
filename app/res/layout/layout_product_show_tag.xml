@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/all_tv"
+        android:gravity="center"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:background="@color/color_black_bg1"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="全部"
+        android:textSize="@dimen/medium_text_size3"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/color_white"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/pic_tv"
+        android:gravity="center"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:background="@color/color_white5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="@dimen/medium_text_size3"
+        android:layout_toRightOf="@id/all_tv"
+        android:textColor="@color/color_black50"
+        android:layout_marginRight="12dp"/>
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/show_tv"
+        android:gravity="center"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:background="@color/color_white5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="@dimen/medium_text_size3"
+        android:layout_toRightOf="@+id/pic_tv"
+        android:textColor="@color/color_black50"
+        android:layout_marginRight="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15.5dp"
+        android:background="@color/line"
+        android:layout_below="@id/all_tv"/>
+</RelativeLayout>

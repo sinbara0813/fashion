@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="24dp"/>
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="72dp"
+        android:layout_height="108dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/empty_view"
+        android:scaleType="centerInside"/>
+    <TextView
+        android:lines="3"
+        android:id="@+id/tv_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty_view"
+        android:textColor="#DE000000"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_product_style"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/tv_product_name"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#61000000"
+        android:textSize="12sp"
+        tools:text="@string/label_product_style" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:textColor="#DE000000"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:text="¥2150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:textColor="#DE000000"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:text="x5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

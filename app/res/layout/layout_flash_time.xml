@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:paddingTop="8dp">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/soon_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/time_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_scroll"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/flash_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精选大牌，限时快抢"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/color_black60"
+            android:textSize="@dimen/small_text_size"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/flash_time_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距结束"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/color_black87"
+                android:layout_marginRight="4dp"/>
+
+            <TextView
+                android:id="@+id/flash_hour_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/bg_rob_time"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/color_black87"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"/>
+            <TextView
+                android:id="@+id/flash_minute_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/bg_rob_time"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/color_black87"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"/>
+            <TextView
+                android:id="@+id/flash_mouse_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@mipmap/bg_rob_time"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/color_white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_below="@id/time_ll"/>
+
+</RelativeLayout>

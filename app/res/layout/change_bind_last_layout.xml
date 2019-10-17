@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFFFF">
+
+    <include layout="@layout/layout_default_title"/>
+
+    <RelativeLayout
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/tv_nation_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:textColor="#DE000000"
+            android:gravity="center"
+            android:drawableEnd="@mipmap/icon_login_down_b"
+            android:text="+86"
+            android:textSize="16sp"/>
+
+        <com.d2cmall.buyer.widget.ClearEditText
+            android:id="@+id/et_bind_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#DE232427"
+            android:textColorHint="#8A000000"
+            android:textSize="16sp"
+            app:del="@mipmap/icon_login_delete_w"
+            android:layout_toEndOf="@id/tv_nation_code"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_security_rl"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="48dp"
+        android:visibility="visible">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"/>
+        <com.d2cmall.buyer.widget.ClearEditText
+            android:id="@+id/et_bind_security_code"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/label_code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#DE232427"
+            android:textColorHint="#61000000"
+            android:textSize="14sp"
+            app:del="@mipmap/icon_login_delete_w"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/register_security_tv"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/border_black"
+            android:textColor="@color/color_black87"
+            android:textSize="@dimen/small_text_size"
+            android:text="@string/label_msg_code"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="16dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#8A000000"
+            android:text="@string/label_cant_code"/>
+        <TextView
+            android:id="@+id/tv_get_voice"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_try_code"
+            android:textSize="12sp"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@mipmap/icon_login_voice"
+            android:textColor="#FFFDC33E"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="#61DDDDDD"
+        android:text="绑定"
+        android:enabled="false"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_verification_1"
+        android:textColor="#61000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/label_verification_2"
+        android:textColor="#61000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/label_verification_3"
+        android:textColor="#61000000"
+        android:textSize="12sp" />
+
+</LinearLayout>

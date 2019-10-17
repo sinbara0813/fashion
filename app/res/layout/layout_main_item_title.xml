@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:visibility="gone"
+    android:id="@+id/title_ll"
+    android:background="@color/color_white"
+    >
+    <View
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="match_parent"
+        android:background="@color/color_black_bg"
+        android:layout_marginRight="8dp"/>
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="精选活动"
+        android:gravity="left|center_vertical"
+        style="@style/boldTextStyle"/>
+    <TextView
+        android:id="@+id/title_all"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="更多"
+        android:textSize="@dimen/medium_text_size3"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_black60"/>
+</LinearLayout>

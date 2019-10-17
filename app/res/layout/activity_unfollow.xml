@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:elevation="4dp"
+        android:background="@color/color_white"
+        >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tab_all_back_b"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="@string/label_recommend"
+            style="@style/boldTextStyle"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:elevation="4dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/big_gun"
+                style="@style/normalSize1TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="72dp"
+                android:text="达人" />
+
+            <TextView
+                android:id="@+id/design_gun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设计师"
+                android:textColor="@color/color_black60"
+                android:textSize="@dimen/medium_text_size1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignBottom="@id/top"
+            android:background="@color/trans_87_color_black"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+</LinearLayout>

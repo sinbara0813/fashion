@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_info"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_progressbar"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/tab_all_back_w" />
+
+    <LinearLayout
+        android:id="@+id/ll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请完善您的信息"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="让您的买家秀更精彩吧"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="关于你,我们想了解多一点"
+            android:textColor="#b4ffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_finish"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="136dp">
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFFFF"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#66000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_finish"
+        android:layout_marginBottom="64dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_info_men_us"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="男"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/tv_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_info_women_us"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="女"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nick_name_rl"
+        android:layout_width="192dp"
+        android:layout_height="28dp"
+        android:layout_above="@id/ll_sex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="192dp"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffffff" />
+
+        <com.d2cmall.buyer.widget.ClearEditText
+            android:id="@+id/et_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入昵称"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/color_white"
+            android:textColorHint="#B3FFFFFF"
+            android:textSize="14sp"
+            app:del="@mipmap/icon_login_delete_w" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/image_set_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nick_name_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:src="@mipmap/icon_info_head" />
+
+    <com.d2cmall.buyer.widget.RoundedImageView
+        android:id="@+id/image_head"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_above="@id/nick_name_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:visibility="gone"
+        app:is_oval="true"
+        app:round_color="#FFFFFFFF"
+        app:round_width="0.5dp" />
+
+
+</RelativeLayout>

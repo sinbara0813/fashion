@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="41dp"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/head_view"
+        android:layout_width="5dp"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_designer_selected"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/border_selected"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="14sp"
+            android:textColor="#8A000000"
+            tools:text="11111" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:padding="2dp"
+            android:layout_alignTop="@+id/tv_designer_selected"
+            android:layout_marginLeft="-6dp"
+            android:layout_marginTop="-6dp"
+            android:layout_toRightOf="@+id/tv_designer_selected"
+            android:background="@mipmap/icon_login_delete_b"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside" />
+
+    </RelativeLayout>
+</LinearLayout>

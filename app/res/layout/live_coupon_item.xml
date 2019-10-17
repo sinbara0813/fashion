@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_live_coupon"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/small_text_size"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/acount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/large_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/use_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/tiny_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_white" />
+
+        <TextView
+            android:id="@+id/lead_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即领取"
+            android:textColor="@color/color_white"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:background="@color/transparent" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<title>无网络加载</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-index-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="cleartype" content="on" />
+</head>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	color: #f0f0f0;
+	min-width:320px;
+	text-align:center;
+	font-family:'Microsoft YaHei';
+}
+
+.content{
+	overflow:hidden;
+	width:100%;
+	position:relative;
+}
+
+.mainbody{
+	width:100%;
+	position:absolute;
+	top:50%;
+	margin-top:-210px;
+}
+
+.mainbody img{
+	width:100px;
+	height:100px;
+}
+
+.try{
+	width:70px;
+	height:30px;
+	text-align:center;
+	border-style:none;
+	color:#222222;
+	border:1px solid #222222;
+	border-radius:4px 4px 4px 4px;
+	background:transparent;
+	font-size:14px;
+	outline:none;
+	margin-top:10px;
+}
+
+</style>
+	<body>
+		<div class="content" id="id">
+        	<div class="mainbody">
+            	<img src="ic_no_net.png" />
+				<br/>
+                <button id="btn" class="try" onClick="window.jsinterface.errorReload()">重新加载</button>
+            </div>
+        </div>
+	</body>
+	 <script type="text/javascript">
+			document.getElementById("id").style.height = window.screen.height+"px";
+	 </script>
+</html>

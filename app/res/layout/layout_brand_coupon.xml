@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@mipmap/pic_yhqbg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_coupon_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="18sp"
+            tools:text="¥125" />
+
+        <TextView
+            android:id="@+id/tv_limit_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#262626"
+            android:textSize="12sp"
+            tools:text="满12500使用" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/tv_coupon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="16dp"
+            android:textColor="#262626"
+            android:textSize="14sp"
+            tools:text="满12500使用" />
+
+        <TextView
+            android:id="@+id/tv_coupon_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="16dp"
+            android:textColor="#262626"
+            android:textSize="10sp"
+            tools:text="满12500使用" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_receive"
+                android:src="@mipmap/button_lingqu"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="24dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFFFFFFF"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_default_title"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/icon_setting_bandcode"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前绑定手机号"
+        android:textSize="14sp"
+        android:textColor="#8A000000"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#DE000000"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:background="@drawable/border_black_button"
+        android:text="修改绑定手机号"
+        android:textSize="18sp"
+        android:layout_marginTop="64dp"
+        android:textColor="#FF232427"/>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#8A000000"
+        android:includeFontPadding="false"
+        android:textColorHighlight="@color/color_white"
+        android:text="@string/label_delete"
+        android:background="@color/transparent"
+        android:layout_marginTop="120dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="12dp"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="108dp"
+        android:background="#FFFFFFFF">
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="72dp"
+            android:layout_height="108dp"
+            android:layout_below="@id/empty_view"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_view"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="32dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_toRightOf="@id/iv_image"
+            android:text="FLO NAKED WENDY张云文小黄人剥香蕉糖化衬衫"
+            android:textColor="#DE000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_product_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/iv_image"
+            android:singleLine="true"
+            android:textColor="#61000000"
+            android:textSize="12sp"
+            tools:text="@string/label_product_style" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/iv_image"
+            android:text="¥2150"
+            android:textColor="#DE000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="x5"
+            android:textColor="#DE000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical|right"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_show_after_sale"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/border_black_button"
+            android:gravity="center"
+            android:text="@string/label_show_after_sale"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_apply_after_sale"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/border_black_button"
+            android:gravity="center"
+            android:text="@string/label_apply_after_sale"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_show_logistical"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/border_black_button"
+            android:gravity="center"
+            android:text="@string/label_show_logistical"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_confirm_receive"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/border_black"
+            android:gravity="center"
+            android:text="@string/label_confirm_receive"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_goto_comment"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/border_black"
+            android:gravity="center"
+            android:text="@string/label_goto_comment"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_show_comment"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/border_black"
+            android:gravity="center"
+            android:text="@string/label_show_comment"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
