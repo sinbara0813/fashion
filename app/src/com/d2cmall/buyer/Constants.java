@@ -4,139 +4,13 @@ import android.os.Environment;
 
 public final class Constants {
 
-    //Api请求地址
-    private static final String API_URL_ONLINE = "https://appserver.d2cmall.com";
     private static final String API_URL_DEV = "http://test4.d2cmall.com";
     private static final String API_TEST = "http://192.168.5.30:8070";
     private static final String API_TEST2 = "http://192.168.5.17:8070";
     private static final String API_TEST3 = "http://192.168.5.13:8070";
     private static final String API_TEST4 = "http://192.168.5.250:8070";
     private static final String API_TEST5 = "http://192.168.5.20:8070";
-    public static final String API_URL = BuildConfig.DEBUG ? API_URL_DEV : API_URL_ONLINE;
-
-    //分享地址
-    private static final String SHARE_URL_ONLINE = "https://m.d2cmall.com";
-    private static final String SHARE_URL_DEV = "https://test2.d2cmall.com";
-    public static final String SHARE_URL = BuildConfig.DEBUG ? SHARE_URL_DEV : SHARE_URL_ONLINE;
-
-    //支付回调地址
-    private static final String PAY_URL_ONLINE = "http://open.api.d2cmall.com";
-    private static final String PAY_URL_DEV = "http://test4.d2cmall.com";
-    public static final String PAY_URL = BuildConfig.DEBUG ? PAY_URL_DEV : PAY_URL_ONLINE;
-
-    public static final String INVOKE_URL = API_URL + "/v3/api/invoke/android?token=%1$s&url=%2$s&openInBrow";
-    public static final String SCAN_URL = "http://app.d2cmall.com/download/d2cmall-install.apk";
-    public static final String WEBP = "/format/webp";
-
-    public static final String VIDEO_STORAGE_DIR = Environment.getExternalStorageDirectory() + "/ShortVideo/";
-    public static final String RECORD_FILE_PATH = VIDEO_STORAGE_DIR + "record.mp4";
-
-    public static final String MY_SUFFIX = "SUFFIX";
-    public static final String PHOTO_URL = "!/both/%1$sx%2$s/format/webp";
-    public static final String PHOTO_URL2 = "!/fw/%s/format/webp";
-    public static final String VIDEO_PIC_URL = "!/fw/%s/format/webp/lossless/true";
-    public static final String WULIU_URL = "/logistics/info?sn=%1$s&com=%2$s&productImg=%3$s";
-    public static final String KAOLA_WULIU_URL = "/logistics/info?sn=%1$s&com=%2$s&productImg=%3$s&orderItemId=%4$s";
-    public static final String USER_AGENT_URL = " Ver/buyer-%1$s NetType/%2$s";
-    public static final String IMG_HOST = "http://img.d2c.cn";
-    public static final String VIDEO_HOST = "http://video.d2cmall.com";
-    public static final String DEFAULT_AVATAR_URL = "http://d2c-app.b0.upaiyun.com/img/logo/android_default_avatar.png";
-    public static final String APP_SECRET = "8811d44df3c0b408f6fa4a31002db44d";
-    public static final String D2C_LOGO = "http://img.d2c.cn/app/a/16/05/10/fa55b70135c181482ae5c6d39c3277b1";
-    public static final String detailWebUrl = "http://a.app.qq.com/o/simple.jsp?pkgname=com.d2cmall.buyer";
-
-    public static final String USER_FILE = "user_session.json";
-    public static final String PARTNER_FILE = "partner_session.json";
-    public static final String POP_FILE = "pop_session.json";
-
-    public static final String GOOD_TAG_FILE = "good_tag.json";
-    public static final String HOT_SEARCH_FILE = "hot_search.json";
-    public static final String HISTORY_SEARCH_FILE = "history_search.json";
-    public static final String READED_GLOBAL_MSG_FILE = "readed_global_msg.json";
-    public static final String DELETED_GLOBAL_MSG_FILE = "deleted_global_msg.json";
-    public static final String TAG_FILE = "tag_%s.json";
-    public static final String ORDER_HISTORY_SEARCH_FILE = "order_history_search.json";
-    public static final String SPLASH_URL_FILE = "splash_url_file.json";
-
-    public static final boolean KEY_AUTO_FOCUS = true;
-    public static final boolean KEY_DISABLE_CONTINUOUS_FOCUS = false;
-    public static final boolean KEY_VIBRATE = false;
-    public static final boolean KEY_PLAY_BEEP = true;
-    /**
-     * 微信绑定成功
-     */
-    public static boolean isBingWChatOK = false;
-
-    public static final String TYPE_AVATAR = "a";
-    public static final String TYPE_FRIEND = "f";
-    public static final String TYPE_VIDEO = "v";
-    public static final String TYPE_CUSTOMER = "c";
-
-    //直播分享渠道
-    public static final int TYPE_CIRCLE = 1;
-    public static final int TYPE_WEIXIN = 2;
-    public static final int TYPE_WEIBO = 3;
-    public static final int TYPE_QQ = 4;
-    public static final int TYPE_QZONE = 5;
-
-    public static final String DATE_TIME_FORMAT_LONG = "yyyy/MM/dd'T'HH:mm:ss'Z'ZZ";
-    public static final String DATE_TIME_FORMAT_LONG7 = "yyyy-MM-dd'T'HH:mm:ss'Z'ZZ";
-    public static final String DATE_TIME_FORMAT_LONG2 = "yyyy/MM/dd'T'HH:mm:ss'Z'";
-    public static final String DATE_TIME_FORMAT_LONG8 = "yyyy-MM-dd'T'HH:mm:ss'Z'";
-    public static final String DATE_TIME_FORMAT_LONG3 = "yyyy/MM/dd'T'HH:mm:ss.SSS'Z'ZZ";
-    public static final String DATE_TIME_FORMAT_LONG9 = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'ZZ";
-    public static final String DATE_TIME_FORMAT_LONG4 = "yyyy/MM/dd'T'HH:mm:ss.SSSZZ";
-    public static final String DATE_TIME_FORMAT_LONG10 = "yyyy-MM-dd'T'HH:mm:ss.SSSZZ";
-    public static final String DATE_TIME_FORMAT_LONG5 = "yyyy/MM/dd'T'HH:mm:ssZZ";
-    public static final String DATE_TIME_FORMAT_LONG11 = "yyyy-MM-dd'T'HH:mm:ssZZ";
-    public static final String DATE_TIME_FORMAT_LONG6 = "yyyy/MM/dd'T'HH:mm'Z'ZZ";
-    public static final String DATE_TIME_FORMAT_LONG12 = "yyyy-MM-dd'T'HH:mm'Z'ZZ";
-    public static final String DATE_FORMAT_LONG = "yyyy/MM/dd HH:mm:ss";
-    public static final String DATE_FORMAT_LONG1 = "yyyy-MM-dd HH:mm:ss";
-    public static final String DATE_FORMAT_SHORT = "yyyy/MM/dd";
-    public static final String DATE_FORMAT_SHORT1 = "yyyy-MM-dd";
-    public static final String DATE_FORMAT_MD = "MM/dd";
-    public static final String DATE_FORMAT_HM = "HH:mm";
-    public static final String DATE_FORMAT_MD_HM = "MM/dd HH:mm";
-    public static final String DATE_FORMAT_MDHM = "MM月dd日 HH:mm";
-    public static final String DATE_FORMAT_YMD = "yyyy年MM月dd日";
-
-    //QQ、微信、微博
-    public static final String QQKEY = "1104624486";
-    public static final String WEIXINAPPID = "wxb74d14eb16859ed9";
-    public static final String WEIXINSECRET = "d4624c36b6795d1d99dcf0547af5443d";
-
-    public static final String WEIBOKEY = "1542490164";
-    public static final String WEIBO_REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";
-    public static final String WEIBO_SCOPE = "email,direct_messages_read,direct_messages_write,"
-            + "friendships_groups_read,friendships_groups_write,statuses_to_me_read,"
-            + "follow_app_official_microblog," + "invitation_write";
-    //支付宝
-    public static final String ALIPAYPARTNER = "2088911603039004";
-    public static final String ALIPAYSELLER = "payment@d2cmall.com";
-    public static final String ALIPAYAPPID="2016110802634196";
-    public static final String ALIPAYPRODUCTCODE="w1010100000000002978";
-    public static final String ALIPAYNEWPUBLICKEY="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk9/2/3qMJuUqd68pnNC/sZGKesDZS8SdUvEVOuhXdAv+wJF0KhVzeCog1aCE524Q9uQp9ZupEu5NPAViTaG/IexEb7zHo0iPCvBe0A9hhZBgW7d39qPJrVwYZUxWRGcbRZ5seDZNMtgndhvvcNx0vKaKSANC7lqfjFC51hxt6W+dIGBPITS6iJbmbRaH3akAH/HhL+die1+Acol6DkOgMlQA9zqZoi6eM2cqUrcZG/ScuyIQMk2/RCIXPHbKHfTM3FPk0VDf0oJ2769KyUIB5Z9PeIC2MRy8a9MFOLG6DHGkuCBkAq1Yfc0ajnE9jKE1XJwUTEl5B8PVt6SfndbhZQIDAQAB";
-    public static final String ALIPAYNEWPRIVATEKEY="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDJaDtMH/UDIKeEm98/ud6HwynmQrRBFRDxgek0ojClaJvhxt5bq79uNW70wv2sa7Al4N4N7X2zESW2PYGatgSL9P9CLGF6u32GuTnAZLFeKprk85z86DkfANNSWc4COJ18WUn1a9q7Blf6AveW8OaUvAj6FHBj5S4ckgLtybIw9EXY940ks/VgKq6GZoKPjKRKttEhfyPwFc/XHOho1x5oJqpZXFfkYBiU4Zyh5f0r7IfYcQnJSB+W9r7dqXb+1p5W3rgNYgf2Tdx5x/9/N0JBxAdkAsKGPeKvPi2pQwu6G50ramKV14Fspc+JPMPh33Bw0kMtS/dsXv0P4zvau3h7AgMBAAECggEAR+DwEKnzCiu0PUpXsWmHNpJ7OJcjt3pqMpa3gLZFgDLGNxx/LN4tkop1T9rrJ4bDNbF77iKM0sRS3igzQeCl3MER/C7UlzWkhdlC+Bu3hTDVWNJse4HxKNRllqVANWC5K7C+CV11kXuhGDPI4tCUqg41cfKrbatT+pRNgUmTU46n2HY9bpPUON56vV4JLJHiwn7vzO+CCzlVYh9jsiC/xFW9Mh3sLKLSdOWdC+4ndsuy75Ou+pUkegBQkMRpr4/4HhA9ESWNQ6ja2CV7uEsONUeG3MKJsL3Kr9V+qxkV3pIXdzIXR56SFHm3jNSsHibrXVwtquj9nE8xliIUQQ5B2QKBgQDqvI5lsa0L5cP7tHMDDdn8WUCwnB4pXrfBQvv6wv5TJ1hDKQ3L67fCr88rsXvV1Klu1SeUTV7/+2YxbxX7MHaBzVtrsgNtD54N7q5GFcGuJwZmq8yczQZZVyCh46W02yAI3qihRGS1R4ZOEJdgJqzZkV5ihX1LRKbtJFU3fiRW3wKBgQDbpsfPc3N1e6QpJtAKTvoEENWDIPaOxTYT+DyqbU82ZVurILr3xs07LizPHhvx8HCk5BYFUw+3TBfO+Lpmc721WCgUHZv7Xu5BWUjmaRyLOWEr0gm/i8F5wx1l8D0FWqSx6iqSv7766fGn0VKT77OvBq+He6hbsV6TDWmLAm2d5QKBgQDgBR1c3ilI7nmQcRFGO+TqmP9MzWFXmAaEUXoLQibXkvf/+GErWQVhrslnaJXHZ5JfrNt+BC0C3ZkU2nA+7mxaynJSIGx2m+36W+xEBKV3n9TTDWhTyLMjdiw1c/2D0ZAMBvsmFRCLlPwO6nSdFavmY36RRdZii91G+mK9eAwUPwKBgDPt3DNZciSGVKs999VYEpe/exsDQgdC7KQP/he0vBN6Jw/wLwPBRmgFZKaa0bSDSb5SBjrABmkpXj+aYkcyedlTvDX1QhlNujpM54VBuHPZ3vVDNPbKDbXBwUOGZobLhUBiwinrlzUu9ejc/g7njq2EgR8gxw7Wgit18kvhCRVZAoGAPnjK4XtgPsQVzbjLQ7MJ/qB/f9NyT+cjs2y8x91Vuw38+/tHDRpGXiYkTPwVS5oIOq11qgsu0isswkZE7tw1v1+CW6X4v8pkvXcUO3y2XcnMdPFlWz+WSrey4YVFYQ3hun2k8/NOIVRP8h5kgtMoGMNKBz2EQ91N4YunDAz0lhk=";
-    public static final String ALIPAYPRIVATEKEY = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBANq7q86K2n48CSBOCfkJ6Tzin1ZjKTx6cMgX5wu563LqHxf13AZTwP5f2dAGHJGhIOtMpDl1M2SfnjufDNKGY3CN39esWqwNLeo1t0CoqAfy7szyAK1IvvNcW+B8SyjQJel9WoZYpTYBrzIoCl+9MFTPMEuNyU1oQZs+idk8Jjx/AgMBAAECgYBJCfno0jz7ghiaDPUPj9uuVQ5XzmzqoQggCLtCEycoDD2txo9eHYGIb4FQEXpgtqlDaSg9d4FdzF8OEaI6el2hjcAPQmdx/JVbVA780f8U82DYK2D1EsSqUg1f3Zc1H1YYKDv6Mu48fFu9C6lPHuh0JaFWBqNd74Z8aCTXn1DD4QJBAPkb3bLUNINRQKDSUbf+XWybuYncn2hlhKD9g9eIVL+gNrW15cMrFxXYhQaBAeDI7qWfWFsAyASgW46TBjQs+5MCQQDgyLDPSX3+2Z85V3hnbCWPMavmX3mYXNXsdQid8LMjz07x5RQUa0tj55lAWFe6iAY2yoImFhiESS/LRrOJxUblAkAVuBpCR0I02Na7rtq1IhZfK8ynenbjkUZZCwF9v0M0WfGrMirQM2eV3gTrJkBVqu8zvYrklFLcJGcXLTZzQiDFAkBdOH2zCYx6I3BYDIF/iqcs8nGS0aeQ23dQX9zZ+1efkzrvMIyaR0D1xreUqs5/KihBksxU1TcHrX5ntAODMFBNAkEA7fMgZzREQ+LXZbnxhCOSvHM1Ug8xAMeglssfb0XrEdYq6SO6VqKAUw/HoZkFlKkc8KhV4SUq0Lu9OduZNMUsjg==";
-    //微信支付
-    public static final String WXMCHID = "1286659301";
-    public static final String WXPARTNERID = "hkoughiuyfjhbvcdlou875412jh879ij";
-    //Tusdk
-    public static final String TUSDK_KEY = "557072c9b05bf9c8-02-9e46o1";
-    //又拍云
-    public static final String UPYUN_KEY = "5LiKYAotpBipKnLJhV2IC3U2VG4=";
-    public static final String UPYUN_SPACE = "d2c-pic";
-    public static final String UPYUN_VIDEO_SPACE = "app-video";
-    //TalkingData广告监测
-    public static final String TALKINGDATA_AD_KEY = "8801de8345d3456bbd3f7e15ce413ae4";
-    //七鱼客服
-    public static final String QIYU_KEY = "cdf7ede373825ab5af9d955d1fb3556c";
-    public static final long QIYU_BF_GROUP_ID = 199569;//售前分组ID
-    public static final long QIYU_AF_GROUP_ID = 194958;//售后分组ID
-    //合力亿捷客服
-    public static final String HLYJ_BF_GROUP_ID = "ad71ad40-cac0-11e8-8347-0be097e57536";//售前分组ID
-    public static final String HLYJ_BF_AF_GROUP_ID = "c069be40-e949-11e8-8708-2f54ddc7a2b6";//售后分组ID
+    public static final String API_URL = BuildConfig.DEBUG ? API_URL_DEV :  
 
     public static final int NO_DATA = 0;
     public static final int NET_DISCONNECT = 1;
@@ -665,7 +539,7 @@ public final class Constants {
     public static String GET_MY_FOLLOW_URL = "/v3/api/share/myfollow/list";
     public static String GET_HOT_LIST = "/v3/api/hot/active/member";
     public static String GET_PRODUCT_MATCH_LIST = "/v3/api/similar/%1$s/top/%2$d";
-    public static String GET_MAIN_PROMOTION_TOP = "/v3/api/similar/promotion/top/%d"; //情报站
+    public static String GET_MAIN_PROMOTION_TOP = "/v3/api/similar/promotion/top/%d"; //情报�?
     public static String GET_TOP_RECOMMEND = "/v3/api/similar/category/top/%d"; //榜单推荐
     public static String GET_TOP_RECOMMEND_SUB = "/v3/api/similar/category/%d/top/%d"; //榜单推荐更多
     public static String GET_MAIN_LIKE_LIST = "/v3/api/similar/top/%d"; //猜你喜欢
@@ -678,7 +552,7 @@ public final class Constants {
     public static String GET_EXCHANGE_DETAIL_URL = "/v3/api/aftersale/exchange/%d";
     public static String GET_MAIN_NOTICE_URL = "/v3/api/article/notice";
     public static String GET_MAIN_NOTICE_CANCEL_URL = "/v3/api/article/cancel";
-    public static String GET_KAOLA_AFTER_SALE_LIST_URL = "/v3/api/aftersale/kaola/list";//考拉商品申请售后,拉取该商品同仓的所有商品
+    public static String GET_KAOLA_AFTER_SALE_LIST_URL = "/v3/api/aftersale/kaola/list";//考拉商品申请售后,拉取该商品同仓的所有商�?
 
     //用户行为埋点
     public static String POST_UPLOAD_DEVICE_INFO_URL = "/v3/api/behavior/event/onload";
@@ -690,35 +564,35 @@ public final class Constants {
 
     //买手中心
     public static String GET_PARTNER_CENTER_URL = "/v3/api/partner/mine";
-    public static String GET_PARTNER_BILL_URL = "/v3/api/partner/bill";//返利单列表
-    public static String GET_PARTNER_CASH_URL = "/v3/api/partner/cash";//提现单列表
+    public static String GET_PARTNER_BILL_URL = "/v3/api/partner/bill";//返利单列�?
+    public static String GET_PARTNER_CASH_URL = "/v3/api/partner/cash";//提现单列�?
     public static String GET_PARTNER_CHILDREN_URL = "/v3/api/partner/children";//团队
-    public static String GET_PARTNER_CUSTOMER_URL = "/v3/api/partner/invite/list";//邀请记录
+    public static String GET_PARTNER_CUSTOMER_URL = "/v3/api/partner/invite/list";//邀请记�?
     public static String GET_PARTNER_LOG_URL = "/v3/api/partner/log";//提现返利记录
-    public static String GET_PARTNER_MIN_WITHDRAW_URL = "/v3/api/partner/min/withdraw";//最低提现金额
+    public static String GET_PARTNER_MIN_WITHDRAW_URL = "/v3/api/partner/min/withdraw";//最低提现金�?
     public static String POST_PARTNER_WITHDRAW_URL = "/v3/api/partner/withdraw/cash";//申请提现
-    public static String GET_PARTNER_SALE_DATA_URL = "/v3/api/partner/summary";//返利单列表
+    public static String GET_PARTNER_SALE_DATA_URL = "/v3/api/partner/summary";//返利单列�?
     public static String GET_PARTNER_VISITOR_URL = "/v3/api/behavior/eventstat/findVisitors";//访客
     public static String GET_PARTNER_VISITOR_YESTERDAY_TODAY_URL = "/v3/api/behavior/eventstat/findUvStat";//今日昨日访客
     public static String GET_PARTNER_NOTICE_URL = "/v3/api/article/list/%s";//买手公告
     public static String GET_PARTNER_INFO_UPDATA_URL = "/v3/api/partner/update";//更新买手信息
-    public static String GET_PARTNER_SALE_SCHOOL_TAGS_URL = "/v3/api/theme/tag/list";//商学院入口
-    public static String GET_PARTNER_SALE_SCHOOL_LIST_URL = "/v3/api/theme/tag/%d";//商学院文章列表
+    public static String GET_PARTNER_SALE_SCHOOL_TAGS_URL = "/v3/api/theme/tag/list";//商学院入�?
+    public static String GET_PARTNER_SALE_SCHOOL_LIST_URL = "/v3/api/theme/tag/%d";//商学院文章列�?
     public static String GET_PARTNER_REFRESH_ARRIVAL_URL = "/v3/api/home/arrival";//签到
     public static String GET_PARTNER_REMOVE_CHILD_URL = "/v3/api/partner/separate";//移除下级
     public static String BUYER_VISITOR_DATA = "/v3/api/partner/customers";//店铺访客数据
     public static String BUYER_CHILDREN_DATA = "/v3/api/partner/children/summary";
     public static String BUYER_LIST_URL = "/v3/api/analyze/partner/list";
     public static String BUYER_SUMMARY_MONTH = "/v3/api/analyze/partner/%s/month/list";
-    public static String BUYER_LOOK_BUYER="/v3/api/member/info/%d";        //点击小头像查看买手
+    public static String BUYER_LOOK_BUYER="/v3/api/member/info/%d";        //点击小头像查看买�?
     public static String GONGMAO_ELECTRIC_SIGN="/v3/api/partner/gongmall/contract";//工猫电签
-    public static String BUYER_MONTH_CASHED_NUM="/v3/api/partner/month/withdraw";//本月已提现金额
+    public static String BUYER_MONTH_CASHED_NUM="/v3/api/partner/month/withdraw";//本月已提现金�?
     public static String BUYER_UPDATE_GONGMAO="/v3/api/partner/gongmall/update";//工猫更新信息
     public static String BUYER_ADVISER_LIST="/v3/api/partner/counselor/list";//运营顾问列表
     public static String BUYER_ADVISER_INFO="/v3/api/partner/counselor/%s";//运营顾问信息
-    public static String NORMAL_CUSTOMER_INFO="/v3/api/member/detail/%s";//普通用户销售信息
+    public static String NORMAL_CUSTOMER_INFO="/v3/api/member/detail/%s";//普通用户销售信�?
     public static String BUYER_CERTIFICATE="/v3/api/partner/poster";//买手证书
-    public static String NORMAL_CUSTOMER_LIKE_LIST="/v3/api/similar/user/%s/top/50";//普通用户可能喜欢商品
+    public static String NORMAL_CUSTOMER_LIKE_LIST="/v3/api/similar/user/%s/top/50";//普通用户可能喜欢商�?
     public static String PARTNER_GIFTS="/v3/api/partner/package/list";//买手我的礼包
 
 
@@ -735,17 +609,17 @@ public final class Constants {
     public static String CLOSE_LIVE_STREAM = "/v3/api/live/close";//关闭直播
     public static String LIVE_LIST_URL = "/v3/api/live/list";//直播数据列表
     public static String RONG_NEW_TOKEN_URL = "/v3/api/live/token";//获取融云token
-    public static String LIVE_CUSTOM_OUT = "/v3/api/live/out/%s";//游客退出房间
+    public static String LIVE_CUSTOM_OUT = "/v3/api/live/out/%s";//游客退出房�?
     public static String LIVE_CUSTOM_IN = "/v3/api/live/in/%s";//游客进入房间
     public static String DELETE_LIVE = "/v3/api/live/delete/%s";//删除直播
     public static String LIVE_ANCHOR_INFO = "/v3/api/member/info/%s";//获取主播信息
     public static String LIVE_RECOMMEND_GOOD_LIST_URL = "/v3/api/live/recommend/list";//获取主播推荐商品列表
     public static String LIVE_LIST_BANNER = "/v3/api/live/banner";//直播的banner
     public static String LIVE_ANCHOR_RECOMMEND_PRODUCT = "/v3/api/live/do/recommend";//主播推荐商品
-    public static String LIVE_STATUS_INFO = "/v3/api/live/%s";//直播的状态
-    public static String LIVE_RECORD_IN = "/v3/api/live/watch/%s";//直播的状态
+    public static String LIVE_STATUS_INFO = "/v3/api/live/%s";//直播的状�?
+    public static String LIVE_RECORD_IN = "/v3/api/live/watch/%s";//直播的状�?
     public static String MEMBER_MINE = "/v3/api/partner/mine";
-    public static String LIVE_COUPON_URL = "/v3/api/live/coupon";//直播优惠券
+    public static String LIVE_COUPON_URL = "/v3/api/live/coupon";//直播优惠�?
     public static String LIVE_COUPON_GROUP_GET = "/v3/api/coupon/batch/%s";
     public static String PARTNER_SUMMARY="/v3/api/partner/summary";
     public static String PARTNER_BILL_SUMMARY="/v3/api/partner/bill/summary";
@@ -770,11 +644,11 @@ public final class Constants {
     public static String CERTIFICATION_DELETE="/v3/api/membercertification/delete/%s"; //删除
     public static String CERTIFICATION_DEFAULT="/v3/api/membercertification/default/%s"; //设置默认
     public static String CERTIFICATION_CERTIFICATE="/v3/api/membercertification/certificate"; //认证
-    public static String CERTIFICATION_REUPLOAD="/v3/api/membercertification/upload"; //重新上传身份证照片
+    public static String CERTIFICATION_REUPLOAD="/v3/api/membercertification/upload"; //重新上传身份证照�?
     public static String CERTIFICATION_BIZNO="/v3/api/membercertification/bizno"; //活体认证获取bizno
     public static String CERTIFICATION_CHECK="/v3/api/membercertification/check"; //是否超过活体认证次数
-    public static String CERTIFICATION_ADD="/v3/api/membercertification/add"; //认证成功后添加活体认证
-    public static String CERTIFICATION_ADDRESS="/v3/api/order/certification/%s"; //选地址的时候重新获取身份信息
+    public static String CERTIFICATION_ADD="/v3/api/membercertification/add"; //认证成功后添加活体认�?
+    public static String CERTIFICATION_ADDRESS="/v3/api/order/certification/%s"; //选地址的时候重新获取身份信�?
 
     //拼团
     public static String COLLAGEDETAIL_PRODUCT_URL="/v3/api/collage/%s";// 详情 参数id get
@@ -786,7 +660,7 @@ public final class Constants {
     public static String COLLAGE_DETAIL="/v3/api/collage/%s";
     public static String COLLAGEDETAIL_URL="/v3/api/collage/order/%s";// 详情订单 参数id get
     public static String GROUP_DETAIL_URL="/v3/api/collage/group/%s";//拼团详情
-    public static String GROUP_CHECK_TERM="/v3/api/collage/check";//检查拼团条件
+    public static String GROUP_CHECK_TERM="/v3/api/collage/check";//检查拼团条�?
     public static String GROUP_LIST="/v3/api/collage/groups/%s";//拼团列表
 
 
@@ -796,15 +670,15 @@ public final class Constants {
     public static String DCION_PROCUCT_LIST_URL="/v3/api/pointproduct/list";//积分列表
     public static String DCION_PROCUCT_EXCHANGE_URL="/v3/api/pointexchange/exchange/%d";//积分商品兑换
     public static String DCION_PROCUCT_EXCHANGE_HISTORY="/v3/api/pointexchange/records";//积分商品兑换记录
-    public static String DCION_SIGNE_HISTORY="/v3/api/member/lastest/records";//积分商城签到最近记录,检查今天有没有签到
-    public static String DCION_MY_POINT="/v3/api/member/point";//获取自己的积分
+    public static String DCION_SIGNE_HISTORY="/v3/api/member/lastest/records";//积分商城签到最近记�?检查今天有没有签到
+    public static String DCION_MY_POINT="/v3/api/member/point";//获取自己的积�?
 
     //每日上新
     public static String UPDATE_BRAND_CATEGORY="/v3/api/page/newup/category";
     public static String UPDATE_BRAND_CATEGORY_LIST="/v3/api/page/newup/goods/brand";
 
     public static String COMMENT_ORDER_POINT="/v3/api/member/task/find/%s";//会员任务
-    public static String MY_TOP_BACK="/v3/api/ad/MY/TOPBACK";//我的背景图
+    public static String MY_TOP_BACK="/v3/api/ad/MY/TOPBACK";//我的背景�?
 
     //我的衣橱
     public static String WARDROBE_LIST="/v3/api/wardrobe/list";  // 我的衣橱
